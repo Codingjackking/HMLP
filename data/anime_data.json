@@ -2,15 +2,8 @@
   {
     "id": 16498,
     "title": "Attack on Titan",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy",
-      "Mystery"
-    ],
-    "studios": [
-      "WIT STUDIO"
-    ],
+    "genres": ["Action", "Drama", "Fantasy", "Mystery"],
+    "studios": ["WIT STUDIO"],
     "source": "MANGA",
     "relations": [
       {
@@ -50,16 +43,8 @@
   {
     "id": 101922,
     "title": "Demon Slayer: Kimetsu no Yaiba",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama",
-      "Fantasy",
-      "Supernatural"
-    ],
-    "studios": [
-      "ufotable"
-    ],
+    "genres": ["Action", "Adventure", "Drama", "Fantasy", "Supernatural"],
+    "studios": ["ufotable"],
     "source": "MANGA",
     "relations": [
       {
@@ -75,15 +60,8 @@
   {
     "id": 1535,
     "title": "Death Note",
-    "genres": [
-      "Mystery",
-      "Psychological",
-      "Supernatural",
-      "Thriller"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Mystery", "Psychological", "Supernatural", "Thriller"],
+    "studios": ["MADHOUSE"],
     "source": "MANGA",
     "relations": [
       {
@@ -95,14 +73,8 @@
   {
     "id": 113415,
     "title": "JUJUTSU KAISEN",
-    "genres": [
-      "Action",
-      "Drama",
-      "Supernatural"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Action", "Drama", "Supernatural"],
+    "studios": ["MAPPA"],
     "source": "MANGA",
     "relations": [
       {
@@ -118,14 +90,8 @@
   {
     "id": 21459,
     "title": "My Hero Academia",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Adventure", "Comedy"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -145,14 +111,8 @@
   {
     "id": 11061,
     "title": "Hunter x Hunter (2011)",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": ["MADHOUSE"],
     "source": "MANGA",
     "relations": [
       {
@@ -184,15 +144,8 @@
   {
     "id": 21087,
     "title": "One-Punch Man",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Sci-Fi",
-      "Supernatural"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Action", "Comedy", "Sci-Fi", "Supernatural"],
+    "studios": ["MADHOUSE"],
     "source": "MANGA",
     "relations": [
       {
@@ -220,9 +173,7 @@
       "Psychological",
       "Supernatural"
     ],
-    "studios": [
-      "Studio Pierrot"
-    ],
+    "studios": ["Studio Pierrot"],
     "source": "MANGA",
     "relations": [
       {
@@ -242,15 +193,8 @@
   {
     "id": 20958,
     "title": "Attack on Titan Season 2",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy",
-      "Mystery"
-    ],
-    "studios": [
-      "WIT STUDIO"
-    ],
+    "genres": ["Action", "Drama", "Fantasy", "Mystery"],
+    "studios": ["WIT STUDIO"],
     "source": "MANGA",
     "relations": [
       {
@@ -274,16 +218,8 @@
   {
     "id": 21,
     "title": "ONE PIECE",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Drama",
-      "Fantasy"
-    ],
-    "studios": [
-      "Toei Animation"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Drama", "Fantasy"],
+    "studios": ["Toei Animation"],
     "source": "MANGA",
     "relations": [
       {
@@ -479,15 +415,8 @@
   {
     "id": 5114,
     "title": "Fullmetal Alchemist: Brotherhood",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama",
-      "Fantasy"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Adventure", "Drama", "Fantasy"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -519,9 +448,7 @@
       "Fantasy",
       "Supernatural"
     ],
-    "studios": [
-      "Studio Pierrot"
-    ],
+    "studios": ["Studio Pierrot"],
     "source": "MANGA",
     "relations": [
       {
@@ -569,15 +496,8 @@
   {
     "id": 11757,
     "title": "Sword Art Online",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy", "Romance"],
+    "studios": ["A-1 Pictures"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -597,43 +517,24 @@
   {
     "id": 21519,
     "title": "Your Name.",
-    "genres": [
-      "Drama",
-      "Romance",
-      "Supernatural"
-    ],
-    "studios": [
-      "CoMix Wave"
-    ],
+    "genres": ["Drama", "Romance", "Supernatural"],
+    "studios": ["CoMix Wave"],
     "source": "ORIGINAL",
     "relations": []
   },
   {
     "id": 20954,
     "title": "A Silent Voice",
-    "genres": [
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Drama", "Romance", "Slice of Life"],
+    "studios": ["Kyoto Animation"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 99147,
     "title": "Attack on Titan Season 3",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy",
-      "Mystery"
-    ],
-    "studios": [
-      "WIT STUDIO"
-    ],
+    "genres": ["Action", "Drama", "Fantasy", "Mystery"],
+    "studios": ["WIT STUDIO"],
     "source": "MANGA",
     "relations": [
       {
@@ -657,14 +558,8 @@
   {
     "id": 21856,
     "title": "My Hero Academia Season 2",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Adventure", "Comedy"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -692,9 +587,7 @@
       "Psychological",
       "Thriller"
     ],
-    "studios": [
-      "CloverWorks"
-    ],
+    "studios": ["CloverWorks"],
     "source": "MANGA",
     "relations": [
       {
@@ -706,15 +599,8 @@
   {
     "id": 110277,
     "title": "Attack on Titan Final Season",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy",
-      "Mystery"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Action", "Drama", "Fantasy", "Mystery"],
+    "studios": ["MAPPA"],
     "source": "MANGA",
     "relations": [
       {
@@ -730,15 +616,8 @@
   {
     "id": 20755,
     "title": "Assassination Classroom",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Drama",
-      "Supernatural"
-    ],
-    "studios": [
-      "Lerche"
-    ],
+    "genres": ["Action", "Comedy", "Drama", "Supernatural"],
+    "studios": ["Lerche"],
     "source": "MANGA",
     "relations": [
       {
@@ -782,9 +661,7 @@
       "Slice of Life",
       "Supernatural"
     ],
-    "studios": [
-      "bones"
-    ],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -804,15 +681,8 @@
   {
     "id": 20665,
     "title": "Your lie in April",
-    "genres": [
-      "Drama",
-      "Music",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Drama", "Music", "Romance", "Slice of Life"],
+    "studios": ["A-1 Pictures"],
     "source": "MANGA",
     "relations": [
       {
@@ -824,15 +694,8 @@
   {
     "id": 104578,
     "title": "Attack on Titan Season 3 Part 2",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy",
-      "Mystery"
-    ],
-    "studios": [
-      "WIT STUDIO"
-    ],
+    "genres": ["Action", "Drama", "Fantasy", "Mystery"],
+    "studios": ["WIT STUDIO"],
     "source": "MANGA",
     "relations": [
       {
@@ -852,16 +715,8 @@
   {
     "id": 21234,
     "title": "ERASED",
-    "genres": [
-      "Drama",
-      "Mystery",
-      "Psychological",
-      "Supernatural",
-      "Thriller"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Drama", "Mystery", "Psychological", "Supernatural", "Thriller"],
+    "studios": ["A-1 Pictures"],
     "source": "MANGA",
     "relations": []
   },
@@ -876,9 +731,7 @@
       "Fantasy",
       "Supernatural"
     ],
-    "studios": [
-      "Studio Pierrot"
-    ],
+    "studios": ["Studio Pierrot"],
     "source": "MANGA",
     "relations": [
       {
@@ -934,15 +787,8 @@
   {
     "id": 100166,
     "title": "My Hero Academia Season 3",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Drama"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Drama"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -971,9 +817,7 @@
       "Romance",
       "Thriller"
     ],
-    "studios": [
-      "WHITE FOX"
-    ],
+    "studios": ["WHITE FOX"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -997,15 +841,8 @@
   {
     "id": 127230,
     "title": "Chainsaw Man",
-    "genres": [
-      "Action",
-      "Drama",
-      "Horror",
-      "Supernatural"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Action", "Drama", "Horror", "Supernatural"],
+    "studios": ["MAPPA"],
     "source": "MANGA",
     "relations": [
       {
@@ -1021,15 +858,8 @@
   {
     "id": 9253,
     "title": "Steins;Gate",
-    "genres": [
-      "Drama",
-      "Psychological",
-      "Sci-Fi",
-      "Thriller"
-    ],
-    "studios": [
-      "WHITE FOX"
-    ],
+    "genres": ["Drama", "Psychological", "Sci-Fi", "Thriller"],
+    "studios": ["WHITE FOX"],
     "source": "VISUAL_NOVEL",
     "relations": [
       {
@@ -1057,14 +887,8 @@
   {
     "id": 20464,
     "title": "HAIKYU!!",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Sports"
-    ],
-    "studios": [
-      "Production I.G"
-    ],
+    "genres": ["Comedy", "Drama", "Sports"],
+    "studios": ["Production I.G"],
     "source": "MANGA",
     "relations": [
       {
@@ -1096,9 +920,7 @@
       "Romance",
       "Supernatural"
     ],
-    "studios": [
-      "CloverWorks"
-    ],
+    "studios": ["CloverWorks"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -1110,15 +932,8 @@
   {
     "id": 97940,
     "title": "Black Clover",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "Studio Pierrot"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy"],
+    "studios": ["Studio Pierrot"],
     "source": "MANGA",
     "relations": [
       {
@@ -1142,16 +957,8 @@
   {
     "id": 140960,
     "title": "SPY x FAMILY",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Slice of Life",
-      "Supernatural"
-    ],
-    "studios": [
-      "CloverWorks",
-      "WIT STUDIO"
-    ],
+    "genres": ["Action", "Comedy", "Slice of Life", "Supernatural"],
+    "studios": ["CloverWorks", "WIT STUDIO"],
     "source": "MANGA",
     "relations": [
       {
@@ -1163,15 +970,8 @@
   {
     "id": 101921,
     "title": "Kaguya-sama: Love is War",
-    "genres": [
-      "Comedy",
-      "Psychological",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Comedy", "Psychological", "Romance", "Slice of Life"],
+    "studios": ["A-1 Pictures"],
     "source": "MANGA",
     "relations": [
       {
@@ -1183,15 +983,8 @@
   {
     "id": 20447,
     "title": "Noragami",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Supernatural"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Supernatural"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -1207,15 +1000,8 @@
   {
     "id": 19815,
     "title": "No Game, No Life",
-    "genres": [
-      "Adventure",
-      "Comedy",
-      "Ecchi",
-      "Fantasy"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Adventure", "Comedy", "Ecchi", "Fantasy"],
+    "studios": ["MADHOUSE"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -1231,15 +1017,8 @@
   {
     "id": 105333,
     "title": "Dr. STONE",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "TMS Entertainment"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Sci-Fi"],
+    "studios": ["TMS Entertainment"],
     "source": "MANGA",
     "relations": [
       {
@@ -1251,14 +1030,8 @@
   {
     "id": 21827,
     "title": "Violet Evergarden",
-    "genres": [
-      "Drama",
-      "Fantasy",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Drama", "Fantasy", "Slice of Life"],
+    "studios": ["Kyoto Animation"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -1274,15 +1047,8 @@
   {
     "id": 4224,
     "title": "Toradora!",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Comedy", "Drama", "Romance", "Slice of Life"],
+    "studios": ["J.C.STAFF"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -1311,25 +1077,15 @@
       "Psychological",
       "Thriller"
     ],
-    "studios": [
-      "WHITE FOX"
-    ],
+    "studios": ["WHITE FOX"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 104276,
     "title": "My Hero Academia Season 4",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Drama",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Drama", "Sci-Fi"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -1361,9 +1117,7 @@
       "Fantasy",
       "Supernatural"
     ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "studios": ["A-1 Pictures"],
     "source": "MANGA",
     "relations": [
       {
@@ -1383,14 +1137,8 @@
   {
     "id": 101348,
     "title": "Vinland Saga",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama"
-    ],
-    "studios": [
-      "WIT STUDIO"
-    ],
+    "genres": ["Action", "Adventure", "Drama"],
+    "studios": ["WIT STUDIO"],
     "source": "MANGA",
     "relations": [
       {
@@ -1402,14 +1150,8 @@
   {
     "id": 124080,
     "title": "Horimiya",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "CloverWorks"
-    ],
+    "genres": ["Comedy", "Romance", "Slice of Life"],
+    "studios": ["CloverWorks"],
     "source": "MANGA",
     "relations": [
       {
@@ -1425,15 +1167,8 @@
   {
     "id": 21202,
     "title": "KONOSUBA -God's blessing on this wonderful world!",
-    "genres": [
-      "Adventure",
-      "Comedy",
-      "Ecchi",
-      "Fantasy"
-    ],
-    "studios": [
-      "Studio DEEN"
-    ],
+    "genres": ["Adventure", "Comedy", "Ecchi", "Fantasy"],
+    "studios": ["Studio DEEN"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -1461,9 +1196,7 @@
       "Mystery",
       "Supernatural"
     ],
-    "studios": [
-      "ufotable"
-    ],
+    "studios": ["ufotable"],
     "source": "MANGA",
     "relations": [
       {
@@ -1483,16 +1216,8 @@
   {
     "id": 20623,
     "title": "Parasyte -the maxim-",
-    "genres": [
-      "Action",
-      "Drama",
-      "Horror",
-      "Psychological",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Action", "Drama", "Horror", "Psychological", "Sci-Fi"],
+    "studios": ["MADHOUSE"],
     "source": "MANGA",
     "relations": []
   },
@@ -1507,24 +1232,15 @@
       "Romance",
       "Sci-Fi"
     ],
-    "studios": [
-      "TRIGGER",
-      "CloverWorks"
-    ],
+    "studios": ["TRIGGER", "CloverWorks"],
     "source": "ORIGINAL",
     "relations": []
   },
   {
     "id": 269,
     "title": "Bleach",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Supernatural"
-    ],
-    "studios": [
-      "Studio Pierrot"
-    ],
+    "genres": ["Action", "Adventure", "Supernatural"],
+    "studios": ["Studio Pierrot"],
     "source": "MANGA",
     "relations": [
       {
@@ -1564,16 +1280,8 @@
   {
     "id": 1575,
     "title": "Code Geass: Lelouch of the Rebellion",
-    "genres": [
-      "Action",
-      "Drama",
-      "Mecha",
-      "Sci-Fi",
-      "Thriller"
-    ],
-    "studios": [
-      "Sunrise"
-    ],
+    "genres": ["Action", "Drama", "Mecha", "Sci-Fi", "Thriller"],
+    "studios": ["Sunrise"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -1605,10 +1313,7 @@
       "Psychological",
       "Sci-Fi"
     ],
-    "studios": [
-      "Gainax",
-      "Tatsunoko Production"
-    ],
+    "studios": ["Gainax", "Tatsunoko Production"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -1628,31 +1333,16 @@
   {
     "id": 199,
     "title": "Spirited Away",
-    "genres": [
-      "Adventure",
-      "Drama",
-      "Fantasy",
-      "Supernatural"
-    ],
-    "studios": [
-      "Studio Ghibli"
-    ],
+    "genres": ["Adventure", "Drama", "Fantasy", "Supernatural"],
+    "studios": ["Studio Ghibli"],
     "source": "ORIGINAL",
     "relations": []
   },
   {
     "id": 20931,
     "title": "Death Parade",
-    "genres": [
-      "Drama",
-      "Mystery",
-      "Psychological",
-      "Supernatural",
-      "Thriller"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Drama", "Mystery", "Psychological", "Supernatural", "Thriller"],
+    "studios": ["MADHOUSE"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -1664,15 +1354,8 @@
   {
     "id": 105310,
     "title": "Fire Force",
-    "genres": [
-      "Action",
-      "Drama",
-      "Sci-Fi",
-      "Supernatural"
-    ],
-    "studios": [
-      "David Production"
-    ],
+    "genres": ["Action", "Drama", "Sci-Fi", "Supernatural"],
+    "studios": ["David Production"],
     "source": "MANGA",
     "relations": [
       {
@@ -1684,14 +1367,8 @@
   {
     "id": 14719,
     "title": "JoJo's Bizarre Adventure (TV)",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Supernatural"
-    ],
-    "studios": [
-      "David Production"
-    ],
+    "genres": ["Action", "Adventure", "Supernatural"],
+    "studios": ["David Production"],
     "source": "MANGA",
     "relations": [
       {
@@ -1707,14 +1384,8 @@
   {
     "id": 9919,
     "title": "Blue Exorcist",
-    "genres": [
-      "Action",
-      "Fantasy",
-      "Supernatural"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Fantasy", "Supernatural"],
+    "studios": ["A-1 Pictures"],
     "source": "MANGA",
     "relations": [
       {
@@ -1738,15 +1409,8 @@
   {
     "id": 97668,
     "title": "One-Punch Man Season 2",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Sci-Fi",
-      "Supernatural"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Action", "Comedy", "Sci-Fi", "Supernatural"],
+    "studios": ["J.C.STAFF"],
     "source": "MANGA",
     "relations": [
       {
@@ -1766,15 +1430,8 @@
   {
     "id": 142329,
     "title": "Demon Slayer: Kimetsu no Yaiba Entertainment District Arc",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy",
-      "Supernatural"
-    ],
-    "studios": [
-      "ufotable"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy", "Supernatural"],
+    "studios": ["ufotable"],
     "source": "MANGA",
     "relations": [
       {
@@ -1794,15 +1451,8 @@
   {
     "id": 1,
     "title": "Cowboy Bebop",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "Sunrise"
-    ],
+    "genres": ["Action", "Adventure", "Drama", "Sci-Fi"],
+    "studios": ["Sunrise"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -1822,14 +1472,8 @@
   {
     "id": 98314,
     "title": "Kakegurui",
-    "genres": [
-      "Drama",
-      "Mystery",
-      "Psychological"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Drama", "Mystery", "Psychological"],
+    "studios": ["MAPPA"],
     "source": "MANGA",
     "relations": [
       {
@@ -1845,15 +1489,8 @@
   {
     "id": 20594,
     "title": "Sword Art Online II",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy", "Sci-Fi"],
+    "studios": ["A-1 Pictures"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -1881,14 +1518,8 @@
   {
     "id": 99263,
     "title": "The Rising of the Shield Hero",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "Kinema Citrus"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": ["Kinema Citrus"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -1900,14 +1531,8 @@
   {
     "id": 145064,
     "title": "JUJUTSU KAISEN Season 2",
-    "genres": [
-      "Action",
-      "Drama",
-      "Supernatural"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Action", "Drama", "Supernatural"],
+    "studios": ["MAPPA"],
     "source": "MANGA",
     "relations": [
       {
@@ -1939,9 +1564,7 @@
       "Slice of Life",
       "Supernatural"
     ],
-    "studios": [
-      "bones"
-    ],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -1961,15 +1584,8 @@
   {
     "id": 6547,
     "title": "Angel Beats!",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Drama",
-      "Supernatural"
-    ],
-    "studios": [
-      "P.A.WORKS"
-    ],
+    "genres": ["Action", "Comedy", "Drama", "Supernatural"],
+    "studios": ["P.A.WORKS"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -1985,15 +1601,8 @@
   {
     "id": 120120,
     "title": "Tokyo Revengers",
-    "genres": [
-      "Action",
-      "Drama",
-      "Romance",
-      "Supernatural"
-    ],
-    "studios": [
-      "LIDENFILMS"
-    ],
+    "genres": ["Action", "Drama", "Romance", "Supernatural"],
+    "studios": ["LIDENFILMS"],
     "source": "MANGA",
     "relations": [
       {
@@ -2009,15 +1618,8 @@
   {
     "id": 101280,
     "title": "That Time I Got Reincarnated as a Slime",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "8-bit"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy"],
+    "studios": ["8-bit"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -2041,15 +1643,8 @@
   {
     "id": 112641,
     "title": "Kaguya-sama: Love is War?",
-    "genres": [
-      "Comedy",
-      "Psychological",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Comedy", "Psychological", "Romance", "Slice of Life"],
+    "studios": ["A-1 Pictures"],
     "source": "MANGA",
     "relations": [
       {
@@ -2077,9 +1672,7 @@
       "Supernatural",
       "Thriller"
     ],
-    "studios": [
-      "Asread"
-    ],
+    "studios": ["Asread"],
     "source": "MANGA",
     "relations": [
       {
@@ -2099,15 +1692,8 @@
   {
     "id": 108465,
     "title": "Mushoku Tensei: Jobless Reincarnation",
-    "genres": [
-      "Adventure",
-      "Drama",
-      "Ecchi",
-      "Fantasy"
-    ],
-    "studios": [
-      "Studio Bind"
-    ],
+    "genres": ["Adventure", "Drama", "Ecchi", "Fantasy"],
+    "studios": ["Studio Bind"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -2119,16 +1705,8 @@
   {
     "id": 20997,
     "title": "Charlotte",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Sci-Fi",
-      "Supernatural"
-    ],
-    "studios": [
-      "P.A.WORKS"
-    ],
+    "genres": ["Comedy", "Drama", "Romance", "Sci-Fi", "Supernatural"],
+    "studios": ["P.A.WORKS"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -2140,13 +1718,8 @@
   {
     "id": 98659,
     "title": "Classroom of the Elite",
-    "genres": [
-      "Drama",
-      "Psychological"
-    ],
-    "studios": [
-      "Lerche"
-    ],
+    "genres": ["Drama", "Psychological"],
+    "studios": ["Lerche"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -2158,16 +1731,8 @@
   {
     "id": 131681,
     "title": "Attack on Titan Final Season Part 2",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy",
-      "Mystery",
-      "Psychological"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Action", "Drama", "Fantasy", "Mystery", "Psychological"],
+    "studios": ["MAPPA"],
     "source": "MANGA",
     "relations": [
       {
@@ -2183,14 +1748,8 @@
   {
     "id": 154587,
     "title": "Frieren: Beyond Journey’s End",
-    "genres": [
-      "Adventure",
-      "Drama",
-      "Fantasy"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Adventure", "Drama", "Fantasy"],
+    "studios": ["MADHOUSE"],
     "source": "MANGA",
     "relations": [
       {
@@ -2210,15 +1769,8 @@
   {
     "id": 21311,
     "title": "Bungo Stray Dogs",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Mystery",
-      "Supernatural"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Comedy", "Mystery", "Supernatural"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -2234,14 +1786,8 @@
   {
     "id": 18679,
     "title": "Kill la Kill",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Ecchi"
-    ],
-    "studios": [
-      "TRIGGER"
-    ],
+    "genres": ["Action", "Comedy", "Ecchi"],
+    "studios": ["TRIGGER"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -2253,13 +1799,8 @@
   {
     "id": 131573,
     "title": "JUJUTSU KAISEN 0",
-    "genres": [
-      "Action",
-      "Supernatural"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Action", "Supernatural"],
+    "studios": ["MAPPA"],
     "source": "MANGA",
     "relations": [
       {
@@ -2271,15 +1812,8 @@
   {
     "id": 117193,
     "title": "My Hero Academia Season 5",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Sci-Fi"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -2315,9 +1849,7 @@
       "Psychological",
       "Supernatural"
     ],
-    "studios": [
-      "Studio Pierrot"
-    ],
+    "studios": ["Studio Pierrot"],
     "source": "MANGA",
     "relations": [
       {
@@ -2333,13 +1865,8 @@
   {
     "id": 20923,
     "title": "Food Wars!",
-    "genres": [
-      "Comedy",
-      "Ecchi"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Comedy", "Ecchi"],
+    "studios": ["J.C.STAFF"],
     "source": "MANGA",
     "relations": [
       {
@@ -2355,14 +1882,8 @@
   {
     "id": 151807,
     "title": "Solo Leveling",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": ["A-1 Pictures"],
     "source": "OTHER",
     "relations": [
       {
@@ -2378,14 +1899,8 @@
   {
     "id": 20992,
     "title": "HAIKYU!! 2nd Season",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Sports"
-    ],
-    "studios": [
-      "Production I.G"
-    ],
+    "genres": ["Comedy", "Drama", "Sports"],
+    "studios": ["Production I.G"],
     "source": "MANGA",
     "relations": [
       {
@@ -2413,17 +1928,8 @@
   {
     "id": 97986,
     "title": "Made in Abyss",
-    "genres": [
-      "Adventure",
-      "Drama",
-      "Fantasy",
-      "Horror",
-      "Mystery",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "Kinema Citrus"
-    ],
+    "genres": ["Adventure", "Drama", "Fantasy", "Horror", "Mystery", "Sci-Fi"],
+    "studios": ["Kinema Citrus"],
     "source": "MANGA",
     "relations": [
       {
@@ -2443,15 +1949,8 @@
   {
     "id": 9989,
     "title": "Anohana: The Flower We Saw That Day",
-    "genres": [
-      "Drama",
-      "Romance",
-      "Slice of Life",
-      "Supernatural"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Drama", "Romance", "Slice of Life", "Supernatural"],
+    "studios": ["A-1 Pictures"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -2467,15 +1966,8 @@
   {
     "id": 15809,
     "title": "The Devil is a Part-Timer!",
-    "genres": [
-      "Comedy",
-      "Fantasy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "WHITE FOX"
-    ],
+    "genres": ["Comedy", "Fantasy", "Romance", "Slice of Life"],
+    "studios": ["WHITE FOX"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -2487,14 +1979,8 @@
   {
     "id": 20832,
     "title": "Overlord",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": ["MADHOUSE"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -2526,15 +2012,8 @@
   {
     "id": 132405,
     "title": "My Dress-Up Darling",
-    "genres": [
-      "Comedy",
-      "Ecchi",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "CloverWorks"
-    ],
+    "genres": ["Comedy", "Ecchi", "Romance", "Slice of Life"],
+    "studios": ["CloverWorks"],
     "source": "MANGA",
     "relations": [
       {
@@ -2546,16 +2025,8 @@
   {
     "id": 20920,
     "title": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy", "Romance"],
+    "studios": ["J.C.STAFF"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -2586,9 +2057,7 @@
       "Supernatural",
       "Thriller"
     ],
-    "studios": [
-      "P.A.WORKS"
-    ],
+    "studios": ["P.A.WORKS"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -2604,16 +2073,8 @@
   {
     "id": 3588,
     "title": "Soul Eater",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy",
-      "Supernatural"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy", "Supernatural"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -2629,16 +2090,8 @@
   {
     "id": 6702,
     "title": "Fairy Tail",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "Satelight",
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy"],
+    "studios": ["Satelight", "A-1 Pictures"],
     "source": "MANGA",
     "relations": [
       {
@@ -2658,15 +2111,8 @@
   {
     "id": 21699,
     "title": "KONOSUBA -God's blessing on this wonderful world! 2",
-    "genres": [
-      "Adventure",
-      "Comedy",
-      "Ecchi",
-      "Fantasy"
-    ],
-    "studios": [
-      "Studio DEEN"
-    ],
+    "genres": ["Adventure", "Comedy", "Ecchi", "Fantasy"],
+    "studios": ["Studio DEEN"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -2686,15 +2132,8 @@
   {
     "id": 14813,
     "title": "My Teen Romantic Comedy SNAFU",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Brain's Base"
-    ],
+    "genres": ["Comedy", "Drama", "Romance", "Slice of Life"],
+    "studios": ["Brain's Base"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -2710,17 +2149,8 @@
   {
     "id": 2001,
     "title": "Gurren Lagann",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Drama",
-      "Mecha",
-      "Romance",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "Gainax"
-    ],
+    "genres": ["Action", "Comedy", "Drama", "Mecha", "Romance", "Sci-Fi"],
+    "studios": ["Gainax"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -2748,16 +2178,8 @@
   {
     "id": 101347,
     "title": "Dororo",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama",
-      "Supernatural"
-    ],
-    "studios": [
-      "MAPPA",
-      "Tezuka Productions"
-    ],
+    "genres": ["Action", "Adventure", "Drama", "Supernatural"],
+    "studios": ["MAPPA", "Tezuka Productions"],
     "source": "MANGA",
     "relations": [
       {
@@ -2769,15 +2191,8 @@
   {
     "id": 21170,
     "title": "Assassination Classroom Second Season",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Drama",
-      "Supernatural"
-    ],
-    "studios": [
-      "Lerche"
-    ],
+    "genres": ["Action", "Comedy", "Drama", "Supernatural"],
+    "studios": ["Lerche"],
     "source": "MANGA",
     "relations": [
       {
@@ -2801,14 +2216,8 @@
   {
     "id": 21698,
     "title": "HAIKYU!! 3rd Season",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Sports"
-    ],
-    "studios": [
-      "Production I.G"
-    ],
+    "genres": ["Comedy", "Drama", "Sports"],
+    "studios": ["Production I.G"],
     "source": "MANGA",
     "relations": [
       {
@@ -2840,9 +2249,7 @@
       "Psychological",
       "Thriller"
     ],
-    "studios": [
-      "WHITE FOX"
-    ],
+    "studios": ["WHITE FOX"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -2862,30 +2269,16 @@
   {
     "id": 99750,
     "title": "I Want to Eat Your Pancreas",
-    "genres": [
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Studio VOLN"
-    ],
+    "genres": ["Drama", "Romance", "Slice of Life"],
+    "studios": ["Studio VOLN"],
     "source": "OTHER",
     "relations": []
   },
   {
     "id": 2904,
     "title": "Code Geass: Lelouch of the Rebellion R2",
-    "genres": [
-      "Action",
-      "Drama",
-      "Mecha",
-      "Sci-Fi",
-      "Thriller"
-    ],
-    "studios": [
-      "Sunrise"
-    ],
+    "genres": ["Action", "Drama", "Mecha", "Sci-Fi", "Thriller"],
+    "studios": ["Sunrise"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -2917,15 +2310,8 @@
   {
     "id": 13601,
     "title": "PSYCHO-PASS",
-    "genres": [
-      "Action",
-      "Psychological",
-      "Sci-Fi",
-      "Thriller"
-    ],
-    "studios": [
-      "Production I.G"
-    ],
+    "genres": ["Action", "Psychological", "Sci-Fi", "Thriller"],
+    "studios": ["Production I.G"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -2937,29 +2323,16 @@
   {
     "id": 431,
     "title": "Howl‘s Moving Castle",
-    "genres": [
-      "Adventure",
-      "Drama",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "Studio Ghibli"
-    ],
+    "genres": ["Adventure", "Drama", "Fantasy", "Romance"],
+    "studios": ["Studio Ghibli"],
     "source": "OTHER",
     "relations": []
   },
   {
     "id": 12189,
     "title": "Hyouka",
-    "genres": [
-      "Mystery",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Mystery", "Romance", "Slice of Life"],
+    "studios": ["Kyoto Animation"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -2971,16 +2344,8 @@
   {
     "id": 98460,
     "title": "Devilman Crybaby",
-    "genres": [
-      "Action",
-      "Drama",
-      "Horror",
-      "Psychological",
-      "Supernatural"
-    ],
-    "studios": [
-      "Science SARU"
-    ],
+    "genres": ["Action", "Drama", "Horror", "Psychological", "Supernatural"],
+    "studios": ["Science SARU"],
     "source": "MANGA",
     "relations": [
       {
@@ -2996,16 +2361,8 @@
   {
     "id": 145139,
     "title": "Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama",
-      "Fantasy",
-      "Supernatural"
-    ],
-    "studios": [
-      "ufotable"
-    ],
+    "genres": ["Action", "Adventure", "Drama", "Fantasy", "Supernatural"],
+    "studios": ["ufotable"],
     "source": "MANGA",
     "relations": [
       {
@@ -3021,15 +2378,8 @@
   {
     "id": 10087,
     "title": "Fate/Zero",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy",
-      "Supernatural"
-    ],
-    "studios": [
-      "ufotable"
-    ],
+    "genres": ["Action", "Drama", "Fantasy", "Supernatural"],
+    "studios": ["ufotable"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -3045,15 +2395,8 @@
   {
     "id": 21804,
     "title": "The Disastrous Life of Saiki K.",
-    "genres": [
-      "Comedy",
-      "Slice of Life",
-      "Supernatural"
-    ],
-    "studios": [
-      "J.C.STAFF",
-      "EGG FIRM"
-    ],
+    "genres": ["Comedy", "Slice of Life", "Supernatural"],
+    "studios": ["J.C.STAFF", "EGG FIRM"],
     "source": "MANGA",
     "relations": [
       {
@@ -3069,30 +2412,16 @@
   {
     "id": 106286,
     "title": "Weathering With You",
-    "genres": [
-      "Drama",
-      "Romance",
-      "Slice of Life",
-      "Supernatural"
-    ],
-    "studios": [
-      "CoMix Wave"
-    ],
+    "genres": ["Drama", "Romance", "Slice of Life", "Supernatural"],
+    "studios": ["CoMix Wave"],
     "source": "ORIGINAL",
     "relations": []
   },
   {
     "id": 14741,
     "title": "Love, Chunibyo & Other Delusions",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Comedy", "Drama", "Romance", "Slice of Life"],
+    "studios": ["Kyoto Animation"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -3124,9 +2453,7 @@
       "Mystery",
       "Supernatural"
     ],
-    "studios": [
-      "ufotable"
-    ],
+    "studios": ["ufotable"],
     "source": "MANGA",
     "relations": [
       {
@@ -3146,15 +2473,8 @@
   {
     "id": 120377,
     "title": "Cyberpunk: Edgerunners",
-    "genres": [
-      "Action",
-      "Drama",
-      "Psychological",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "TRIGGER"
-    ],
+    "genres": ["Action", "Drama", "Psychological", "Sci-Fi"],
+    "studios": ["TRIGGER"],
     "source": "VIDEO_GAME",
     "relations": [
       {
@@ -3174,9 +2494,7 @@
       "Sci-Fi",
       "Supernatural"
     ],
-    "studios": [
-      "Science SARU"
-    ],
+    "studios": ["Science SARU"],
     "source": "MANGA",
     "relations": [
       {
@@ -3196,9 +2514,7 @@
       "Romance",
       "Supernatural"
     ],
-    "studios": [
-      "Shaft"
-    ],
+    "studios": ["Shaft"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -3222,14 +2538,8 @@
   {
     "id": 20474,
     "title": "JoJo's Bizarre Adventure: Stardust Crusaders",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Supernatural"
-    ],
-    "studios": [
-      "David Production"
-    ],
+    "genres": ["Action", "Adventure", "Supernatural"],
+    "studios": ["David Production"],
     "source": "MANGA",
     "relations": [
       {
@@ -3253,16 +2563,8 @@
   {
     "id": 115230,
     "title": "Tower of God",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama",
-      "Fantasy",
-      "Mystery"
-    ],
-    "studios": [
-      "Telecom Animation Film"
-    ],
+    "genres": ["Action", "Adventure", "Drama", "Fantasy", "Mystery"],
+    "studios": ["Telecom Animation Film"],
     "source": "MANGA",
     "relations": [
       {
@@ -3274,14 +2576,8 @@
   {
     "id": 21776,
     "title": "Miss Kobayashi's Dragon Maid",
-    "genres": [
-      "Comedy",
-      "Fantasy",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Comedy", "Fantasy", "Slice of Life"],
+    "studios": ["Kyoto Animation"],
     "source": "MANGA",
     "relations": [
       {
@@ -3297,15 +2593,8 @@
   {
     "id": 113936,
     "title": "Dr. STONE: STONE WARS",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "TMS Entertainment"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Sci-Fi"],
+    "studios": ["TMS Entertainment"],
     "source": "MANGA",
     "relations": [
       {
@@ -3330,9 +2619,7 @@
       "Psychological",
       "Thriller"
     ],
-    "studios": [
-      "CloverWorks"
-    ],
+    "studios": ["CloverWorks"],
     "source": "MANGA",
     "relations": [
       {
@@ -3344,31 +2631,16 @@
   {
     "id": 19,
     "title": "Monster",
-    "genres": [
-      "Drama",
-      "Horror",
-      "Mystery",
-      "Psychological",
-      "Thriller"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Drama", "Horror", "Mystery", "Psychological", "Thriller"],
+    "studios": ["MADHOUSE"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 128893,
     "title": "Hell’s Paradise",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Mystery",
-      "Supernatural"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Action", "Adventure", "Mystery", "Supernatural"],
+    "studios": ["MAPPA"],
     "source": "MANGA",
     "relations": [
       {
@@ -3380,16 +2652,8 @@
   {
     "id": 20829,
     "title": "Seraph of the End: Vampire Reign",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy",
-      "Mystery",
-      "Supernatural"
-    ],
-    "studios": [
-      "WIT STUDIO"
-    ],
+    "genres": ["Action", "Drama", "Fantasy", "Mystery", "Supernatural"],
+    "studios": ["WIT STUDIO"],
     "source": "MANGA",
     "relations": [
       {
@@ -3409,14 +2673,8 @@
   {
     "id": 99578,
     "title": "Wotakoi: Love is Hard for Otaku",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Comedy", "Romance", "Slice of Life"],
+    "studios": ["A-1 Pictures"],
     "source": "MANGA",
     "relations": [
       {
@@ -3436,9 +2694,7 @@
       "Psychological",
       "Thriller"
     ],
-    "studios": [
-      "Shaft"
-    ],
+    "studios": ["Shaft"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -3462,16 +2718,8 @@
   {
     "id": 142838,
     "title": "SPY x FAMILY Cour 2",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Slice of Life",
-      "Supernatural"
-    ],
-    "studios": [
-      "WIT STUDIO",
-      "CloverWorks"
-    ],
+    "genres": ["Action", "Comedy", "Slice of Life", "Supernatural"],
+    "studios": ["WIT STUDIO", "CloverWorks"],
     "source": "MANGA",
     "relations": [
       {
@@ -3487,15 +2735,8 @@
   {
     "id": 21128,
     "title": "Noragami Aragoto",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Supernatural"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Supernatural"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -3511,15 +2752,8 @@
   {
     "id": 100388,
     "title": "BANANA FISH",
-    "genres": [
-      "Action",
-      "Drama",
-      "Psychological",
-      "Thriller"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Action", "Drama", "Psychological", "Thriller"],
+    "studios": ["MAPPA"],
     "source": "MANGA",
     "relations": []
   },
@@ -3533,9 +2767,7 @@
       "Psychological",
       "Supernatural"
     ],
-    "studios": [
-      "Brain's Base"
-    ],
+    "studios": ["Brain's Base"],
     "source": "MANGA",
     "relations": [
       {
@@ -3547,14 +2779,8 @@
   {
     "id": 133965,
     "title": "Komi Can’t Communicate",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "OLM"
-    ],
+    "genres": ["Comedy", "Romance", "Slice of Life"],
+    "studios": ["OLM"],
     "source": "MANGA",
     "relations": [
       {
@@ -3566,16 +2792,8 @@
   {
     "id": 21450,
     "title": "JoJo's Bizarre Adventure: Diamond is Unbreakable",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama",
-      "Mystery",
-      "Supernatural"
-    ],
-    "studios": [
-      "David Production"
-    ],
+    "genres": ["Action", "Adventure", "Drama", "Mystery", "Supernatural"],
+    "studios": ["David Production"],
     "source": "MANGA",
     "relations": [
       {
@@ -3595,15 +2813,8 @@
   {
     "id": 150672,
     "title": "Oshi No Ko",
-    "genres": [
-      "Drama",
-      "Mystery",
-      "Psychological",
-      "Supernatural"
-    ],
-    "studios": [
-      "Doga Kobo"
-    ],
+    "genres": ["Drama", "Mystery", "Psychological", "Supernatural"],
+    "studios": ["Doga Kobo"],
     "source": "MANGA",
     "relations": [
       {
@@ -3615,16 +2826,8 @@
   {
     "id": 105334,
     "title": "Fruits Basket (2019)",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Slice of Life",
-      "Supernatural"
-    ],
-    "studios": [
-      "TMS Entertainment"
-    ],
+    "genres": ["Comedy", "Drama", "Romance", "Slice of Life", "Supernatural"],
+    "studios": ["TMS Entertainment"],
     "source": "MANGA",
     "relations": [
       {
@@ -3640,14 +2843,8 @@
   {
     "id": 113813,
     "title": "Rent-a-Girlfriend",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance"
-    ],
-    "studios": [
-      "TMS Entertainment"
-    ],
+    "genres": ["Comedy", "Drama", "Romance"],
+    "studios": ["TMS Entertainment"],
     "source": "MANGA",
     "relations": [
       {
@@ -3659,16 +2856,8 @@
   {
     "id": 11617,
     "title": "High School DxD",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Ecchi",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "TNK"
-    ],
+    "genres": ["Action", "Comedy", "Ecchi", "Fantasy", "Romance"],
+    "studios": ["TNK"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -3688,16 +2877,8 @@
   {
     "id": 100240,
     "title": "Tokyo Ghoul:re",
-    "genres": [
-      "Action",
-      "Horror",
-      "Mystery",
-      "Psychological",
-      "Supernatural"
-    ],
-    "studios": [
-      "Studio Pierrot"
-    ],
+    "genres": ["Action", "Horror", "Mystery", "Psychological", "Supernatural"],
+    "studios": ["Studio Pierrot"],
     "source": "MANGA",
     "relations": [
       {
@@ -3713,15 +2894,8 @@
   {
     "id": 108511,
     "title": "That Time I Got Reincarnated as a Slime Season 2",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "8-bit"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy"],
+    "studios": ["8-bit"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -3737,14 +2911,8 @@
   {
     "id": 137822,
     "title": "BLUE LOCK",
-    "genres": [
-      "Action",
-      "Drama",
-      "Sports"
-    ],
-    "studios": [
-      "8-bit"
-    ],
+    "genres": ["Action", "Drama", "Sports"],
+    "studios": ["8-bit"],
     "source": "MANGA",
     "relations": [
       {
@@ -3760,15 +2928,8 @@
   {
     "id": 103572,
     "title": "The Quintessential Quintuplets",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Tezuka Productions"
-    ],
+    "genres": ["Comedy", "Drama", "Romance", "Slice of Life"],
+    "studios": ["Tezuka Productions"],
     "source": "MANGA",
     "relations": [
       {
@@ -3780,15 +2941,8 @@
   {
     "id": 127720,
     "title": "Mushoku Tensei: Jobless Reincarnation Cour 2",
-    "genres": [
-      "Adventure",
-      "Drama",
-      "Ecchi",
-      "Fantasy"
-    ],
-    "studios": [
-      "Studio Bind"
-    ],
+    "genres": ["Adventure", "Drama", "Ecchi", "Fantasy"],
+    "studios": ["Studio Bind"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -3808,15 +2962,8 @@
   {
     "id": 116589,
     "title": "86 EIGHTY-SIX",
-    "genres": [
-      "Action",
-      "Drama",
-      "Mecha",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Drama", "Mecha", "Sci-Fi"],
+    "studios": ["A-1 Pictures"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -3828,29 +2975,16 @@
   {
     "id": 164,
     "title": "Princess Mononoke",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama",
-      "Fantasy"
-    ],
-    "studios": [
-      "Studio Ghibli"
-    ],
+    "genres": ["Action", "Adventure", "Drama", "Fantasy"],
+    "studios": ["Studio Ghibli"],
     "source": "ORIGINAL",
     "relations": []
   },
   {
     "id": 101165,
     "title": "GOBLIN SLAYER",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "WHITE FOX"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": ["WHITE FOX"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -3862,29 +2996,16 @@
   {
     "id": 116006,
     "title": "The God of High School",
-    "genres": [
-      "Action",
-      "Fantasy"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Action", "Fantasy"],
+    "studios": ["MAPPA"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 2167,
     "title": "Clannad",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Slice of Life",
-      "Supernatural"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Comedy", "Drama", "Romance", "Slice of Life", "Supernatural"],
+    "studios": ["Kyoto Animation"],
     "source": "VISUAL_NOVEL",
     "relations": [
       {
@@ -3908,14 +3029,8 @@
   {
     "id": 6746,
     "title": "Durarara!!",
-    "genres": [
-      "Action",
-      "Mystery",
-      "Supernatural"
-    ],
-    "studios": [
-      "Brain's Base"
-    ],
+    "genres": ["Action", "Mystery", "Supernatural"],
+    "studios": ["Brain's Base"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -3931,14 +3046,8 @@
   {
     "id": 106625,
     "title": "HAIKYU!! TO THE TOP",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Sports"
-    ],
-    "studios": [
-      "Production I.G"
-    ],
+    "genres": ["Comedy", "Drama", "Sports"],
+    "studios": ["Production I.G"],
     "source": "MANGA",
     "relations": [
       {
@@ -3954,16 +3063,8 @@
   {
     "id": 102883,
     "title": "JoJo's Bizarre Adventure: Golden Wind",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama",
-      "Mystery",
-      "Supernatural"
-    ],
-    "studios": [
-      "David Production"
-    ],
+    "genres": ["Action", "Adventure", "Drama", "Mystery", "Supernatural"],
+    "studios": ["David Production"],
     "source": "MANGA",
     "relations": [
       {
@@ -3979,15 +3080,8 @@
   {
     "id": 114236,
     "title": "Fire Force Season 2",
-    "genres": [
-      "Action",
-      "Drama",
-      "Sci-Fi",
-      "Supernatural"
-    ],
-    "studios": [
-      "David Production"
-    ],
+    "genres": ["Action", "Drama", "Sci-Fi", "Supernatural"],
+    "studios": ["David Production"],
     "source": "MANGA",
     "relations": [
       {
@@ -4003,15 +3097,8 @@
   {
     "id": 918,
     "title": "Gintama",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Drama",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "Sunrise"
-    ],
+    "genres": ["Action", "Comedy", "Drama", "Sci-Fi"],
+    "studios": ["Sunrise"],
     "source": "MANGA",
     "relations": [
       {
@@ -4060,9 +3147,7 @@
       "Romance",
       "Thriller"
     ],
-    "studios": [
-      "WHITE FOX"
-    ],
+    "studios": ["WHITE FOX"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -4091,9 +3176,7 @@
       "Sci-Fi",
       "Thriller"
     ],
-    "studios": [
-      "CloverWorks"
-    ],
+    "studios": ["CloverWorks"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -4113,9 +3196,7 @@
       "Fantasy",
       "Supernatural"
     ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "studios": ["A-1 Pictures"],
     "source": "MANGA",
     "relations": [
       {
@@ -4139,30 +3220,16 @@
   {
     "id": 20661,
     "title": "Terror in Resonance",
-    "genres": [
-      "Drama",
-      "Mystery",
-      "Psychological",
-      "Thriller"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Drama", "Mystery", "Psychological", "Thriller"],
+    "studios": ["MAPPA"],
     "source": "ORIGINAL",
     "relations": []
   },
   {
     "id": 20799,
     "title": "JoJo's Bizarre Adventure: Stardust Crusaders - Battle in Egypt",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama",
-      "Supernatural"
-    ],
-    "studios": [
-      "David Production"
-    ],
+    "genres": ["Action", "Adventure", "Drama", "Supernatural"],
+    "studios": ["David Production"],
     "source": "MANGA",
     "relations": [
       {
@@ -4186,14 +3253,8 @@
   {
     "id": 100182,
     "title": "Sword Art Online: Alicization",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": ["A-1 Pictures"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -4209,14 +3270,8 @@
   {
     "id": 7054,
     "title": "Maid-Sama!",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Comedy", "Drama", "Romance"],
+    "studios": ["J.C.STAFF"],
     "source": "MANGA",
     "relations": [
       {
@@ -4232,15 +3287,8 @@
   {
     "id": 125367,
     "title": "Kaguya-sama: Love is War -Ultra Romantic-",
-    "genres": [
-      "Comedy",
-      "Psychological",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Comedy", "Psychological", "Romance", "Slice of Life"],
+    "studios": ["A-1 Pictures"],
     "source": "MANGA",
     "relations": [
       {
@@ -4260,14 +3308,8 @@
   {
     "id": 130298,
     "title": "The Eminence in Shadow",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "Nexus"
-    ],
+    "genres": ["Action", "Comedy", "Fantasy"],
+    "studios": ["Nexus"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -4283,16 +3325,8 @@
   {
     "id": 18153,
     "title": "Beyond the Boundary",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy",
-      "Slice of Life",
-      "Supernatural"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Action", "Drama", "Fantasy", "Slice of Life", "Supernatural"],
+    "studios": ["Kyoto Animation"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -4320,17 +3354,8 @@
   {
     "id": 8074,
     "title": "High School of the Dead",
-    "genres": [
-      "Action",
-      "Drama",
-      "Ecchi",
-      "Horror",
-      "Romance",
-      "Supernatural"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Action", "Drama", "Ecchi", "Horror", "Romance", "Supernatural"],
+    "studios": ["MADHOUSE"],
     "source": "MANGA",
     "relations": [
       {
@@ -4342,13 +3367,8 @@
   {
     "id": 11771,
     "title": "Kuroko's Basketball",
-    "genres": [
-      "Comedy",
-      "Sports"
-    ],
-    "studios": [
-      "Production I.G"
-    ],
+    "genres": ["Comedy", "Sports"],
+    "studios": ["Production I.G"],
     "source": "MANGA",
     "relations": [
       {
@@ -4376,14 +3396,8 @@
   {
     "id": 161645,
     "title": "The Apothecary Diaries",
-    "genres": [
-      "Drama",
-      "Mystery"
-    ],
-    "studios": [
-      "OLM",
-      "TOHO animation STUDIO"
-    ],
+    "genres": ["Drama", "Mystery"],
+    "studios": ["OLM", "TOHO animation STUDIO"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -4399,15 +3413,8 @@
   {
     "id": 523,
     "title": "My Neighbor Totoro",
-    "genres": [
-      "Adventure",
-      "Fantasy",
-      "Slice of Life",
-      "Supernatural"
-    ],
-    "studios": [
-      "Studio Ghibli"
-    ],
+    "genres": ["Adventure", "Fantasy", "Slice of Life", "Supernatural"],
+    "studios": ["Studio Ghibli"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -4419,28 +3426,16 @@
   {
     "id": 205,
     "title": "Samurai Champloo",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy"
-    ],
-    "studios": [
-      "Manglobe"
-    ],
+    "genres": ["Action", "Adventure", "Comedy"],
+    "studios": ["Manglobe"],
     "source": "ORIGINAL",
     "relations": []
   },
   {
     "id": 5680,
     "title": "K-ON!",
-    "genres": [
-      "Comedy",
-      "Music",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Comedy", "Music", "Slice of Life"],
+    "studios": ["Kyoto Animation"],
     "source": "MANGA",
     "relations": [
       {
@@ -4460,15 +3455,8 @@
   {
     "id": 13759,
     "title": "The Pet Girl of Sakurasou",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Comedy", "Drama", "Romance", "Slice of Life"],
+    "studios": ["J.C.STAFF"],
     "source": "LIGHT_NOVEL",
     "relations": []
   },
@@ -4484,9 +3472,7 @@
       "Romance",
       "Supernatural"
     ],
-    "studios": [
-      "Arms"
-    ],
+    "studios": ["Arms"],
     "source": "MANGA",
     "relations": [
       {
@@ -4498,15 +3484,8 @@
   {
     "id": 20698,
     "title": "My Teen Romantic Comedy SNAFU TOO!",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "feel."
-    ],
+    "genres": ["Comedy", "Drama", "Romance", "Slice of Life"],
+    "studios": ["feel."],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -4526,14 +3505,8 @@
   {
     "id": 176496,
     "title": "Solo Leveling Season 2 -Arise from the Shadow-",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": ["A-1 Pictures"],
     "source": "OTHER",
     "relations": [
       {
@@ -4549,14 +3522,8 @@
   {
     "id": 18897,
     "title": "Nisekoi",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Shaft"
-    ],
+    "genres": ["Comedy", "Romance", "Slice of Life"],
+    "studios": ["Shaft"],
     "source": "MANGA",
     "relations": [
       {
@@ -4572,14 +3539,8 @@
   {
     "id": 151801,
     "title": "MASHLE: MAGIC AND MUSCLES",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Comedy", "Fantasy"],
+    "studios": ["A-1 Pictures"],
     "source": "MANGA",
     "relations": [
       {
@@ -4591,14 +3552,8 @@
   {
     "id": 19603,
     "title": "Fate/stay night: Unlimited Blade Works",
-    "genres": [
-      "Action",
-      "Fantasy",
-      "Supernatural"
-    ],
-    "studios": [
-      "ufotable"
-    ],
+    "genres": ["Action", "Fantasy", "Supernatural"],
+    "studios": ["ufotable"],
     "source": "VISUAL_NOVEL",
     "relations": [
       {
@@ -4646,14 +3601,8 @@
   {
     "id": 120697,
     "title": "DON'T TOY WITH ME, MISS NAGATORO",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Telecom Animation Film"
-    ],
+    "genres": ["Comedy", "Romance", "Slice of Life"],
+    "studios": ["Telecom Animation Film"],
     "source": "MANGA",
     "relations": [
       {
@@ -4665,13 +3614,8 @@
   {
     "id": 21518,
     "title": "Food Wars! The Second Plate",
-    "genres": [
-      "Comedy",
-      "Ecchi"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Comedy", "Ecchi"],
+    "studios": ["J.C.STAFF"],
     "source": "MANGA",
     "relations": [
       {
@@ -4691,15 +3635,8 @@
   {
     "id": 121,
     "title": "Fullmetal Alchemist",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama",
-      "Fantasy"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Adventure", "Drama", "Fantasy"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -4723,14 +3660,8 @@
   {
     "id": 98437,
     "title": "Overlord II",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": ["MADHOUSE"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -4754,16 +3685,8 @@
   {
     "id": 107660,
     "title": "BEASTARS",
-    "genres": [
-      "Drama",
-      "Mystery",
-      "Psychological",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Orange"
-    ],
+    "genres": ["Drama", "Mystery", "Psychological", "Romance", "Slice of Life"],
+    "studios": ["Orange"],
     "source": "MANGA",
     "relations": [
       {
@@ -4775,16 +3698,8 @@
   {
     "id": 4898,
     "title": "Black Butler",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Fantasy",
-      "Mystery",
-      "Supernatural"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Comedy", "Fantasy", "Mystery", "Supernatural"],
+    "studios": ["A-1 Pictures"],
     "source": "MANGA",
     "relations": [
       {
@@ -4804,13 +3719,8 @@
   {
     "id": 21613,
     "title": "Saga of Tanya the Evil",
-    "genres": [
-      "Action",
-      "Fantasy"
-    ],
-    "studios": [
-      "NUT"
-    ],
+    "genres": ["Action", "Fantasy"],
+    "studios": ["NUT"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -4830,14 +3740,8 @@
   {
     "id": 14227,
     "title": "My Little Monster",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Brain's Base"
-    ],
+    "genres": ["Comedy", "Romance", "Slice of Life"],
+    "studios": ["Brain's Base"],
     "source": "MANGA",
     "relations": [
       {
@@ -4849,27 +3753,16 @@
   {
     "id": 17895,
     "title": "Golden Time",
-    "genres": [
-      "Drama",
-      "Romance"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Drama", "Romance"],
+    "studios": ["J.C.STAFF"],
     "source": "LIGHT_NOVEL",
     "relations": []
   },
   {
     "id": 112301,
     "title": "The Misfit of Demon King Academy: History’s Strongest Demon King Reincarnates and Goes to School with His Descendants",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "SILVER LINK."
-    ],
+    "genres": ["Action", "Comedy", "Fantasy"],
+    "studios": ["SILVER LINK."],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -4888,9 +3781,7 @@
       "Slice of Life",
       "Supernatural"
     ],
-    "studios": [
-      "LIDENFILMS"
-    ],
+    "studios": ["LIDENFILMS"],
     "source": "MANGA",
     "relations": [
       {
@@ -4906,13 +3797,8 @@
   {
     "id": 153288,
     "title": "Kaiju No. 8",
-    "genres": [
-      "Action",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "Production I.G"
-    ],
+    "genres": ["Action", "Sci-Fi"],
+    "studios": ["Production I.G"],
     "source": "MANGA",
     "relations": [
       {
@@ -4936,30 +3822,16 @@
   {
     "id": 20872,
     "title": "Plastic Memories",
-    "genres": [
-      "Drama",
-      "Romance",
-      "Sci-Fi",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Doga Kobo"
-    ],
+    "genres": ["Drama", "Romance", "Sci-Fi", "Slice of Life"],
+    "studios": ["Doga Kobo"],
     "source": "ORIGINAL",
     "relations": []
   },
   {
     "id": 20458,
     "title": "The Irregular at Magic High School",
-    "genres": [
-      "Action",
-      "Romance",
-      "Sci-Fi",
-      "Supernatural"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Action", "Romance", "Sci-Fi", "Supernatural"],
+    "studios": ["MADHOUSE"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -4979,31 +3851,16 @@
   {
     "id": 853,
     "title": "Ouran High School Host Club",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Comedy", "Drama", "Romance", "Slice of Life"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 813,
     "title": "Dragon Ball Z",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy",
-      "Supernatural"
-    ],
-    "studios": [
-      "Toei Animation"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy", "Supernatural"],
+    "studios": ["Toei Animation"],
     "source": "MANGA",
     "relations": [
       {
@@ -5131,14 +3988,8 @@
   {
     "id": 113538,
     "title": "HAIKYU!! TO THE TOP Part 2",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Sports"
-    ],
-    "studios": [
-      "Production I.G"
-    ],
+    "genres": ["Comedy", "Drama", "Sports"],
+    "studios": ["Production I.G"],
     "source": "MANGA",
     "relations": [
       {
@@ -5154,14 +4005,8 @@
   {
     "id": 136430,
     "title": "Vinland Saga Season 2",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Action", "Adventure", "Drama"],
+    "studios": ["MAPPA"],
     "source": "MANGA",
     "relations": [
       {
@@ -5181,15 +4026,8 @@
   {
     "id": 104157,
     "title": "Rascal Does Not Dream of a Dreaming Girl",
-    "genres": [
-      "Drama",
-      "Psychological",
-      "Romance",
-      "Supernatural"
-    ],
-    "studios": [
-      "CloverWorks"
-    ],
+    "genres": ["Drama", "Psychological", "Romance", "Supernatural"],
+    "studios": ["CloverWorks"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -5205,15 +4043,8 @@
   {
     "id": 116742,
     "title": "That Time I Got Reincarnated as a Slime Season 2 Part 2",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "8-bit"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy"],
+    "studios": ["8-bit"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -5229,15 +4060,8 @@
   {
     "id": 21049,
     "title": "ReLIFE",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "TMS Entertainment"
-    ],
+    "genres": ["Comedy", "Drama", "Romance", "Slice of Life"],
+    "studios": ["TMS Entertainment"],
     "source": "MANGA",
     "relations": [
       {
@@ -5249,13 +4073,8 @@
   {
     "id": 139630,
     "title": "My Hero Academia Season 6",
-    "genres": [
-      "Action",
-      "Adventure"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Adventure"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -5283,9 +4102,7 @@
       "Slice of Life",
       "Supernatural"
     ],
-    "studios": [
-      "bones"
-    ],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -5297,15 +4114,8 @@
   {
     "id": 6880,
     "title": "Deadman Wonderland",
-    "genres": [
-      "Action",
-      "Drama",
-      "Sci-Fi",
-      "Supernatural"
-    ],
-    "studios": [
-      "Manglobe"
-    ],
+    "genres": ["Action", "Drama", "Sci-Fi", "Supernatural"],
+    "studios": ["Manglobe"],
     "source": "MANGA",
     "relations": [
       {
@@ -5317,14 +4127,8 @@
   {
     "id": 1689,
     "title": "5 Centimeters per Second",
-    "genres": [
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "CoMix Wave"
-    ],
+    "genres": ["Drama", "Romance", "Slice of Life"],
+    "studios": ["CoMix Wave"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -5336,31 +4140,16 @@
   {
     "id": 16782,
     "title": "The Garden of Words",
-    "genres": [
-      "Drama",
-      "Psychological",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "CoMix Wave"
-    ],
+    "genres": ["Drama", "Psychological", "Romance", "Slice of Life"],
+    "studios": ["CoMix Wave"],
     "source": "ORIGINAL",
     "relations": []
   },
   {
     "id": 166240,
     "title": "Demon Slayer: Kimetsu no Yaiba Hashira Training Arc",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama",
-      "Fantasy",
-      "Supernatural"
-    ],
-    "studios": [
-      "ufotable"
-    ],
+    "genres": ["Action", "Adventure", "Drama", "Fantasy", "Supernatural"],
+    "studios": ["ufotable"],
     "source": "MANGA",
     "relations": [
       {
@@ -5376,17 +4165,8 @@
   {
     "id": 32,
     "title": "Neon Genesis Evangelion: The End of Evangelion",
-    "genres": [
-      "Action",
-      "Drama",
-      "Mecha",
-      "Psychological",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "Gainax",
-      "Production I.G"
-    ],
+    "genres": ["Action", "Drama", "Mecha", "Psychological", "Sci-Fi"],
+    "studios": ["Gainax", "Production I.G"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -5406,14 +4186,8 @@
   {
     "id": 130003,
     "title": "BOCCHI THE ROCK!",
-    "genres": [
-      "Comedy",
-      "Music",
-      "Slice of Life"
-    ],
-    "studios": [
-      "CloverWorks"
-    ],
+    "genres": ["Comedy", "Music", "Slice of Life"],
+    "studios": ["CloverWorks"],
     "source": "MANGA",
     "relations": [
       {
@@ -5433,15 +4207,8 @@
   {
     "id": 889,
     "title": "Black Lagoon",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama",
-      "Thriller"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Action", "Adventure", "Drama", "Thriller"],
+    "studios": ["MADHOUSE"],
     "source": "MANGA",
     "relations": [
       {
@@ -5453,15 +4220,8 @@
   {
     "id": 11741,
     "title": "Fate/Zero Season 2",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy",
-      "Supernatural"
-    ],
-    "studios": [
-      "ufotable"
-    ],
+    "genres": ["Action", "Drama", "Fantasy", "Supernatural"],
+    "studios": ["ufotable"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -5497,32 +4257,16 @@
   {
     "id": 339,
     "title": "Serial Experiments Lain",
-    "genres": [
-      "Drama",
-      "Mystery",
-      "Psychological",
-      "Sci-Fi",
-      "Supernatural"
-    ],
-    "studios": [
-      "Triangle Staff"
-    ],
+    "genres": ["Drama", "Mystery", "Psychological", "Sci-Fi", "Supernatural"],
+    "studios": ["Triangle Staff"],
     "source": "ORIGINAL",
     "relations": []
   },
   {
     "id": 98436,
     "title": "The Ancient Magus' Bride",
-    "genres": [
-      "Drama",
-      "Fantasy",
-      "Romance",
-      "Slice of Life",
-      "Supernatural"
-    ],
-    "studios": [
-      "WIT STUDIO"
-    ],
+    "genres": ["Drama", "Fantasy", "Romance", "Slice of Life", "Supernatural"],
+    "studios": ["WIT STUDIO"],
     "source": "MANGA",
     "relations": [
       {
@@ -5542,13 +4286,8 @@
   {
     "id": 20807,
     "title": "Prison School",
-    "genres": [
-      "Comedy",
-      "Ecchi"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Comedy", "Ecchi"],
+    "studios": ["J.C.STAFF"],
     "source": "MANGA",
     "relations": [
       {
@@ -5560,14 +4299,8 @@
   {
     "id": 20596,
     "title": "Blue Spring Ride",
-    "genres": [
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Production I.G"
-    ],
+    "genres": ["Drama", "Romance", "Slice of Life"],
+    "studios": ["Production I.G"],
     "source": "MANGA",
     "relations": [
       {
@@ -5583,14 +4316,8 @@
   {
     "id": 100876,
     "title": "Kakegurui xx",
-    "genres": [
-      "Drama",
-      "Mystery",
-      "Psychological"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Drama", "Mystery", "Psychological"],
+    "studios": ["MAPPA"],
     "source": "MANGA",
     "relations": [
       {
@@ -5611,9 +4338,7 @@
       "Romance",
       "Sci-Fi"
     ],
-    "studios": [
-      "AIC Plus+"
-    ],
+    "studios": ["AIC Plus+"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -5641,9 +4366,7 @@
       "Romance",
       "Sci-Fi"
     ],
-    "studios": [
-      "Production I.G"
-    ],
+    "studios": ["Production I.G"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -5659,15 +4382,8 @@
   {
     "id": 6045,
     "title": "Kimi ni Todoke: From Me to You",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Production I.G"
-    ],
+    "genres": ["Comedy", "Drama", "Romance", "Slice of Life"],
+    "studios": ["Production I.G"],
     "source": "MANGA",
     "relations": [
       {
@@ -5679,14 +4395,8 @@
   {
     "id": 101474,
     "title": "Overlord III",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": ["MADHOUSE"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -5706,14 +4416,8 @@
   {
     "id": 145545,
     "title": "Classroom of the Elite Season 2",
-    "genres": [
-      "Drama",
-      "Mystery",
-      "Psychological"
-    ],
-    "studios": [
-      "Lerche"
-    ],
+    "genres": ["Drama", "Mystery", "Psychological"],
+    "studios": ["Lerche"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -5729,15 +4433,8 @@
   {
     "id": 21679,
     "title": "Bungo Stray Dogs 2",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Mystery",
-      "Supernatural"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Comedy", "Mystery", "Supernatural"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -5757,13 +4454,8 @@
   {
     "id": 10165,
     "title": "Nichijou - My Ordinary Life",
-    "genres": [
-      "Comedy",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Comedy", "Slice of Life"],
+    "studios": ["Kyoto Animation"],
     "source": "MANGA",
     "relations": [
       {
@@ -5775,16 +4467,8 @@
   {
     "id": 101167,
     "title": "Is It Wrong to Try to Pick Up Girls in a Dungeon? II",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy", "Romance"],
+    "studios": ["J.C.STAFF"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -5804,16 +4488,8 @@
   {
     "id": 108463,
     "title": "Toilet-bound Hanako-kun",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Drama",
-      "Mystery",
-      "Supernatural"
-    ],
-    "studios": [
-      "Lerche"
-    ],
+    "genres": ["Action", "Comedy", "Drama", "Mystery", "Supernatural"],
+    "studios": ["Lerche"],
     "source": "MANGA",
     "relations": [
       {
@@ -5829,15 +4505,8 @@
   {
     "id": 111321,
     "title": "The Rising of the Shield Hero Season 2",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "Kinema Citrus",
-      "DR Movie"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": ["Kinema Citrus", "DR Movie"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -5853,15 +4522,8 @@
   {
     "id": 437,
     "title": "Perfect Blue",
-    "genres": [
-      "Drama",
-      "Horror",
-      "Psychological",
-      "Thriller"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Drama", "Horror", "Psychological", "Thriller"],
+    "studios": ["MADHOUSE"],
     "source": "OTHER",
     "relations": []
   },
@@ -5876,9 +4538,7 @@
       "Fantasy",
       "Supernatural"
     ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "studios": ["J.C.STAFF"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -5894,14 +4554,8 @@
   {
     "id": 116267,
     "title": "TONIKAWA: Over The Moon For You",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Seven Arcs"
-    ],
+    "genres": ["Comedy", "Romance", "Slice of Life"],
+    "studios": ["Seven Arcs"],
     "source": "MANGA",
     "relations": [
       {
@@ -5913,14 +4567,8 @@
   {
     "id": 124153,
     "title": "SK8 the Infinity",
-    "genres": [
-      "Action",
-      "Drama",
-      "Sports"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Drama", "Sports"],
+    "studios": ["bones"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -5932,30 +4580,16 @@
   {
     "id": 21092,
     "title": "Chivalry of a Failed Knight",
-    "genres": [
-      "Action",
-      "Ecchi",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "SILVER LINK.",
-      "Nexus"
-    ],
+    "genres": ["Action", "Ecchi", "Fantasy", "Romance"],
+    "studios": ["SILVER LINK.", "Nexus"],
     "source": "LIGHT_NOVEL",
     "relations": []
   },
   {
     "id": 17265,
     "title": "Log Horizon",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "Satelight"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": ["Satelight"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -5967,14 +4601,8 @@
   {
     "id": 21857,
     "title": "Masamune-kun's Revenge",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "SILVER LINK."
-    ],
+    "genres": ["Comedy", "Romance", "Slice of Life"],
+    "studios": ["SILVER LINK."],
     "source": "MANGA",
     "relations": [
       {
@@ -5990,14 +4618,8 @@
   {
     "id": 21647,
     "title": "Orange",
-    "genres": [
-      "Drama",
-      "Romance",
-      "Supernatural"
-    ],
-    "studios": [
-      "Telecom Animation Film"
-    ],
+    "genres": ["Drama", "Romance", "Supernatural"],
+    "studios": ["Telecom Animation Film"],
     "source": "MANGA",
     "relations": [
       {
@@ -6009,15 +4631,8 @@
   {
     "id": 146065,
     "title": "Mushoku Tensei: Jobless Reincarnation Season 2",
-    "genres": [
-      "Adventure",
-      "Drama",
-      "Ecchi",
-      "Fantasy"
-    ],
-    "studios": [
-      "Studio Bind"
-    ],
+    "genres": ["Adventure", "Drama", "Ecchi", "Fantasy"],
+    "studios": ["Studio Bind"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -6033,14 +4648,8 @@
   {
     "id": 21709,
     "title": "Yuri!!! on ICE",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Sports"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Comedy", "Drama", "Sports"],
+    "studios": ["MAPPA"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -6056,16 +4665,8 @@
   {
     "id": 16592,
     "title": "Danganronpa: The Animation",
-    "genres": [
-      "Horror",
-      "Mystery",
-      "Psychological",
-      "Sci-Fi",
-      "Thriller"
-    ],
-    "studios": [
-      "Lerche"
-    ],
+    "genres": ["Horror", "Mystery", "Psychological", "Sci-Fi", "Thriller"],
+    "studios": ["Lerche"],
     "source": "VIDEO_GAME",
     "relations": [
       {
@@ -6077,16 +4678,8 @@
   {
     "id": 102351,
     "title": "Tokyo Ghoul:re 2",
-    "genres": [
-      "Action",
-      "Horror",
-      "Mystery",
-      "Psychological",
-      "Supernatural"
-    ],
-    "studios": [
-      "Studio Pierrot"
-    ],
+    "genres": ["Action", "Horror", "Mystery", "Psychological", "Supernatural"],
+    "studios": ["Studio Pierrot"],
     "source": "MANGA",
     "relations": [
       {
@@ -6098,16 +4691,8 @@
   {
     "id": 146984,
     "title": "Attack on Titan Final Season THE FINAL CHAPTERS Special 1",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy",
-      "Mystery",
-      "Psychological"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Action", "Drama", "Fantasy", "Mystery", "Psychological"],
+    "studios": ["MAPPA"],
     "source": "MANGA",
     "relations": [
       {
@@ -6123,14 +4708,8 @@
   {
     "id": 14513,
     "title": "Magi: The Labyrinth of Magic",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": ["A-1 Pictures"],
     "source": "MANGA",
     "relations": [
       {
@@ -6150,15 +4729,8 @@
   {
     "id": 110349,
     "title": "Great Pretender",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Drama",
-      "Thriller"
-    ],
-    "studios": [
-      "WIT STUDIO"
-    ],
+    "genres": ["Action", "Comedy", "Drama", "Thriller"],
+    "studios": ["WIT STUDIO"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -6170,16 +4742,8 @@
   {
     "id": 21875,
     "title": "No Game, No Life Zero",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Action", "Adventure", "Drama", "Fantasy", "Romance"],
+    "studios": ["MADHOUSE"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -6191,13 +4755,8 @@
   {
     "id": 99255,
     "title": "Food Wars! The Third Plate",
-    "genres": [
-      "Comedy",
-      "Ecchi"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Comedy", "Ecchi"],
+    "studios": ["J.C.STAFF"],
     "source": "MANGA",
     "relations": [
       {
@@ -6229,9 +4788,7 @@
       "Sci-Fi",
       "Supernatural"
     ],
-    "studios": [
-      "Toei Animation"
-    ],
+    "studios": ["Toei Animation"],
     "source": "MANGA",
     "relations": [
       {
@@ -6267,14 +4824,8 @@
   {
     "id": 20727,
     "title": "Blood Blockade Battlefront",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Supernatural"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Comedy", "Supernatural"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -6298,9 +4849,7 @@
       "Sci-Fi",
       "Supernatural"
     ],
-    "studios": [
-      "Tokyo Movie Shinsha"
-    ],
+    "studios": ["Tokyo Movie Shinsha"],
     "source": "MANGA",
     "relations": [
       {
@@ -6312,14 +4861,8 @@
   {
     "id": 100922,
     "title": "Grand Blue Dreaming",
-    "genres": [
-      "Comedy",
-      "Slice of Life",
-      "Sports"
-    ],
-    "studios": [
-      "Zero-G"
-    ],
+    "genres": ["Comedy", "Slice of Life", "Sports"],
+    "studios": ["Zero-G"],
     "source": "MANGA",
     "relations": [
       {
@@ -6331,14 +4874,8 @@
   {
     "id": 97938,
     "title": "Boruto: Naruto Next Generations",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "Studio Pierrot"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": ["Studio Pierrot"],
     "source": "MANGA",
     "relations": [
       {
@@ -6366,14 +4903,8 @@
   {
     "id": 20668,
     "title": "Monthly Girls' Nozaki-kun",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Doga Kobo"
-    ],
+    "genres": ["Comedy", "Romance", "Slice of Life"],
+    "studios": ["Doga Kobo"],
     "source": "MANGA",
     "relations": [
       {
@@ -6385,30 +4916,16 @@
   {
     "id": 159831,
     "title": "Zom 100: Bucket List of the Dead",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Horror",
-      "Supernatural"
-    ],
-    "studios": [
-      "BUG FILMS"
-    ],
+    "genres": ["Action", "Comedy", "Horror", "Supernatural"],
+    "studios": ["BUG FILMS"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 4181,
     "title": "Clannad: After Story",
-    "genres": [
-      "Drama",
-      "Romance",
-      "Slice of Life",
-      "Supernatural"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Drama", "Romance", "Slice of Life", "Supernatural"],
+    "studios": ["Kyoto Animation"],
     "source": "VISUAL_NOVEL",
     "relations": [
       {
@@ -6424,15 +4941,8 @@
   {
     "id": 100723,
     "title": "My Hero Academia: Two Heroes",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Drama",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Comedy", "Drama", "Sci-Fi"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -6448,15 +4958,8 @@
   {
     "id": 109261,
     "title": "The Quintessential Quintuplets 2",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Bibury Animation Studios"
-    ],
+    "genres": ["Comedy", "Drama", "Romance", "Slice of Life"],
+    "studios": ["Bibury Animation Studios"],
     "source": "MANGA",
     "relations": [
       {
@@ -6472,15 +4975,8 @@
   {
     "id": 21127,
     "title": "Steins;Gate 0",
-    "genres": [
-      "Drama",
-      "Psychological",
-      "Sci-Fi",
-      "Thriller"
-    ],
-    "studios": [
-      "WHITE FOX"
-    ],
+    "genres": ["Drama", "Psychological", "Sci-Fi", "Thriller"],
+    "studios": ["WHITE FOX"],
     "source": "VISUAL_NOVEL",
     "relations": [
       {
@@ -6496,16 +4992,8 @@
   {
     "id": 158927,
     "title": "SPY x FAMILY Season 2",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Slice of Life",
-      "Supernatural"
-    ],
-    "studios": [
-      "WIT STUDIO",
-      "CloverWorks"
-    ],
+    "genres": ["Action", "Comedy", "Slice of Life", "Supernatural"],
+    "studios": ["WIT STUDIO", "CloverWorks"],
     "source": "MANGA",
     "relations": [
       {
@@ -6525,29 +5013,16 @@
   {
     "id": 103139,
     "title": "Domestic Girlfriend",
-    "genres": [
-      "Drama",
-      "Ecchi",
-      "Romance"
-    ],
-    "studios": [
-      "diomedéa"
-    ],
+    "genres": ["Drama", "Ecchi", "Romance"],
+    "studios": ["diomedéa"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 113717,
     "title": "Ranking of Kings",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama",
-      "Fantasy"
-    ],
-    "studios": [
-      "WIT STUDIO"
-    ],
+    "genres": ["Action", "Adventure", "Drama", "Fantasy"],
+    "studios": ["WIT STUDIO"],
     "source": "MANGA",
     "relations": [
       {
@@ -6559,16 +5034,8 @@
   {
     "id": 99629,
     "title": "Angels of Death",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Horror",
-      "Psychological",
-      "Thriller"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Action", "Adventure", "Horror", "Psychological", "Thriller"],
+    "studios": ["J.C.STAFF"],
     "source": "VIDEO_GAME",
     "relations": [
       {
@@ -6580,16 +5047,8 @@
   {
     "id": 100668,
     "title": "Arifureta: From Commonplace to World's Strongest",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy",
-      "Psychological"
-    ],
-    "studios": [
-      "WHITE FOX",
-      "Asread"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy", "Psychological"],
+    "studios": ["WHITE FOX", "Asread"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -6609,15 +5068,8 @@
   {
     "id": 108489,
     "title": "My Teen Romantic Comedy SNAFU Climax!",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "feel."
-    ],
+    "genres": ["Comedy", "Drama", "Romance", "Slice of Life"],
+    "studios": ["feel."],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -6633,14 +5085,8 @@
   {
     "id": 108759,
     "title": "Sword Art Online: Alicization - War of Underworld",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": ["A-1 Pictures"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -6656,17 +5102,8 @@
   {
     "id": 20770,
     "title": "Yona of the Dawn",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Drama",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "Studio Pierrot"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Drama", "Fantasy", "Romance"],
+    "studios": ["Studio Pierrot"],
     "source": "MANGA",
     "relations": [
       {
@@ -6682,13 +5119,8 @@
   {
     "id": 21366,
     "title": "March comes in like a lion",
-    "genres": [
-      "Drama",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Shaft"
-    ],
+    "genres": ["Drama", "Slice of Life"],
+    "studios": ["Shaft"],
     "source": "MANGA",
     "relations": [
       {
@@ -6700,16 +5132,8 @@
   {
     "id": 21175,
     "title": "Dragon Ball Super",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "Toei Animation"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy", "Sci-Fi"],
+    "studios": ["Toei Animation"],
     "source": "MANGA",
     "relations": [
       {
@@ -6753,31 +5177,16 @@
   {
     "id": 129201,
     "title": "Summer Time Rendering",
-    "genres": [
-      "Action",
-      "Drama",
-      "Mystery",
-      "Supernatural",
-      "Thriller"
-    ],
-    "studios": [
-      "OLM"
-    ],
+    "genres": ["Action", "Drama", "Mystery", "Supernatural", "Thriller"],
+    "studios": ["OLM"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 108430,
     "title": "given",
-    "genres": [
-      "Drama",
-      "Music",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Lerche"
-    ],
+    "genres": ["Drama", "Music", "Romance", "Slice of Life"],
+    "studios": ["Lerche"],
     "source": "MANGA",
     "relations": [
       {
@@ -6789,16 +5198,8 @@
   {
     "id": 227,
     "title": "FLCL",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Mecha",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "Gainax",
-      "Production I.G"
-    ],
+    "genres": ["Action", "Comedy", "Mecha", "Sci-Fi"],
+    "studios": ["Gainax", "Production I.G"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -6810,14 +5211,8 @@
   {
     "id": 100977,
     "title": "Cells at Work!",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "David Production"
-    ],
+    "genres": ["Action", "Comedy", "Sci-Fi"],
+    "studios": ["David Production"],
     "source": "MANGA",
     "relations": [
       {
@@ -6837,15 +5232,8 @@
   {
     "id": 20792,
     "title": "Fate/stay night: Unlimited Blade Works 2nd Season",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy",
-      "Supernatural"
-    ],
-    "studios": [
-      "ufotable"
-    ],
+    "genres": ["Action", "Drama", "Fantasy", "Supernatural"],
+    "studios": ["ufotable"],
     "source": "VISUAL_NOVEL",
     "relations": [
       {
@@ -6861,14 +5249,8 @@
   {
     "id": 153518,
     "title": "Delicious in Dungeon",
-    "genres": [
-      "Adventure",
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "TRIGGER"
-    ],
+    "genres": ["Adventure", "Comedy", "Fantasy"],
+    "studios": ["TRIGGER"],
     "source": "MANGA",
     "relations": [
       {
@@ -6880,13 +5262,8 @@
   {
     "id": 143270,
     "title": "Lycoris Recoil",
-    "genres": [
-      "Action",
-      "Slice of Life"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Slice of Life"],
+    "studios": ["A-1 Pictures"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -6898,29 +5275,16 @@
   {
     "id": 20910,
     "title": "SHIMONETA: A Boring World Where the Concept of Dirty Jokes Doesn’t Exist",
-    "genres": [
-      "Comedy",
-      "Ecchi"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Comedy", "Ecchi"],
+    "studios": ["J.C.STAFF"],
     "source": "LIGHT_NOVEL",
     "relations": []
   },
   {
     "id": 131646,
     "title": "The Case Study of Vanitas",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy",
-      "Mystery",
-      "Supernatural"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Drama", "Fantasy", "Mystery", "Supernatural"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -6932,14 +5296,8 @@
   {
     "id": 21421,
     "title": "Kiznaiver",
-    "genres": [
-      "Drama",
-      "Romance",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "TRIGGER"
-    ],
+    "genres": ["Drama", "Romance", "Sci-Fi"],
+    "studios": ["TRIGGER"],
     "source": "ORIGINAL",
     "relations": []
   },
@@ -6954,10 +5312,7 @@
       "Fantasy",
       "Supernatural"
     ],
-    "studios": [
-      "Studio DEEN",
-      "Marvy Jack"
-    ],
+    "studios": ["Studio DEEN", "Marvy Jack"],
     "source": "MANGA",
     "relations": [
       {
@@ -6973,29 +5328,16 @@
   {
     "id": 127911,
     "title": "Shikimori's Not Just a Cutie",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Doga Kobo"
-    ],
+    "genres": ["Comedy", "Romance", "Slice of Life"],
+    "studios": ["Doga Kobo"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 155783,
     "title": "Tengoku Daimakyo",
-    "genres": [
-      "Adventure",
-      "Mystery",
-      "Sci-Fi",
-      "Thriller"
-    ],
-    "studios": [
-      "Production I.G"
-    ],
+    "genres": ["Adventure", "Mystery", "Sci-Fi", "Thriller"],
+    "studios": ["Production I.G"],
     "source": "MANGA",
     "relations": [
       {
@@ -7007,16 +5349,8 @@
   {
     "id": 849,
     "title": "The Melancholy of Haruhi Suzumiya",
-    "genres": [
-      "Comedy",
-      "Mystery",
-      "Sci-Fi",
-      "Slice of Life",
-      "Supernatural"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Comedy", "Mystery", "Sci-Fi", "Slice of Life", "Supernatural"],
+    "studios": ["Kyoto Animation"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -7032,29 +5366,16 @@
   {
     "id": 877,
     "title": "NANA",
-    "genres": [
-      "Drama",
-      "Music",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Drama", "Music", "Romance", "Slice of Life"],
+    "studios": ["MADHOUSE"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 101004,
     "title": "How NOT to Summon a Demon Lord",
-    "genres": [
-      "Comedy",
-      "Ecchi",
-      "Fantasy"
-    ],
-    "studios": [
-      "Ajiado"
-    ],
+    "genres": ["Comedy", "Ecchi", "Fantasy"],
+    "studios": ["Ajiado"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -7066,14 +5387,8 @@
   {
     "id": 178025,
     "title": "Gachiakuta",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy"
-    ],
-    "studios": [
-      "bones film"
-    ],
+    "genres": ["Action", "Drama", "Fantasy"],
+    "studios": ["bones film"],
     "source": "MANGA",
     "relations": [
       {
@@ -7085,14 +5400,8 @@
   {
     "id": 21711,
     "title": "91 Days",
-    "genres": [
-      "Action",
-      "Drama",
-      "Psychological"
-    ],
-    "studios": [
-      "Shuka"
-    ],
+    "genres": ["Action", "Drama", "Psychological"],
+    "studios": ["Shuka"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -7108,15 +5417,8 @@
   {
     "id": 103223,
     "title": "Bungo Stray Dogs 3",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Mystery",
-      "Supernatural"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Comedy", "Mystery", "Supernatural"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -7136,58 +5438,32 @@
   {
     "id": 578,
     "title": "Grave of the Fireflies",
-    "genres": [
-      "Drama"
-    ],
-    "studios": [
-      "Studio Ghibli"
-    ],
+    "genres": ["Drama"],
+    "studios": ["Studio Ghibli"],
     "source": "OTHER",
     "relations": []
   },
   {
     "id": 10408,
     "title": "Into the Forest of Fireflies' Light",
-    "genres": [
-      "Drama",
-      "Fantasy",
-      "Romance",
-      "Supernatural"
-    ],
-    "studios": [
-      "Brain's Base"
-    ],
+    "genres": ["Drama", "Fantasy", "Romance", "Supernatural"],
+    "studios": ["Brain's Base"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 20457,
     "title": "Black Bullet",
-    "genres": [
-      "Action",
-      "Drama",
-      "Mystery",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "Kinema Citrus",
-      "Orange"
-    ],
+    "genres": ["Action", "Drama", "Mystery", "Sci-Fi"],
+    "studios": ["Kinema Citrus", "Orange"],
     "source": "LIGHT_NOVEL",
     "relations": []
   },
   {
     "id": 20993,
     "title": "Seraph of the End: Battle in Nagoya",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy",
-      "Supernatural"
-    ],
-    "studios": [
-      "WIT STUDIO"
-    ],
+    "genres": ["Action", "Drama", "Fantasy", "Supernatural"],
+    "studios": ["WIT STUDIO"],
     "source": "MANGA",
     "relations": [
       {
@@ -7207,30 +5483,16 @@
   {
     "id": 12355,
     "title": "Wolf Children",
-    "genres": [
-      "Drama",
-      "Fantasy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "MADHOUSE",
-      "Studio Chizu"
-    ],
+    "genres": ["Drama", "Fantasy", "Romance", "Slice of Life"],
+    "studios": ["MADHOUSE", "Studio Chizu"],
     "source": "ORIGINAL",
     "relations": []
   },
   {
     "id": 103047,
     "title": "Violet Evergarden: the Movie",
-    "genres": [
-      "Drama",
-      "Fantasy",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Drama", "Fantasy", "Slice of Life"],
+    "studios": ["Kyoto Animation"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -7242,28 +5504,16 @@
   {
     "id": 98291,
     "title": "Tsuredure Children",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Studio Gokumi"
-    ],
+    "genres": ["Comedy", "Drama", "Romance", "Slice of Life"],
+    "studios": ["Studio Gokumi"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 177709,
     "title": "SAKAMOTO DAYS",
-    "genres": [
-      "Action",
-      "Comedy"
-    ],
-    "studios": [
-      "TMS Entertainment"
-    ],
+    "genres": ["Action", "Comedy"],
+    "studios": ["TMS Entertainment"],
     "source": "MANGA",
     "relations": [
       {
@@ -7275,32 +5525,16 @@
   {
     "id": 1210,
     "title": "Welcome to the N-H-K",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Psychological",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "GONZO"
-    ],
+    "genres": ["Comedy", "Drama", "Psychological", "Romance", "Slice of Life"],
+    "studios": ["GONZO"],
     "source": "LIGHT_NOVEL",
     "relations": []
   },
   {
     "id": 15451,
     "title": "High School DxD NEW",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Ecchi",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "TNK"
-    ],
+    "genres": ["Action", "Comedy", "Ecchi", "Fantasy", "Romance"],
+    "studios": ["TNK"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -7320,16 +5554,8 @@
   {
     "id": 112124,
     "title": "Is It Wrong to Try to Pick Up Girls in a Dungeon? III",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy", "Romance"],
+    "studios": ["J.C.STAFF"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -7357,9 +5583,7 @@
       "Sci-Fi",
       "Supernatural"
     ],
-    "studios": [
-      "Science SARU"
-    ],
+    "studios": ["Science SARU"],
     "source": "MANGA",
     "relations": [
       {
@@ -7375,16 +5599,8 @@
   {
     "id": 21403,
     "title": "Sword Art Online the Movie: Ordinal Scale",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy",
-      "Romance",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy", "Romance", "Sci-Fi"],
+    "studios": ["A-1 Pictures"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -7400,13 +5616,8 @@
   {
     "id": 11843,
     "title": "Daily Lives of High School Boys",
-    "genres": [
-      "Comedy",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Sunrise"
-    ],
+    "genres": ["Comedy", "Slice of Life"],
+    "studios": ["Sunrise"],
     "source": "MANGA",
     "relations": [
       {
@@ -7418,30 +5629,16 @@
   {
     "id": 21700,
     "title": "Akashic Records of Bastard Magic Instructor",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "LIDENFILMS"
-    ],
+    "genres": ["Action", "Comedy", "Fantasy"],
+    "studios": ["LIDENFILMS"],
     "source": "LIGHT_NOVEL",
     "relations": []
   },
   {
     "id": 21196,
     "title": "Kabaneri of the Iron Fortress",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy",
-      "Horror",
-      "Supernatural"
-    ],
-    "studios": [
-      "WIT STUDIO"
-    ],
+    "genres": ["Action", "Drama", "Fantasy", "Horror", "Supernatural"],
+    "studios": ["WIT STUDIO"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -7461,16 +5658,8 @@
   {
     "id": 20631,
     "title": "TRINITY SEVEN",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Ecchi",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "Seven Arcs"
-    ],
+    "genres": ["Action", "Comedy", "Ecchi", "Fantasy", "Romance"],
+    "studios": ["Seven Arcs"],
     "source": "MANGA",
     "relations": [
       {
@@ -7486,29 +5675,16 @@
   {
     "id": 105156,
     "title": "Cautious Hero: The Hero Is Overpowered but Overly Cautious",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "WHITE FOX"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy"],
+    "studios": ["WHITE FOX"],
     "source": "LIGHT_NOVEL",
     "relations": []
   },
   {
     "id": 114308,
     "title": "Sword Art Online: Alicization - War of Underworld Part 2",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": ["A-1 Pictures"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -7520,14 +5696,8 @@
   {
     "id": 2251,
     "title": "Baccano!",
-    "genres": [
-      "Action",
-      "Mystery",
-      "Supernatural"
-    ],
-    "studios": [
-      "Brain's Base"
-    ],
+    "genres": ["Action", "Mystery", "Supernatural"],
+    "studios": ["Brain's Base"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -7547,9 +5717,7 @@
       "Slice of Life",
       "Supernatural"
     ],
-    "studios": [
-      "Artland"
-    ],
+    "studios": ["Artland"],
     "source": "MANGA",
     "relations": [
       {
@@ -7561,14 +5729,8 @@
   {
     "id": 20994,
     "title": "Gate",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": ["A-1 Pictures"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -7580,15 +5742,8 @@
   {
     "id": 11887,
     "title": "Kokoro Connect",
-    "genres": [
-      "Drama",
-      "Romance",
-      "Slice of Life",
-      "Supernatural"
-    ],
-    "studios": [
-      "SILVER LINK."
-    ],
+    "genres": ["Drama", "Romance", "Slice of Life", "Supernatural"],
+    "studios": ["SILVER LINK."],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -7600,13 +5755,8 @@
   {
     "id": 21595,
     "title": "Haven't You Heard? I'm Sakamoto",
-    "genres": [
-      "Comedy",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Studio DEEN"
-    ],
+    "genres": ["Comedy", "Slice of Life"],
+    "studios": ["Studio DEEN"],
     "source": "MANGA",
     "relations": [
       {
@@ -7618,14 +5768,8 @@
   {
     "id": 4654,
     "title": "A Certain Magical Index",
-    "genres": [
-      "Action",
-      "Sci-Fi",
-      "Supernatural"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Action", "Sci-Fi", "Supernatural"],
+    "studios": ["J.C.STAFF"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -7653,15 +5797,8 @@
   {
     "id": 131518,
     "title": "Dr. STONE New World",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "TMS Entertainment"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Sci-Fi"],
+    "studios": ["TMS Entertainment"],
     "source": "MANGA",
     "relations": [
       {
@@ -7685,9 +5822,7 @@
       "Psychological",
       "Supernatural"
     ],
-    "studios": [
-      "Shaft"
-    ],
+    "studios": ["Shaft"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -7707,14 +5842,8 @@
   {
     "id": 116674,
     "title": "BLEACH: Thousand-Year Blood War",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Supernatural"
-    ],
-    "studios": [
-      "Studio Pierrot"
-    ],
+    "genres": ["Action", "Adventure", "Supernatural"],
+    "studios": ["Studio Pierrot"],
     "source": "MANGA",
     "relations": [
       {
@@ -7730,18 +5859,8 @@
   {
     "id": 129898,
     "title": "The World's Finest Assassin Gets Reincarnated in Another World as an Aristocrat",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama",
-      "Fantasy",
-      "Mystery",
-      "Romance"
-    ],
-    "studios": [
-      "SILVER LINK.",
-      "Studio Palette"
-    ],
+    "genres": ["Action", "Adventure", "Drama", "Fantasy", "Mystery", "Romance"],
+    "studios": ["SILVER LINK.", "Studio Palette"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -7753,16 +5872,8 @@
   {
     "id": 21685,
     "title": "Eromanga Sensei",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Ecchi",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Comedy", "Drama", "Ecchi", "Romance", "Slice of Life"],
+    "studios": ["A-1 Pictures"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -7774,15 +5885,8 @@
   {
     "id": 20966,
     "title": "Yamada and the Seven Witches",
-    "genres": [
-      "Comedy",
-      "Mystery",
-      "Romance",
-      "Supernatural"
-    ],
-    "studios": [
-      "LIDENFILMS"
-    ],
+    "genres": ["Comedy", "Mystery", "Romance", "Supernatural"],
+    "studios": ["LIDENFILMS"],
     "source": "MANGA",
     "relations": [
       {
@@ -7802,30 +5906,16 @@
   {
     "id": 142770,
     "title": "Suzume",
-    "genres": [
-      "Adventure",
-      "Fantasy",
-      "Mystery",
-      "Supernatural"
-    ],
-    "studios": [
-      "CoMix Wave"
-    ],
+    "genres": ["Adventure", "Fantasy", "Mystery", "Supernatural"],
+    "studios": ["CoMix Wave"],
     "source": "ORIGINAL",
     "relations": []
   },
   {
     "id": 18507,
     "title": "Free! -Iwatobi Swim Club-",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Slice of Life",
-      "Sports"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Comedy", "Drama", "Slice of Life", "Sports"],
+    "studios": ["Kyoto Animation"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -7849,15 +5939,8 @@
   {
     "id": 356,
     "title": "Fate/stay night",
-    "genres": [
-      "Action",
-      "Fantasy",
-      "Romance",
-      "Supernatural"
-    ],
-    "studios": [
-      "Studio DEEN"
-    ],
+    "genres": ["Action", "Fantasy", "Romance", "Supernatural"],
+    "studios": ["Studio DEEN"],
     "source": "VISUAL_NOVEL",
     "relations": [
       {
@@ -7905,15 +5988,8 @@
   {
     "id": 98034,
     "title": "The Disastrous Life of Saiki K. Season 2",
-    "genres": [
-      "Comedy",
-      "Slice of Life",
-      "Supernatural"
-    ],
-    "studios": [
-      "J.C.STAFF",
-      "EGG FIRM"
-    ],
+    "genres": ["Comedy", "Slice of Life", "Supernatural"],
+    "studios": ["J.C.STAFF", "EGG FIRM"],
     "source": "MANGA",
     "relations": [
       {
@@ -7941,9 +6017,7 @@
       "Slice of Life",
       "Supernatural"
     ],
-    "studios": [
-      "TMS Entertainment"
-    ],
+    "studios": ["TMS Entertainment"],
     "source": "MANGA",
     "relations": [
       {
@@ -7959,43 +6033,24 @@
   {
     "id": 114963,
     "title": "A Whisker Away",
-    "genres": [
-      "Drama",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "Studio Colorido"
-    ],
+    "genres": ["Drama", "Fantasy", "Romance"],
+    "studios": ["Studio Colorido"],
     "source": "ORIGINAL",
     "relations": []
   },
   {
     "id": 114232,
     "title": "Higehiro: After Being Rejected, I Shaved and Took in a High School Runaway",
-    "genres": [
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "project No.9"
-    ],
+    "genres": ["Drama", "Romance", "Slice of Life"],
+    "studios": ["project No.9"],
     "source": "LIGHT_NOVEL",
     "relations": []
   },
   {
     "id": 20626,
     "title": "Fairy Tail Series 2",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "A-1 Pictures",
-      "Bridge"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": ["A-1 Pictures", "Bridge"],
     "source": "MANGA",
     "relations": [
       {
@@ -8019,70 +6074,40 @@
   {
     "id": 154965,
     "title": "My Love Story with Yamada-kun at Lv999",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Comedy", "Drama", "Romance"],
+    "studios": ["MADHOUSE"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 2890,
     "title": "Ponyo",
-    "genres": [
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "Studio Ghibli"
-    ],
+    "genres": ["Adventure", "Fantasy"],
+    "studios": ["Studio Ghibli"],
     "source": "ORIGINAL",
     "relations": []
   },
   {
     "id": 97994,
     "title": "BLEND-S",
-    "genres": [
-      "Comedy",
-      "Slice of Life"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Comedy", "Slice of Life"],
+    "studios": ["A-1 Pictures"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 512,
     "title": "Kiki's Delivery Service",
-    "genres": [
-      "Adventure",
-      "Drama",
-      "Fantasy",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Studio Ghibli"
-    ],
+    "genres": ["Adventure", "Drama", "Fantasy", "Slice of Life"],
+    "studios": ["Studio Ghibli"],
     "source": "OTHER",
     "relations": []
   },
   {
     "id": 131942,
     "title": "JoJo's Bizarre Adventure: STONE OCEAN",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama",
-      "Supernatural"
-    ],
-    "studios": [
-      "David Production"
-    ],
+    "genres": ["Action", "Adventure", "Drama", "Supernatural"],
+    "studios": ["David Production"],
     "source": "MANGA",
     "relations": [
       {
@@ -8098,15 +6123,8 @@
   {
     "id": 131586,
     "title": "86 EIGHTY-SIX Part 2",
-    "genres": [
-      "Action",
-      "Drama",
-      "Mecha",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Drama", "Mecha", "Sci-Fi"],
+    "studios": ["A-1 Pictures"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -8118,30 +6136,16 @@
   {
     "id": 21701,
     "title": "Scum's Wish",
-    "genres": [
-      "Drama",
-      "Ecchi",
-      "Psychological",
-      "Romance"
-    ],
-    "studios": [
-      "Lerche"
-    ],
+    "genres": ["Drama", "Ecchi", "Psychological", "Romance"],
+    "studios": ["Lerche"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 18671,
     "title": "Love, Chunibyo & Other Delusions - Heart Throb -",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Comedy", "Drama", "Romance", "Slice of Life"],
+    "studios": ["Kyoto Animation"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -8165,15 +6169,8 @@
   {
     "id": 2966,
     "title": "Spice and Wolf",
-    "genres": [
-      "Adventure",
-      "Fantasy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Imagin"
-    ],
+    "genres": ["Adventure", "Fantasy", "Romance", "Slice of Life"],
+    "studios": ["Imagin"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -8189,13 +6186,8 @@
   {
     "id": 16894,
     "title": "Kuroko's Basketball 2",
-    "genres": [
-      "Comedy",
-      "Sports"
-    ],
-    "studios": [
-      "Production I.G"
-    ],
+    "genres": ["Comedy", "Sports"],
+    "studios": ["Production I.G"],
     "source": "MANGA",
     "relations": [
       {
@@ -8219,16 +6211,8 @@
   {
     "id": 777,
     "title": "Hellsing Ultimate",
-    "genres": [
-      "Action",
-      "Horror",
-      "Supernatural"
-    ],
-    "studios": [
-      "MADHOUSE",
-      "Satelight",
-      "Graphinica"
-    ],
+    "genres": ["Action", "Horror", "Supernatural"],
+    "studios": ["MADHOUSE", "Satelight", "Graphinica"],
     "source": "MANGA",
     "relations": [
       {
@@ -8252,23 +6236,15 @@
       "Sci-Fi",
       "Supernatural"
     ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "studios": ["A-1 Pictures"],
     "source": "OTHER",
     "relations": []
   },
   {
     "id": 21861,
     "title": "Blue Exorcist: Kyoto Saga",
-    "genres": [
-      "Action",
-      "Fantasy",
-      "Supernatural"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Fantasy", "Supernatural"],
+    "studios": ["A-1 Pictures"],
     "source": "MANGA",
     "relations": [
       {
@@ -8288,14 +6264,8 @@
   {
     "id": 21058,
     "title": "Snow White with the Red Hair",
-    "genres": [
-      "Drama",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Drama", "Fantasy", "Romance"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -8311,15 +6281,8 @@
   {
     "id": 21428,
     "title": "Grimgar of Fantasy and Ash",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama",
-      "Fantasy"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Adventure", "Drama", "Fantasy"],
+    "studios": ["A-1 Pictures"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -8331,15 +6294,8 @@
   {
     "id": 166873,
     "title": "Mushoku Tensei: Jobless Reincarnation Season 2 Part 2",
-    "genres": [
-      "Adventure",
-      "Drama",
-      "Ecchi",
-      "Fantasy"
-    ],
-    "studios": [
-      "Studio Bind"
-    ],
+    "genres": ["Adventure", "Drama", "Ecchi", "Fantasy"],
+    "studios": ["Studio Bind"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -8355,16 +6311,8 @@
   {
     "id": 128546,
     "title": "Vivy -Fluorite Eye's Song-",
-    "genres": [
-      "Action",
-      "Drama",
-      "Music",
-      "Sci-Fi",
-      "Thriller"
-    ],
-    "studios": [
-      "WIT STUDIO"
-    ],
+    "genres": ["Action", "Drama", "Music", "Sci-Fi", "Thriller"],
+    "studios": ["WIT STUDIO"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -8383,9 +6331,7 @@
       "Supernatural",
       "Thriller"
     ],
-    "studios": [
-      "Studio DEEN"
-    ],
+    "studios": ["Studio DEEN"],
     "source": "VISUAL_NOVEL",
     "relations": [
       {
@@ -8405,14 +6351,8 @@
   {
     "id": 20657,
     "title": "Saekano: How to Raise a Boring Girlfriend",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Comedy", "Romance", "Slice of Life"],
+    "studios": ["A-1 Pictures"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -8424,17 +6364,8 @@
   {
     "id": 105228,
     "title": "Dorohedoro",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy",
-      "Horror",
-      "Mystery"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy", "Horror", "Mystery"],
+    "studios": ["MAPPA"],
     "source": "MANGA",
     "relations": [
       {
@@ -8450,13 +6381,8 @@
   {
     "id": 109963,
     "title": "Food Wars! The Fourth Plate",
-    "genres": [
-      "Comedy",
-      "Ecchi"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Comedy", "Ecchi"],
+    "studios": ["J.C.STAFF"],
     "source": "MANGA",
     "relations": [
       {
@@ -8472,14 +6398,8 @@
   {
     "id": 2025,
     "title": "Darker than Black",
-    "genres": [
-      "Action",
-      "Mystery",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Mystery", "Sci-Fi"],
+    "studios": ["bones"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -8491,30 +6411,16 @@
   {
     "id": 2236,
     "title": "The Girl Who Leapt Through Time",
-    "genres": [
-      "Drama",
-      "Romance",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Drama", "Romance", "Sci-Fi"],
+    "studios": ["MADHOUSE"],
     "source": "OTHER",
     "relations": []
   },
   {
     "id": 106479,
     "title": "BOFURI: I Don't Want to Get Hurt, so I'll Max Out My Defense.",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy",
-      "Slice of Life"
-    ],
-    "studios": [
-      "SILVER LINK."
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy", "Slice of Life"],
+    "studios": ["SILVER LINK."],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -8526,15 +6432,8 @@
   {
     "id": 100112,
     "title": "Wise Man’s Grandchild",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "SILVER LINK."
-    ],
+    "genres": ["Action", "Comedy", "Fantasy", "Romance"],
+    "studios": ["SILVER LINK."],
     "source": "LIGHT_NOVEL",
     "relations": []
   },
@@ -8549,9 +6448,7 @@
       "Slice of Life",
       "Supernatural"
     ],
-    "studios": [
-      "TMS Entertainment"
-    ],
+    "studios": ["TMS Entertainment"],
     "source": "MANGA",
     "relations": [
       {
@@ -8567,30 +6464,16 @@
   {
     "id": 113596,
     "title": "Josee, the Tiger and the Fish",
-    "genres": [
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Drama", "Romance", "Slice of Life"],
+    "studios": ["bones"],
     "source": "OTHER",
     "relations": []
   },
   {
     "id": 20745,
     "title": "High School DxD BorN",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Ecchi",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "TNK"
-    ],
+    "genres": ["Action", "Comedy", "Ecchi", "Fantasy", "Romance"],
+    "studios": ["TNK"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -8614,29 +6497,16 @@
   {
     "id": 97922,
     "title": "INUYASHIKI LAST HERO",
-    "genres": [
-      "Action",
-      "Drama",
-      "Psychological",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Action", "Drama", "Psychological", "Sci-Fi"],
+    "studios": ["MAPPA"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 14467,
     "title": "K",
-    "genres": [
-      "Action",
-      "Mystery",
-      "Supernatural"
-    ],
-    "studios": [
-      "GoHands"
-    ],
+    "genres": ["Action", "Mystery", "Supernatural"],
+    "studios": ["GoHands"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -8660,9 +6530,7 @@
       "Horror",
       "Supernatural"
     ],
-    "studios": [
-      "OLM"
-    ],
+    "studios": ["OLM"],
     "source": "MANGA",
     "relations": [
       {
@@ -8686,16 +6554,8 @@
   {
     "id": 171627,
     "title": "Chainsaw Man – The Movie: Reze Arc",
-    "genres": [
-      "Action",
-      "Drama",
-      "Horror",
-      "Romance",
-      "Supernatural"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Action", "Drama", "Horror", "Romance", "Supernatural"],
+    "studios": ["MAPPA"],
     "source": "MANGA",
     "relations": [
       {
@@ -8719,9 +6579,7 @@
       "Romance",
       "Supernatural"
     ],
-    "studios": [
-      "Shaft"
-    ],
+    "studios": ["Shaft"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -8745,13 +6603,8 @@
   {
     "id": 100773,
     "title": "Food Wars! The Third Plate: Totsuki Train Arc",
-    "genres": [
-      "Comedy",
-      "Ecchi"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Comedy", "Ecchi"],
+    "studios": ["J.C.STAFF"],
     "source": "MANGA",
     "relations": [
       {
@@ -8767,13 +6620,8 @@
   {
     "id": 108553,
     "title": "My Hero Academia: Heroes Rising",
-    "genres": [
-      "Action",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Sci-Fi"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -8789,28 +6637,16 @@
   {
     "id": 97766,
     "title": "GAMERS!",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "PINE JAM"
-    ],
+    "genres": ["Comedy", "Drama", "Romance", "Slice of Life"],
+    "studios": ["PINE JAM"],
     "source": "LIGHT_NOVEL",
     "relations": []
   },
   {
     "id": 20987,
     "title": "Himouto! Umaru-chan",
-    "genres": [
-      "Comedy",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Doga Kobo"
-    ],
+    "genres": ["Comedy", "Slice of Life"],
+    "studios": ["Doga Kobo"],
     "source": "MANGA",
     "relations": [
       {
@@ -8830,14 +6666,8 @@
   {
     "id": 161964,
     "title": "The Eminence in Shadow Season 2",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "Nexus"
-    ],
+    "genres": ["Action", "Comedy", "Fantasy"],
+    "studios": ["Nexus"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -8857,14 +6687,8 @@
   {
     "id": 162804,
     "title": "Alya Sometimes Hides Her Feelings in Russian",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Doga Kobo"
-    ],
+    "genres": ["Comedy", "Romance", "Slice of Life"],
+    "studios": ["Doga Kobo"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -8876,16 +6700,8 @@
   {
     "id": 249,
     "title": "InuYasha",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "Sunrise"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy", "Romance"],
+    "studios": ["Sunrise"],
     "source": "MANGA",
     "relations": [
       {
@@ -8917,29 +6733,16 @@
   {
     "id": 105190,
     "title": "Darwin's Game",
-    "genres": [
-      "Action",
-      "Mystery",
-      "Sci-Fi",
-      "Thriller"
-    ],
-    "studios": [
-      "Nexus"
-    ],
+    "genres": ["Action", "Mystery", "Sci-Fi", "Thriller"],
+    "studios": ["Nexus"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 245,
     "title": "GTO: Great Teacher Onizuka",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Studio Pierrot"
-    ],
+    "genres": ["Comedy", "Drama", "Slice of Life"],
+    "studios": ["Studio Pierrot"],
     "source": "MANGA",
     "relations": [
       {
@@ -8959,9 +6762,7 @@
       "Fantasy",
       "Supernatural"
     ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "studios": ["A-1 Pictures"],
     "source": "MANGA",
     "relations": [
       {
@@ -8977,14 +6778,8 @@
   {
     "id": 163270,
     "title": "WIND BREAKER",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Drama"
-    ],
-    "studios": [
-      "CloverWorks"
-    ],
+    "genres": ["Action", "Comedy", "Drama"],
+    "studios": ["CloverWorks"],
     "source": "MANGA",
     "relations": [
       {
@@ -8996,14 +6791,8 @@
   {
     "id": 172463,
     "title": "JUJUTSU KAISEN Season 3: The Culling Game Part 1",
-    "genres": [
-      "Action",
-      "Drama",
-      "Supernatural"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Action", "Drama", "Supernatural"],
+    "studios": ["MAPPA"],
     "source": "MANGA",
     "relations": [
       {
@@ -9019,14 +6808,8 @@
   {
     "id": 43,
     "title": "Ghost in the Shell",
-    "genres": [
-      "Action",
-      "Psychological",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "Production I.G"
-    ],
+    "genres": ["Action", "Psychological", "Sci-Fi"],
+    "studios": ["Production I.G"],
     "source": "MANGA",
     "relations": [
       {
@@ -9054,14 +6837,8 @@
   {
     "id": 99468,
     "title": "Teasing Master Takagi-san",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Shin-Ei Animation"
-    ],
+    "genres": ["Comedy", "Romance", "Slice of Life"],
+    "studios": ["Shin-Ei Animation"],
     "source": "MANGA",
     "relations": [
       {
@@ -9077,14 +6854,8 @@
   {
     "id": 176301,
     "title": "The Apothecary Diaries Season 2",
-    "genres": [
-      "Drama",
-      "Mystery"
-    ],
-    "studios": [
-      "TOHO animation STUDIO",
-      "OLM"
-    ],
+    "genres": ["Drama", "Mystery"],
+    "studios": ["TOHO animation STUDIO", "OLM"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -9104,14 +6875,8 @@
   {
     "id": 18115,
     "title": "Magi: The Kingdom of Magic",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": ["A-1 Pictures"],
     "source": "MANGA",
     "relations": [
       {
@@ -9127,28 +6892,16 @@
   {
     "id": 99426,
     "title": "A Place Further Than the Universe",
-    "genres": [
-      "Adventure",
-      "Comedy",
-      "Drama"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Adventure", "Comedy", "Drama"],
+    "studios": ["MADHOUSE"],
     "source": "ORIGINAL",
     "relations": []
   },
   {
     "id": 133844,
     "title": "Overlord IV",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": ["MADHOUSE"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -9168,30 +6921,16 @@
   {
     "id": 131565,
     "title": "takt op.Destiny",
-    "genres": [
-      "Action",
-      "Fantasy",
-      "Music"
-    ],
-    "studios": [
-      "MADHOUSE",
-      "MAPPA"
-    ],
+    "genres": ["Action", "Fantasy", "Music"],
+    "studios": ["MADHOUSE", "MAPPA"],
     "source": "OTHER",
     "relations": []
   },
   {
     "id": 21093,
     "title": "Monster Musume: Everyday Life With Monster Girls",
-    "genres": [
-      "Comedy",
-      "Ecchi",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "Lerche"
-    ],
+    "genres": ["Comedy", "Ecchi", "Fantasy", "Romance"],
+    "studios": ["Lerche"],
     "source": "MANGA",
     "relations": [
       {
@@ -9207,13 +6946,8 @@
   {
     "id": 98444,
     "title": "Laid-Back Camp",
-    "genres": [
-      "Comedy",
-      "Slice of Life"
-    ],
-    "studios": [
-      "C-Station"
-    ],
+    "genres": ["Comedy", "Slice of Life"],
+    "studios": ["C-Station"],
     "source": "MANGA",
     "relations": [
       {
@@ -9237,14 +6971,8 @@
   {
     "id": 7791,
     "title": "K-ON! Season 2",
-    "genres": [
-      "Comedy",
-      "Music",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Comedy", "Music", "Slice of Life"],
+    "studios": ["Kyoto Animation"],
     "source": "MANGA",
     "relations": [
       {
@@ -9268,13 +6996,8 @@
   {
     "id": 100183,
     "title": "Sword Art Online Alternative: Gun Gale Online",
-    "genres": [
-      "Action",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "Studio 3Hz"
-    ],
+    "genres": ["Action", "Sci-Fi"],
+    "studios": ["Studio 3Hz"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -9290,16 +7013,8 @@
   {
     "id": 6,
     "title": "Trigun",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Drama",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Drama", "Sci-Fi"],
+    "studios": ["MADHOUSE"],
     "source": "MANGA",
     "relations": [
       {
@@ -9315,13 +7030,8 @@
   {
     "id": 21858,
     "title": "Little Witch Academia (TV)",
-    "genres": [
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "TRIGGER"
-    ],
+    "genres": ["Comedy", "Fantasy"],
+    "studios": ["TRIGGER"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -9345,9 +7055,7 @@
       "Psychological",
       "Supernatural"
     ],
-    "studios": [
-      "Shaft"
-    ],
+    "studios": ["Shaft"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -9363,14 +7071,8 @@
   {
     "id": 107717,
     "title": "Miss Kobayashi's Dragon Maid S",
-    "genres": [
-      "Comedy",
-      "Fantasy",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Comedy", "Fantasy", "Slice of Life"],
+    "studios": ["Kyoto Animation"],
     "source": "MANGA",
     "relations": [
       {
@@ -9394,14 +7096,8 @@
   {
     "id": 166610,
     "title": "MASHLE: MAGIC AND MUSCLES Season 2",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Comedy", "Fantasy"],
+    "studios": ["A-1 Pictures"],
     "source": "MANGA",
     "relations": [
       {
@@ -9417,14 +7113,8 @@
   {
     "id": 20876,
     "title": "Nisekoi:",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Shaft"
-    ],
+    "genres": ["Comedy", "Romance", "Slice of Life"],
+    "studios": ["Shaft"],
     "source": "MANGA",
     "relations": [
       {
@@ -9440,16 +7130,8 @@
   {
     "id": 136804,
     "title": "KONOSUBA -God's blessing on this wonderful world! 3",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Ecchi",
-      "Fantasy"
-    ],
-    "studios": [
-      "Drive"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Ecchi", "Fantasy"],
+    "studios": ["Drive"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -9469,30 +7151,16 @@
   {
     "id": 114888,
     "title": "The Millionaire Detective - Balance: UNLIMITED",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Mystery",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "CloverWorks"
-    ],
+    "genres": ["Action", "Comedy", "Mystery", "Sci-Fi"],
+    "studios": ["CloverWorks"],
     "source": "OTHER",
     "relations": []
   },
   {
     "id": 126403,
     "title": "Link Click",
-    "genres": [
-      "Drama",
-      "Mystery",
-      "Supernatural",
-      "Thriller"
-    ],
-    "studios": [
-      "Studio LAN"
-    ],
+    "genres": ["Drama", "Mystery", "Supernatural", "Thriller"],
+    "studios": ["Studio LAN"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -9516,29 +7184,16 @@
   {
     "id": 14345,
     "title": "BTOOOM!",
-    "genres": [
-      "Action",
-      "Psychological",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Action", "Psychological", "Sci-Fi"],
+    "studios": ["MADHOUSE"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 10719,
     "title": "Haganai",
-    "genres": [
-      "Comedy",
-      "Ecchi",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "AIC Build"
-    ],
+    "genres": ["Comedy", "Ecchi", "Romance", "Slice of Life"],
+    "studios": ["AIC Build"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -9554,13 +7209,8 @@
   {
     "id": 146066,
     "title": "Classroom of the Elite Season 3",
-    "genres": [
-      "Drama",
-      "Psychological"
-    ],
-    "studios": [
-      "Lerche"
-    ],
+    "genres": ["Drama", "Psychological"],
+    "studios": ["Lerche"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -9576,15 +7226,8 @@
   {
     "id": 14713,
     "title": "Kamisama Kiss",
-    "genres": [
-      "Comedy",
-      "Fantasy",
-      "Romance",
-      "Supernatural"
-    ],
-    "studios": [
-      "TMS Entertainment"
-    ],
+    "genres": ["Comedy", "Fantasy", "Romance", "Supernatural"],
+    "studios": ["TMS Entertainment"],
     "source": "MANGA",
     "relations": [
       {
@@ -9609,9 +7252,7 @@
       "Romance",
       "Thriller"
     ],
-    "studios": [
-      "WHITE FOX"
-    ],
+    "studios": ["WHITE FOX"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -9631,13 +7272,8 @@
   {
     "id": 20602,
     "title": "Amagi Brilliant Park",
-    "genres": [
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Comedy", "Fantasy"],
+    "studios": ["Kyoto Animation"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -9653,16 +7289,8 @@
   {
     "id": 151970,
     "title": "Shangri-La Frontier",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "C2C"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy", "Sci-Fi"],
+    "studios": ["C2C"],
     "source": "MANGA",
     "relations": [
       {
@@ -9678,13 +7306,8 @@
   {
     "id": 163139,
     "title": "My Hero Academia Season 7",
-    "genres": [
-      "Action",
-      "Adventure"
-    ],
-    "studios": [
-      "bones"
-    ],
+    "genres": ["Action", "Adventure"],
+    "studios": ["bones"],
     "source": "MANGA",
     "relations": [
       {
@@ -9704,30 +7327,16 @@
   {
     "id": 116566,
     "title": "Akudama Drive",
-    "genres": [
-      "Action",
-      "Drama",
-      "Sci-Fi",
-      "Thriller"
-    ],
-    "studios": [
-      "Studio Pierrot"
-    ],
+    "genres": ["Action", "Drama", "Sci-Fi", "Thriller"],
+    "studios": ["Studio Pierrot"],
     "source": "ORIGINAL",
     "relations": []
   },
   {
     "id": 166531,
     "title": "Oshi no Ko Season 2",
-    "genres": [
-      "Drama",
-      "Mystery",
-      "Psychological",
-      "Supernatural"
-    ],
-    "studios": [
-      "Doga Kobo"
-    ],
+    "genres": ["Drama", "Mystery", "Psychological", "Supernatural"],
+    "studios": ["Doga Kobo"],
     "source": "MANGA",
     "relations": [
       {
@@ -9743,14 +7352,8 @@
   {
     "id": 142984,
     "title": "Komi Can't Communicate Part 2",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "OLM"
-    ],
+    "genres": ["Comedy", "Romance", "Slice of Life"],
+    "studios": ["OLM"],
     "source": "MANGA",
     "relations": [
       {
@@ -9762,14 +7365,8 @@
   {
     "id": 181444,
     "title": "The Fragrant Flower Blooms With Dignity",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance"
-    ],
-    "studios": [
-      "CloverWorks"
-    ],
+    "genres": ["Comedy", "Drama", "Romance"],
+    "studios": ["CloverWorks"],
     "source": "MANGA",
     "relations": []
   },
@@ -9786,9 +7383,7 @@
       "Psychological",
       "Sci-Fi"
     ],
-    "studios": [
-      "Kinema Citrus"
-    ],
+    "studios": ["Kinema Citrus"],
     "source": "MANGA",
     "relations": [
       {
@@ -9812,13 +7407,8 @@
   {
     "id": 20725,
     "title": "Kuroko's Basketball 3",
-    "genres": [
-      "Comedy",
-      "Sports"
-    ],
-    "studios": [
-      "Production I.G"
-    ],
+    "genres": ["Comedy", "Sports"],
+    "studios": ["Production I.G"],
     "source": "MANGA",
     "relations": [
       {
@@ -9846,30 +7436,16 @@
   {
     "id": 131083,
     "title": "Mieruko-chan",
-    "genres": [
-      "Comedy",
-      "Horror",
-      "Slice of Life",
-      "Supernatural"
-    ],
-    "studios": [
-      "Passione"
-    ],
+    "genres": ["Comedy", "Horror", "Slice of Life", "Supernatural"],
+    "studios": ["Passione"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 156822,
     "title": "That Time I Got Reincarnated as a Slime Season 3",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "8-bit"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy"],
+    "studios": ["8-bit"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -9889,16 +7465,8 @@
   {
     "id": 98707,
     "title": "Land of the Lustrous",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy",
-      "Mystery",
-      "Psychological"
-    ],
-    "studios": [
-      "Orange"
-    ],
+    "genres": ["Action", "Drama", "Fantasy", "Mystery", "Psychological"],
+    "studios": ["Orange"],
     "source": "MANGA",
     "relations": [
       {
@@ -9910,29 +7478,16 @@
   {
     "id": 151806,
     "title": "Tomo-chan Is a Girl!",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Lay-duce"
-    ],
+    "genres": ["Comedy", "Romance", "Slice of Life"],
+    "studios": ["Lay-duce"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 107201,
     "title": "In/Spectre",
-    "genres": [
-      "Comedy",
-      "Mystery",
-      "Romance",
-      "Supernatural"
-    ],
-    "studios": [
-      "Brain's Base"
-    ],
+    "genres": ["Comedy", "Mystery", "Romance", "Supernatural"],
+    "studios": ["Brain's Base"],
     "source": "OTHER",
     "relations": [
       {
@@ -9948,15 +7503,8 @@
   {
     "id": 392,
     "title": "Yu Yu Hakusho: Ghostfiles",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Supernatural"
-    ],
-    "studios": [
-      "Studio Pierrot"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Supernatural"],
+    "studios": ["Studio Pierrot"],
     "source": "MANGA",
     "relations": [
       {
@@ -9992,15 +7540,8 @@
   {
     "id": 20678,
     "title": "The Testament of Sister New Devil",
-    "genres": [
-      "Action",
-      "Ecchi",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "Production IMS"
-    ],
+    "genres": ["Action", "Ecchi", "Fantasy", "Romance"],
+    "studios": ["Production IMS"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -10016,13 +7557,8 @@
   {
     "id": 125426,
     "title": "The Way of the Househusband",
-    "genres": [
-      "Comedy",
-      "Slice of Life"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Comedy", "Slice of Life"],
+    "studios": ["J.C.STAFF"],
     "source": "MANGA",
     "relations": [
       {
@@ -10034,16 +7570,8 @@
   {
     "id": 162314,
     "title": "Attack on Titan Final Season THE FINAL CHAPTERS Special 2",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy",
-      "Psychological",
-      "Romance"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Action", "Drama", "Fantasy", "Psychological", "Romance"],
+    "studios": ["MAPPA"],
     "source": "MANGA",
     "relations": [
       {
@@ -10055,14 +7583,8 @@
   {
     "id": 98202,
     "title": "Tsukigakirei",
-    "genres": [
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "feel."
-    ],
+    "genres": ["Drama", "Romance", "Slice of Life"],
+    "studios": ["feel."],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -10074,15 +7596,8 @@
   {
     "id": 125206,
     "title": "TSUKIMICHI -Moonlit Fantasy-",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "C2C"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy"],
+    "studios": ["C2C"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -10094,13 +7609,8 @@
   {
     "id": 107693,
     "title": "Welcome to Demon School! Iruma-kun",
-    "genres": [
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "Bandai Namco Pictures"
-    ],
+    "genres": ["Comedy", "Fantasy"],
+    "studios": ["Bandai Namco Pictures"],
     "source": "MANGA",
     "relations": [
       {
@@ -10116,14 +7626,8 @@
   {
     "id": 103871,
     "title": "ZOMBIE LAND SAGA",
-    "genres": [
-      "Comedy",
-      "Music",
-      "Supernatural"
-    ],
-    "studios": [
-      "MAPPA"
-    ],
+    "genres": ["Comedy", "Music", "Supernatural"],
+    "studios": ["MAPPA"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -10135,42 +7639,24 @@
   {
     "id": 141014,
     "title": "Tomodachi Game",
-    "genres": [
-      "Drama",
-      "Mystery",
-      "Psychological",
-      "Thriller"
-    ],
-    "studios": [
-      "Okuruto Noboru"
-    ],
+    "genres": ["Drama", "Mystery", "Psychological", "Thriller"],
+    "studios": ["Okuruto Noboru"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 20946,
     "title": "My Love Story!!",
-    "genres": [
-      "Comedy",
-      "Romance"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Comedy", "Romance"],
+    "studios": ["MADHOUSE"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 6213,
     "title": "A Certain Scientific Railgun",
-    "genres": [
-      "Action",
-      "Fantasy",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Action", "Fantasy", "Sci-Fi"],
+    "studios": ["J.C.STAFF"],
     "source": "MANGA",
     "relations": [
       {
@@ -10198,16 +7684,8 @@
   {
     "id": 178788,
     "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama",
-      "Fantasy",
-      "Supernatural"
-    ],
-    "studios": [
-      "ufotable"
-    ],
+    "genres": ["Action", "Adventure", "Drama", "Fantasy", "Supernatural"],
+    "studios": ["ufotable"],
     "source": "MANGA",
     "relations": [
       {
@@ -10223,13 +7701,8 @@
   {
     "id": 14289,
     "title": "Say \"I love you\".",
-    "genres": [
-      "Drama",
-      "Romance"
-    ],
-    "studios": [
-      "ZEXCS"
-    ],
+    "genres": ["Drama", "Romance"],
+    "studios": ["ZEXCS"],
     "source": "MANGA",
     "relations": [
       {
@@ -10245,17 +7718,8 @@
   {
     "id": 21131,
     "title": "The Asterisk War",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Ecchi",
-      "Fantasy",
-      "Romance",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Comedy", "Ecchi", "Fantasy", "Romance", "Sci-Fi"],
+    "studios": ["A-1 Pictures"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -10267,30 +7731,16 @@
   {
     "id": 790,
     "title": "Ergo Proxy",
-    "genres": [
-      "Adventure",
-      "Mystery",
-      "Psychological",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "Manglobe"
-    ],
+    "genres": ["Adventure", "Mystery", "Psychological", "Sci-Fi"],
+    "studios": ["Manglobe"],
     "source": "ORIGINAL",
     "relations": []
   },
   {
     "id": 130592,
     "title": "The Devil is a Part-Timer! Season 2",
-    "genres": [
-      "Comedy",
-      "Fantasy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Studio 3Hz"
-    ],
+    "genres": ["Comedy", "Fantasy", "Romance", "Slice of Life"],
+    "studios": ["Studio 3Hz"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -10310,14 +7760,8 @@
   {
     "id": 114124,
     "title": "Moriarty the Patriot",
-    "genres": [
-      "Drama",
-      "Mystery",
-      "Psychological"
-    ],
-    "studios": [
-      "Production I.G"
-    ],
+    "genres": ["Drama", "Mystery", "Psychological"],
+    "studios": ["Production I.G"],
     "source": "MANGA",
     "relations": [
       {
@@ -10329,12 +7773,8 @@
   {
     "id": 20722,
     "title": "Barakamon",
-    "genres": [
-      "Slice of Life"
-    ],
-    "studios": [
-      "Kinema Citrus"
-    ],
+    "genres": ["Slice of Life"],
+    "studios": ["Kinema Citrus"],
     "source": "MANGA",
     "relations": [
       {
@@ -10350,17 +7790,8 @@
   {
     "id": 1195,
     "title": "The Familiar of Zero",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Ecchi",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Ecchi", "Fantasy", "Romance"],
+    "studios": ["J.C.STAFF"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -10372,15 +7803,8 @@
   {
     "id": 154768,
     "title": "My Dress-Up Darling Season 2",
-    "genres": [
-      "Comedy",
-      "Ecchi",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "CloverWorks"
-    ],
+    "genres": ["Comedy", "Ecchi", "Romance", "Slice of Life"],
+    "studios": ["CloverWorks"],
     "source": "MANGA",
     "relations": [
       {
@@ -10392,13 +7816,8 @@
   {
     "id": 16742,
     "title": "WataMote: No Matter How I Look At It, It's You Guys' Fault I'm Not Popular!",
-    "genres": [
-      "Comedy",
-      "Slice of Life"
-    ],
-    "studios": [
-      "SILVER LINK."
-    ],
+    "genres": ["Comedy", "Slice of Life"],
+    "studios": ["SILVER LINK."],
     "source": "MANGA",
     "relations": [
       {
@@ -10410,29 +7829,16 @@
   {
     "id": 128705,
     "title": "Blue Period",
-    "genres": [
-      "Drama",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Seven Arcs"
-    ],
+    "genres": ["Drama", "Slice of Life"],
+    "studios": ["Seven Arcs"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 15689,
     "title": "Nekomonogatari Black",
-    "genres": [
-      "Drama",
-      "Mystery",
-      "Psychological",
-      "Romance",
-      "Supernatural"
-    ],
-    "studios": [
-      "Shaft"
-    ],
+    "genres": ["Drama", "Mystery", "Psychological", "Romance", "Supernatural"],
+    "studios": ["Shaft"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -10448,14 +7854,8 @@
   {
     "id": 20811,
     "title": "Attack on Titan: No Regrets",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy"
-    ],
-    "studios": [
-      "WIT STUDIO"
-    ],
+    "genres": ["Action", "Drama", "Fantasy"],
+    "studios": ["WIT STUDIO"],
     "source": "VISUAL_NOVEL",
     "relations": [
       {
@@ -10467,14 +7867,8 @@
   {
     "id": 182255,
     "title": "Frieren: Beyond Journey’s End Season 2",
-    "genres": [
-      "Adventure",
-      "Drama",
-      "Fantasy"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Adventure", "Drama", "Fantasy"],
+    "studios": ["MADHOUSE"],
     "source": "MANGA",
     "relations": [
       {
@@ -10490,14 +7884,8 @@
   {
     "id": 20912,
     "title": "Sound! Euphonium",
-    "genres": [
-      "Drama",
-      "Music",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Drama", "Music", "Slice of Life"],
+    "studios": ["Kyoto Animation"],
     "source": "OTHER",
     "relations": [
       {
@@ -10521,48 +7909,24 @@
   {
     "id": 1943,
     "title": "Paprika",
-    "genres": [
-      "Fantasy",
-      "Mystery",
-      "Psychological",
-      "Sci-Fi",
-      "Thriller"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Fantasy", "Mystery", "Psychological", "Sci-Fi", "Thriller"],
+    "studios": ["MADHOUSE"],
     "source": "OTHER",
     "relations": []
   },
   {
     "id": 100077,
     "title": "HINAMATSURI",
-    "genres": [
-      "Comedy",
-      "Sci-Fi",
-      "Slice of Life",
-      "Supernatural"
-    ],
-    "studios": [
-      "feel."
-    ],
+    "genres": ["Comedy", "Sci-Fi", "Slice of Life", "Supernatural"],
+    "studios": ["feel."],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 114745,
     "title": "Made in Abyss: The Golden City of the Scorching Sun",
-    "genres": [
-      "Adventure",
-      "Drama",
-      "Fantasy",
-      "Horror",
-      "Mystery",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "Kinema Citrus"
-    ],
+    "genres": ["Adventure", "Drama", "Fantasy", "Horror", "Mystery", "Sci-Fi"],
+    "studios": ["Kinema Citrus"],
     "source": "MANGA",
     "relations": [
       {
@@ -10582,15 +7946,8 @@
   {
     "id": 98491,
     "title": "In Another World With My Smartphone",
-    "genres": [
-      "Adventure",
-      "Comedy",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "Ashi Productions"
-    ],
+    "genres": ["Adventure", "Comedy", "Fantasy", "Romance"],
+    "studios": ["Ashi Productions"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -10602,30 +7959,16 @@
   {
     "id": 108241,
     "title": "Gleipnir",
-    "genres": [
-      "Action",
-      "Ecchi",
-      "Mystery",
-      "Supernatural"
-    ],
-    "studios": [
-      "PINE JAM"
-    ],
+    "genres": ["Action", "Ecchi", "Mystery", "Supernatural"],
+    "studios": ["PINE JAM"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 7785,
     "title": "The Tatami Galaxy",
-    "genres": [
-      "Comedy",
-      "Mystery",
-      "Psychological",
-      "Romance"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Comedy", "Mystery", "Psychological", "Romance"],
+    "studios": ["MADHOUSE"],
     "source": "OTHER",
     "relations": [
       {
@@ -10645,14 +7988,8 @@
   {
     "id": 112609,
     "title": "Wandering Witch: The Journey of Elaina",
-    "genres": [
-      "Adventure",
-      "Fantasy",
-      "Slice of Life"
-    ],
-    "studios": [
-      "C2C"
-    ],
+    "genres": ["Adventure", "Fantasy", "Slice of Life"],
+    "studios": ["C2C"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -10664,14 +8001,8 @@
   {
     "id": 114043,
     "title": "Food Wars! The Fifth Plate",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Ecchi"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Comedy", "Drama", "Ecchi"],
+    "studios": ["J.C.STAFF"],
     "source": "MANGA",
     "relations": [
       {
@@ -10683,13 +8014,8 @@
   {
     "id": 101001,
     "title": "Asobi Asobase - workshop of fun -",
-    "genres": [
-      "Comedy",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Lerche"
-    ],
+    "genres": ["Comedy", "Slice of Life"],
+    "studios": ["Lerche"],
     "source": "MANGA",
     "relations": [
       {
@@ -10705,15 +8031,8 @@
   {
     "id": 7311,
     "title": "The Disappearance of Haruhi Suzumiya",
-    "genres": [
-      "Drama",
-      "Mystery",
-      "Sci-Fi",
-      "Supernatural"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Drama", "Mystery", "Sci-Fi", "Supernatural"],
+    "studios": ["Kyoto Animation"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -10733,13 +8052,8 @@
   {
     "id": 8769,
     "title": "Oreimo",
-    "genres": [
-      "Comedy",
-      "Slice of Life"
-    ],
-    "studios": [
-      "AIC Build"
-    ],
+    "genres": ["Comedy", "Slice of Life"],
+    "studios": ["AIC Build"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -10755,16 +8069,8 @@
   {
     "id": 128547,
     "title": "ODDTAXI",
-    "genres": [
-      "Drama",
-      "Mystery",
-      "Psychological",
-      "Thriller"
-    ],
-    "studios": [
-      "OLM",
-      "P.I.C.S."
-    ],
+    "genres": ["Drama", "Mystery", "Psychological", "Thriller"],
+    "studios": ["OLM", "P.I.C.S."],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -10788,9 +8094,7 @@
       "Psychological",
       "Supernatural"
     ],
-    "studios": [
-      "Shaft"
-    ],
+    "studios": ["Shaft"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -10810,14 +8114,8 @@
   {
     "id": 163132,
     "title": "Horimiya: The Missing Pieces",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "CloverWorks"
-    ],
+    "genres": ["Comedy", "Romance", "Slice of Life"],
+    "studios": ["CloverWorks"],
     "source": "MANGA",
     "relations": [
       {
@@ -10829,17 +8127,8 @@
   {
     "id": 19163,
     "title": "Date A Live II",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Ecchi",
-      "Fantasy",
-      "Romance",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "Production IMS"
-    ],
+    "genres": ["Action", "Comedy", "Ecchi", "Fantasy", "Romance", "Sci-Fi"],
+    "studios": ["Production IMS"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -10855,32 +8144,16 @@
   {
     "id": 103632,
     "title": "So I'm a Spider, So What?",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy",
-      "Mystery"
-    ],
-    "studios": [
-      "Millepensee",
-      "exsa"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy", "Mystery"],
+    "studios": ["Millepensee", "exsa"],
     "source": "LIGHT_NOVEL",
     "relations": []
   },
   {
     "id": 115113,
     "title": "Uzaki-chan Wants to Hang Out!",
-    "genres": [
-      "Comedy",
-      "Ecchi",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "ENGI"
-    ],
+    "genres": ["Comedy", "Ecchi", "Romance", "Slice of Life"],
+    "studios": ["ENGI"],
     "source": "MANGA",
     "relations": [
       {
@@ -10892,30 +8165,16 @@
   {
     "id": 113425,
     "title": "Redo of Healer",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Ecchi",
-      "Fantasy"
-    ],
-    "studios": [
-      "TNK"
-    ],
+    "genres": ["Action", "Adventure", "Ecchi", "Fantasy"],
+    "studios": ["TNK"],
     "source": "LIGHT_NOVEL",
     "relations": []
   },
   {
     "id": 104647,
     "title": "My Next Life as a Villainess: All Routes Lead to Doom!",
-    "genres": [
-      "Comedy",
-      "Fantasy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "SILVER LINK."
-    ],
+    "genres": ["Comedy", "Fantasy", "Romance", "Slice of Life"],
+    "studios": ["SILVER LINK."],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -10927,15 +8186,8 @@
   {
     "id": 17729,
     "title": "The Fruit of Grisaia",
-    "genres": [
-      "Drama",
-      "Ecchi",
-      "Psychological",
-      "Romance"
-    ],
-    "studios": [
-      "8-bit"
-    ],
+    "genres": ["Drama", "Ecchi", "Psychological", "Romance"],
+    "studios": ["8-bit"],
     "source": "VISUAL_NOVEL",
     "relations": [
       {
@@ -10951,15 +8203,8 @@
   {
     "id": 527,
     "title": "Pokémon",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "OLM"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy"],
+    "studios": ["OLM"],
     "source": "VIDEO_GAME",
     "relations": [
       {
@@ -11031,15 +8276,8 @@
   {
     "id": 20791,
     "title": "Fate/stay night [Heaven's Feel] I. presage flower",
-    "genres": [
-      "Action",
-      "Fantasy",
-      "Psychological",
-      "Supernatural"
-    ],
-    "studios": [
-      "ufotable"
-    ],
+    "genres": ["Action", "Fantasy", "Psychological", "Supernatural"],
+    "studios": ["ufotable"],
     "source": "VISUAL_NOVEL",
     "relations": [
       {
@@ -11087,13 +8325,8 @@
   {
     "id": 1887,
     "title": "Lucky☆Star",
-    "genres": [
-      "Comedy",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Comedy", "Slice of Life"],
+    "studios": ["Kyoto Animation"],
     "source": "MANGA",
     "relations": [
       {
@@ -11109,27 +8342,16 @@
   {
     "id": 97832,
     "title": "Citrus",
-    "genres": [
-      "Drama",
-      "Romance"
-    ],
-    "studios": [
-      "Passione"
-    ],
+    "genres": ["Drama", "Romance"],
+    "studios": ["Passione"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 99457,
     "title": "Maquia: When the Promised Flower Blooms",
-    "genres": [
-      "Drama",
-      "Fantasy",
-      "Psychological"
-    ],
-    "studios": [
-      "P.A.WORKS"
-    ],
+    "genres": ["Drama", "Fantasy", "Psychological"],
+    "studios": ["P.A.WORKS"],
     "source": "ORIGINAL",
     "relations": []
   },
@@ -11144,9 +8366,7 @@
       "Psychological",
       "Supernatural"
     ],
-    "studios": [
-      "Shaft"
-    ],
+    "studios": ["Shaft"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -11166,16 +8386,8 @@
   {
     "id": 2759,
     "title": "Evangelion: 1.0 You Are (Not) Alone",
-    "genres": [
-      "Action",
-      "Drama",
-      "Mecha",
-      "Psychological",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "Studio Khara"
-    ],
+    "genres": ["Action", "Drama", "Mecha", "Psychological", "Sci-Fi"],
+    "studios": ["Studio Khara"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -11191,13 +8403,8 @@
   {
     "id": 143338,
     "title": "The Angel Next Door Spoils Me Rotten",
-    "genres": [
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "project No.9"
-    ],
+    "genres": ["Romance", "Slice of Life"],
+    "studios": ["project No.9"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -11209,14 +8416,8 @@
   {
     "id": 109190,
     "title": "Violet Evergarden: Eternity and the Auto Memory Doll",
-    "genres": [
-      "Drama",
-      "Fantasy",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Drama", "Fantasy", "Slice of Life"],
+    "studios": ["Kyoto Animation"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -11232,14 +8433,8 @@
   {
     "id": 153152,
     "title": "The Dangers in My Heart",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Shin-Ei Animation"
-    ],
+    "genres": ["Comedy", "Romance", "Slice of Life"],
+    "studios": ["Shin-Ei Animation"],
     "source": "MANGA",
     "relations": [
       {
@@ -11259,16 +8454,8 @@
   {
     "id": 114194,
     "title": "BEASTARS Season 2",
-    "genres": [
-      "Drama",
-      "Mystery",
-      "Psychological",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Orange"
-    ],
+    "genres": ["Drama", "Mystery", "Psychological", "Romance", "Slice of Life"],
+    "studios": ["Orange"],
     "source": "MANGA",
     "relations": [
       {
@@ -11284,15 +8471,8 @@
   {
     "id": 97863,
     "title": "My First Girlfriend is a Gal",
-    "genres": [
-      "Comedy",
-      "Ecchi",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "NAZ"
-    ],
+    "genres": ["Comedy", "Ecchi", "Romance", "Slice of Life"],
+    "studios": ["NAZ"],
     "source": "MANGA",
     "relations": [
       {
@@ -11304,15 +8484,8 @@
   {
     "id": 20513,
     "title": "PSYCHO-PASS 2",
-    "genres": [
-      "Action",
-      "Psychological",
-      "Sci-Fi",
-      "Thriller"
-    ],
-    "studios": [
-      "Tatsunoko Production"
-    ],
+    "genres": ["Action", "Psychological", "Sci-Fi", "Thriller"],
+    "studios": ["Tatsunoko Production"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -11328,17 +8501,8 @@
   {
     "id": 99749,
     "title": "Fairy Tail Final Season",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "A-1 Pictures",
-      "Bridge",
-      "CloverWorks"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy"],
+    "studios": ["A-1 Pictures", "Bridge", "CloverWorks"],
     "source": "MANGA",
     "relations": [
       {
@@ -11354,15 +8518,8 @@
   {
     "id": 100298,
     "title": "Megalobox",
-    "genres": [
-      "Action",
-      "Drama",
-      "Sci-Fi",
-      "Sports"
-    ],
-    "studios": [
-      "TMS Entertainment"
-    ],
+    "genres": ["Action", "Drama", "Sci-Fi", "Sports"],
+    "studios": ["TMS Entertainment"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -11382,13 +8539,8 @@
   {
     "id": 16870,
     "title": "The Last: Naruto the Movie",
-    "genres": [
-      "Action",
-      "Romance"
-    ],
-    "studios": [
-      "Studio Pierrot"
-    ],
+    "genres": ["Action", "Romance"],
+    "studios": ["Studio Pierrot"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -11400,16 +8552,8 @@
   {
     "id": 11633,
     "title": "Blood Lad",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Ecchi",
-      "Supernatural"
-    ],
-    "studios": [
-      "Brain's Base"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Ecchi", "Supernatural"],
+    "studios": ["Brain's Base"],
     "source": "MANGA",
     "relations": [
       {
@@ -11421,14 +8565,8 @@
   {
     "id": 111322,
     "title": "The Rising of the Shield Hero Season 3",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy"
-    ],
-    "studios": [
-      "Kinema Citrus"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "studios": ["Kinema Citrus"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -11444,14 +8582,8 @@
   {
     "id": 270,
     "title": "Hellsing",
-    "genres": [
-      "Action",
-      "Horror",
-      "Supernatural"
-    ],
-    "studios": [
-      "GONZO"
-    ],
+    "genres": ["Action", "Horror", "Supernatural"],
+    "studios": ["GONZO"],
     "source": "MANGA",
     "relations": [
       {
@@ -11463,30 +8595,16 @@
   {
     "id": 141949,
     "title": "More than a Married Couple, but Not Lovers.",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Ecchi",
-      "Romance"
-    ],
-    "studios": [
-      "studio MOTHER"
-    ],
+    "genres": ["Comedy", "Drama", "Ecchi", "Romance"],
+    "studios": ["studio MOTHER"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 11577,
     "title": "Steins;Gate The Movie – Load Region of Déjà Vu",
-    "genres": [
-      "Drama",
-      "Romance",
-      "Sci-Fi",
-      "Thriller"
-    ],
-    "studios": [
-      "WHITE FOX"
-    ],
+    "genres": ["Drama", "Romance", "Sci-Fi", "Thriller"],
+    "studios": ["WHITE FOX"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -11502,30 +8620,16 @@
   {
     "id": 16067,
     "title": "A Lull in the Sea",
-    "genres": [
-      "Drama",
-      "Fantasy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "P.A.WORKS"
-    ],
+    "genres": ["Drama", "Fantasy", "Romance", "Slice of Life"],
+    "studios": ["P.A.WORKS"],
     "source": "ORIGINAL",
     "relations": []
   },
   {
     "id": 3455,
     "title": "To Love Ru",
-    "genres": [
-      "Comedy",
-      "Ecchi",
-      "Romance",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "Xebec"
-    ],
+    "genres": ["Comedy", "Ecchi", "Romance", "Sci-Fi"],
+    "studios": ["Xebec"],
     "source": "MANGA",
     "relations": [
       {
@@ -11537,15 +8641,8 @@
   {
     "id": 151384,
     "title": "Kaguya-sama: Love is War -The First Kiss That Never Ends-",
-    "genres": [
-      "Comedy",
-      "Psychological",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Comedy", "Psychological", "Romance", "Slice of Life"],
+    "studios": ["A-1 Pictures"],
     "source": "MANGA",
     "relations": [
       {
@@ -11561,15 +8658,8 @@
   {
     "id": 153800,
     "title": "One-Punch Man Season 3",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Sci-Fi",
-      "Supernatural"
-    ],
-    "studios": [
-      "J.C.STAFF"
-    ],
+    "genres": ["Action", "Comedy", "Sci-Fi", "Supernatural"],
+    "studios": ["J.C.STAFF"],
     "source": "MANGA",
     "relations": [
       {
@@ -11585,15 +8675,8 @@
   {
     "id": 142853,
     "title": "Tokyo Revengers Season 2",
-    "genres": [
-      "Action",
-      "Drama",
-      "Romance",
-      "Supernatural"
-    ],
-    "studios": [
-      "LIDENFILMS"
-    ],
+    "genres": ["Action", "Drama", "Romance", "Supernatural"],
+    "studios": ["LIDENFILMS"],
     "source": "MANGA",
     "relations": [
       {
@@ -11609,29 +8692,16 @@
   {
     "id": 21290,
     "title": "And you thought there is never a girl online?",
-    "genres": [
-      "Comedy",
-      "Ecchi",
-      "Romance"
-    ],
-    "studios": [
-      "project No.9"
-    ],
+    "genres": ["Comedy", "Ecchi", "Romance"],
+    "studios": ["project No.9"],
     "source": "LIGHT_NOVEL",
     "relations": []
   },
   {
     "id": 21306,
     "title": "Myriad Colors Phantom World",
-    "genres": [
-      "Action",
-      "Ecchi",
-      "Slice of Life",
-      "Supernatural"
-    ],
-    "studios": [
-      "Kyoto Animation"
-    ],
+    "genres": ["Action", "Ecchi", "Slice of Life", "Supernatural"],
+    "studios": ["Kyoto Animation"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -11647,14 +8717,8 @@
   {
     "id": 263,
     "title": "Hajime no Ippo: The Fighting!",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Sports"
-    ],
-    "studios": [
-      "MADHOUSE"
-    ],
+    "genres": ["Comedy", "Drama", "Sports"],
+    "studios": ["MADHOUSE"],
     "source": "MANGA",
     "relations": [
       {
@@ -11678,10 +8742,7 @@
       "Fantasy",
       "Supernatural"
     ],
-    "studios": [
-      "Studio DEEN",
-      "Marvy Jack"
-    ],
+    "studios": ["Studio DEEN", "Marvy Jack"],
     "source": "MANGA",
     "relations": [
       {
@@ -11697,15 +8758,8 @@
   {
     "id": 112443,
     "title": "Bottom-Tier Character Tomozaki",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "project No.9"
-    ],
+    "genres": ["Comedy", "Drama", "Romance", "Slice of Life"],
+    "studios": ["project No.9"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -11721,30 +8775,16 @@
   {
     "id": 101573,
     "title": "Bloom Into You",
-    "genres": [
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "TROYCA"
-    ],
+    "genres": ["Drama", "Romance", "Slice of Life"],
+    "studios": ["TROYCA"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 104464,
     "title": "ORESUKI: Are you the only one who loves me?",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Ecchi",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "CONNECT"
-    ],
+    "genres": ["Comedy", "Drama", "Ecchi", "Romance", "Slice of Life"],
+    "studios": ["CONNECT"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -11756,58 +8796,32 @@
   {
     "id": 6594,
     "title": "Katanagatari",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Romance"
-    ],
-    "studios": [
-      "WHITE FOX"
-    ],
+    "genres": ["Action", "Adventure", "Romance"],
+    "studios": ["WHITE FOX"],
     "source": "LIGHT_NOVEL",
     "relations": []
   },
   {
     "id": 20773,
     "title": "GANGSTA.",
-    "genres": [
-      "Action",
-      "Drama"
-    ],
-    "studios": [
-      "Manglobe"
-    ],
+    "genres": ["Action", "Drama"],
+    "studios": ["Manglobe"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 97980,
     "title": "Re:CREATORS",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy",
-      "Mecha",
-      "Thriller"
-    ],
-    "studios": [
-      "TROYCA"
-    ],
+    "genres": ["Action", "Drama", "Fantasy", "Mecha", "Thriller"],
+    "studios": ["TROYCA"],
     "source": "ORIGINAL",
     "relations": []
   },
   {
     "id": 99726,
     "title": "Recovery of an MMO Junkie",
-    "genres": [
-      "Comedy",
-      "Fantasy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Signal.MD"
-    ],
+    "genres": ["Comedy", "Fantasy", "Romance", "Slice of Life"],
+    "studios": ["Signal.MD"],
     "source": "MANGA",
     "relations": [
       {
@@ -11819,14 +8833,8 @@
   {
     "id": 8525,
     "title": "The World God Only Knows",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Supernatural"
-    ],
-    "studios": [
-      "Manglobe"
-    ],
+    "genres": ["Comedy", "Romance", "Supernatural"],
+    "studios": ["Manglobe"],
     "source": "MANGA",
     "relations": [
       {
@@ -11846,16 +8854,8 @@
   {
     "id": 97767,
     "title": "High School DxD HERO",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Ecchi",
-      "Fantasy",
-      "Romance"
-    ],
-    "studios": [
-      "Passione"
-    ],
+    "genres": ["Action", "Comedy", "Ecchi", "Fantasy", "Romance"],
+    "studios": ["Passione"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -11867,15 +8867,8 @@
   {
     "id": 112608,
     "title": "I've Been Killing Slimes for 300 Years and Maxed Out My Level",
-    "genres": [
-      "Adventure",
-      "Comedy",
-      "Fantasy",
-      "Slice of Life"
-    ],
-    "studios": [
-      "REVOROOT"
-    ],
+    "genres": ["Adventure", "Comedy", "Fantasy", "Slice of Life"],
+    "studios": ["REVOROOT"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -11887,13 +8880,8 @@
   {
     "id": 97888,
     "title": "BAKI",
-    "genres": [
-      "Action",
-      "Sports"
-    ],
-    "studios": [
-      "TMS Entertainment"
-    ],
+    "genres": ["Action", "Sports"],
+    "studios": ["TMS Entertainment"],
     "source": "MANGA",
     "relations": [
       {
@@ -11926,24 +8914,15 @@
       "Fantasy",
       "Romance"
     ],
-    "studios": [
-      "GEEKTOYS"
-    ],
+    "studios": ["GEEKTOYS"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 20955,
     "title": "Rokka -Braves of the Six Flowers-",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Fantasy",
-      "Mystery"
-    ],
-    "studios": [
-      "Passione"
-    ],
+    "genres": ["Action", "Adventure", "Fantasy", "Mystery"],
+    "studios": ["Passione"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -11955,15 +8934,8 @@
   {
     "id": 114121,
     "title": "The Daily Life of the Immortal King",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy"
-    ],
-    "studios": [
-      "Haoliners Animation"
-    ],
+    "genres": ["Action", "Adventure", "Comedy", "Fantasy"],
+    "studios": ["Haoliners Animation"],
     "source": "OTHER",
     "relations": [
       {
@@ -11975,14 +8947,8 @@
   {
     "id": 99699,
     "title": "Golden Kamuy",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy"
-    ],
-    "studios": [
-      "Geno Studio"
-    ],
+    "genres": ["Action", "Adventure", "Comedy"],
+    "studios": ["Geno Studio"],
     "source": "MANGA",
     "relations": [
       {
@@ -12002,14 +8968,8 @@
   {
     "id": 11759,
     "title": "Accel World",
-    "genres": [
-      "Action",
-      "Romance",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "Sunrise"
-    ],
+    "genres": ["Action", "Romance", "Sci-Fi"],
+    "studios": ["Sunrise"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -12025,14 +8985,8 @@
   {
     "id": 99420,
     "title": "Girls' Last Tour",
-    "genres": [
-      "Adventure",
-      "Sci-Fi",
-      "Slice of Life"
-    ],
-    "studios": [
-      "WHITE FOX"
-    ],
+    "genres": ["Adventure", "Sci-Fi", "Slice of Life"],
+    "studios": ["WHITE FOX"],
     "source": "MANGA",
     "relations": [
       {
@@ -12044,14 +8998,8 @@
   {
     "id": 124410,
     "title": "Rent-a-Girlfriend Season 2",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance"
-    ],
-    "studios": [
-      "TMS Entertainment"
-    ],
+    "genres": ["Comedy", "Drama", "Romance"],
+    "studios": ["TMS Entertainment"],
     "source": "MANGA",
     "relations": [
       {
@@ -12067,14 +9015,8 @@
   {
     "id": 147103,
     "title": "My Happy Marriage",
-    "genres": [
-      "Drama",
-      "Romance",
-      "Supernatural"
-    ],
-    "studios": [
-      "Kinema Citrus"
-    ],
+    "genres": ["Drama", "Romance", "Supernatural"],
+    "studios": ["Kinema Citrus"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -12086,13 +9028,8 @@
   {
     "id": 178754,
     "title": "Kaiju No. 8 Season 2",
-    "genres": [
-      "Action",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "Production I.G"
-    ],
+    "genres": ["Action", "Sci-Fi"],
+    "studios": ["Production I.G"],
     "source": "MANGA",
     "relations": [
       {
@@ -12112,16 +9049,8 @@
   {
     "id": 3784,
     "title": "Evangelion: 2.0 You Can (Not) Advance",
-    "genres": [
-      "Action",
-      "Drama",
-      "Mecha",
-      "Psychological",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "Studio Khara"
-    ],
+    "genres": ["Action", "Drama", "Mecha", "Psychological", "Sci-Fi"],
+    "studios": ["Studio Khara"],
     "source": "ORIGINAL",
     "relations": [
       {
@@ -12137,13 +9066,8 @@
   {
     "id": 98478,
     "title": "March comes in like a lion Season 2",
-    "genres": [
-      "Drama",
-      "Slice of Life"
-    ],
-    "studios": [
-      "Shaft"
-    ],
+    "genres": ["Drama", "Slice of Life"],
+    "studios": ["Shaft"],
     "source": "MANGA",
     "relations": [
       {
@@ -12155,28 +9079,16 @@
   {
     "id": 125428,
     "title": "High-Rise Invasion",
-    "genres": [
-      "Action",
-      "Horror",
-      "Mystery"
-    ],
-    "studios": [
-      "Zero-G"
-    ],
+    "genres": ["Action", "Horror", "Mystery"],
+    "studios": ["Zero-G"],
     "source": "MANGA",
     "relations": []
   },
   {
     "id": 21878,
     "title": "Gabriel DropOut",
-    "genres": [
-      "Comedy",
-      "Slice of Life",
-      "Supernatural"
-    ],
-    "studios": [
-      "Doga Kobo"
-    ],
+    "genres": ["Comedy", "Slice of Life", "Supernatural"],
+    "studios": ["Doga Kobo"],
     "source": "MANGA",
     "relations": [
       {
@@ -12188,29 +9100,16 @@
   {
     "id": 513,
     "title": "Castle in the Sky",
-    "genres": [
-      "Adventure",
-      "Fantasy",
-      "Sci-Fi"
-    ],
-    "studios": [
-      "Studio Ghibli"
-    ],
+    "genres": ["Adventure", "Fantasy", "Sci-Fi"],
+    "studios": ["Studio Ghibli"],
     "source": "ORIGINAL",
     "relations": []
   },
   {
     "id": 98035,
     "title": "Fate/Apocrypha",
-    "genres": [
-      "Action",
-      "Drama",
-      "Fantasy",
-      "Supernatural"
-    ],
-    "studios": [
-      "A-1 Pictures"
-    ],
+    "genres": ["Action", "Drama", "Fantasy", "Supernatural"],
+    "studios": ["A-1 Pictures"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {
@@ -12234,15 +9133,8 @@
   {
     "id": 21262,
     "title": "Owarimonogatari",
-    "genres": [
-      "Drama",
-      "Mystery",
-      "Psychological",
-      "Supernatural"
-    ],
-    "studios": [
-      "Shaft"
-    ],
+    "genres": ["Drama", "Mystery", "Psychological", "Supernatural"],
+    "studios": ["Shaft"],
     "source": "LIGHT_NOVEL",
     "relations": [
       {

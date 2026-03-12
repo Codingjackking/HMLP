@@ -12,14 +12,14 @@ import os
 import requests
 from typing import Optional
 
-# ── Configuration ────────────────────────────────────────────────────────────
+# Configuration 
 ANILIST_URL = "https://graphql.anilist.co"
 CACHE_FILE  = os.path.join(os.path.dirname(__file__), "data", "anime_data.json")
 MAX_ANIME   = 500          # hard cap: stay within 300-600 spec
 PER_PAGE    = 50           # AniList max per page
 RATE_LIMIT_DELAY = 0.7     # seconds between requests (~85 req/min, safe buffer)
 
-# ── GraphQL Query ─────────────────────────────────────────────────────────────
+# GraphQL Query to fetch the most popular anime
 ANIME_QUERY = """
 query ($page: Int, $perPage: Int) {
   Page(page: $page, perPage: $perPage) {
@@ -58,7 +58,7 @@ query ($page: Int, $perPage: Int) {
 """
 
 
-# ── API Helpers ───────────────────────────────────────────────────────────────
+# API Helpers
 
 def _post(query: str, variables: dict) -> dict:
     """Send a single GraphQL request; raises on HTTP errors."""
@@ -105,7 +105,7 @@ def _parse_anime(raw: dict) -> dict:
     }
 
 
-# ── Main Collection Function ──────────────────────────────────────────────────
+# Collection Function 
 
 def collect_anime(max_anime: int = MAX_ANIME, force_refresh: bool = False) -> list[dict]:
     """
@@ -120,7 +120,7 @@ def collect_anime(max_anime: int = MAX_ANIME, force_refresh: bool = False) -> li
     -------
     List of cleaned anime dicts (also saved to CACHE_FILE).
     """
-    # ── Return cached data if available ─────────────────────────────────────
+    # Return cached data if available 
     if not force_refresh and os.path.exists(CACHE_FILE):
         print(f"[data_collection] Loading cached data from {CACHE_FILE}")
         with open(CACHE_FILE, "r", encoding="utf-8") as f:
@@ -128,7 +128,7 @@ def collect_anime(max_anime: int = MAX_ANIME, force_refresh: bool = False) -> li
         print(f"[data_collection] Loaded {len(cached)} anime from cache.")
         return cached
 
-    # ── Paginated fetch ──────────────────────────────────────────────────────
+    # Paginated fetch
     print(f"[data_collection] Fetching up to {max_anime} anime from AniList API…")
     anime_list: list[dict] = []
     page = 1
@@ -164,7 +164,7 @@ def collect_anime(max_anime: int = MAX_ANIME, force_refresh: bool = False) -> li
         page += 1
         time.sleep(RATE_LIMIT_DELAY)   # be polite to the API
 
-    # ── Save to cache ────────────────────────────────────────────────────────
+    # Save to cache 
     os.makedirs(os.path.dirname(CACHE_FILE), exist_ok=True)
     with open(CACHE_FILE, "w", encoding="utf-8") as f:
         json.dump(anime_list, f, ensure_ascii=False, indent=2)
@@ -173,7 +173,7 @@ def collect_anime(max_anime: int = MAX_ANIME, force_refresh: bool = False) -> li
     return anime_list
 
 
-# ── Quick stats helper ────────────────────────────────────────────────────────
+# Stats helper function
 
 def dataset_stats(anime_list: list[dict]) -> dict:
     """Return basic statistics about the collected dataset."""
@@ -190,11 +190,9 @@ def dataset_stats(anime_list: list[dict]) -> dict:
         "total_relation_edges": total_rels,
     }
 
-
-# ── CLI entry point ───────────────────────────────────────────────────────────
 if __name__ == "__main__":
     anime = collect_anime()
     stats = dataset_stats(anime)
-    print("\n── Dataset Statistics ─────────────────────")
+    print("\n ----Dataset Statistics----")
     for k, v in stats.items():
         print(f"  {k:<28} {v}")
