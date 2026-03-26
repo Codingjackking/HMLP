@@ -58,9 +58,7 @@ query ($page: Int, $perPage: Int) {
 }
 """
 
-
 # API Helpers
-
 def _post(query: str, variables: dict, retries: int = 4) -> dict:
     """Send a single GraphQL request; retries on 429 and 5xx errors."""
     for attempt in range(retries):
@@ -127,9 +125,7 @@ def _parse_anime(raw: dict) -> dict:
         "relations":  relations,
     }
 
-
 # Main Collection Function 
-
 def collect_anime(max_anime: int = MAX_ANIME, force_refresh: bool = False) -> list[dict]:
     """
     Fetch up to `max_anime` popular anime from AniList.
@@ -183,7 +179,7 @@ def collect_anime(max_anime: int = MAX_ANIME, force_refresh: bool = False) -> li
             break
 
         page += 1
-        time.sleep(RATE_LIMIT_DELAY)   # be polite to the API
+        time.sleep(RATE_LIMIT_DELAY) # Respect rate limits
 
     # Save to cache
     os.makedirs(os.path.dirname(CACHE_FILE), exist_ok=True)
@@ -193,9 +189,7 @@ def collect_anime(max_anime: int = MAX_ANIME, force_refresh: bool = False) -> li
 
     return anime_list
 
-
 # Quick stats helper
-
 def dataset_stats(anime_list: list[dict]) -> dict:
     """Return basic statistics about the collected dataset."""
     all_genres  = {g for a in anime_list for g in a["genres"]}
@@ -211,8 +205,6 @@ def dataset_stats(anime_list: list[dict]) -> dict:
         "total_relation_edges": total_rels,
     }
 
-
-# CLI entry point 
 if __name__ == "__main__":
     anime = collect_anime()
     stats = dataset_stats(anime)
