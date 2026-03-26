@@ -19,7 +19,7 @@ MAX_ANIME   = 500          # hard cap: stay within 300-600 spec
 PER_PAGE    = 50           # AniList max per page
 RATE_LIMIT_DELAY = 0.7     # seconds between requests (~85 req/min, safe buffer)
 
-# GraphQL Query to fetch the most popular anime
+# GraphQL Query 
 ANIME_QUERY = """
 query ($page: Int, $perPage: Int) {
   Page(page: $page, perPage: $perPage) {
@@ -37,6 +37,7 @@ query ($page: Int, $perPage: Int) {
       }
       genres
       source
+      seasonYear
       studios(isMain: true) {
         nodes {
           id
@@ -60,19 +61,40 @@ query ($page: Int, $perPage: Int) {
 
 # API Helpers
 
-def _post(query: str, variables: dict) -> dict:
-    """Send a single GraphQL request; raises on HTTP errors."""
-    response = requests.post(
-        ANILIST_URL,
-        json={"query": query, "variables": variables},
-        headers={"Content-Type": "application/json", "Accept": "application/json"},
-        timeout=15,
-    )
-    response.raise_for_status()
-    data = response.json()
-    if "errors" in data:
-        raise RuntimeError(f"AniList API error: {data['errors']}")
-    return data
+def _post(query: str, variables: dict, retries: int = 4) -> dict:
+    """Send a single GraphQL request; retries on 429 and 5xx errors."""
+    for attempt in range(retries):
+        response = requests.post(
+            ANILIST_URL,
+            json={"query": query, "variables": variables},
+            headers={"Content-Type": "application/json", "Accept": "application/json"},
+            timeout=20,
+        )
+        # Rate limited — honour Retry-After header
+        if response.status_code == 429:
+            wait = int(response.headers.get("Retry-After", 60))
+            print(f"[data_collection] Rate limited – waiting {wait}s…")
+            time.sleep(wait)
+            continue
+        # Server error — exponential backoff, then give up on final attempt
+        if response.status_code >= 500:
+            wait = 2 ** attempt * 3   # 3s, 6s, 12s, 24s
+            if attempt < retries - 1:
+                print(f"[data_collection] Server error {response.status_code} "
+                      f"on attempt {attempt + 1}/{retries} – retrying in {wait}s…")
+                time.sleep(wait)
+                continue
+            else:
+                raise RuntimeError(
+                    f"AniList 500 after {retries} attempts "
+                    f"(page {variables.get('page')}). Skipping."
+                )
+        response.raise_for_status()
+        data = response.json()
+        if "errors" in data:
+            raise RuntimeError(f"AniList API error: {data['errors']}")
+        return data
+    raise RuntimeError("Exhausted retries in _post()")
 
 
 def _parse_anime(raw: dict) -> dict:
@@ -96,16 +118,17 @@ def _parse_anime(raw: dict) -> dict:
     ]
 
     return {
-        "id":        raw["id"],
-        "title":     title,
-        "genres":    raw.get("genres") or [],
-        "studios":   studios,
-        "source":    raw.get("source") or "UNKNOWN",
-        "relations": relations,
+        "id":         raw["id"],
+        "title":      title,
+        "genres":     raw.get("genres") or [],
+        "studios":    studios,
+        "source":     raw.get("source") or "UNKNOWN",
+        "seasonYear": raw.get("seasonYear"),   # int or None
+        "relations":  relations,
     }
 
 
-# Collection Function 
+# Main Collection Function 
 
 def collect_anime(max_anime: int = MAX_ANIME, force_refresh: bool = False) -> list[dict]:
     """
@@ -139,16 +162,14 @@ def collect_anime(max_anime: int = MAX_ANIME, force_refresh: bool = False) -> li
 
         try:
             data      = _post(ANIME_QUERY, {"page": page, "perPage": per_page})
-            page_info = data["data"]["Page"]["pageInfo"]
-            media     = data["data"]["Page"]["media"]
-        except requests.exceptions.HTTPError as e:
-            # Handle 429 Too Many Requests gracefully
-            if e.response is not None and e.response.status_code == 429:
-                wait = int(e.response.headers.get("Retry-After", 60))
-                print(f"[data_collection] Rate limited – waiting {wait}s…")
-                time.sleep(wait)
-                continue
-            raise
+        except RuntimeError as e:
+            print(f"[data_collection] Skipping page {page}: {e}")
+            page += 1
+            time.sleep(RATE_LIMIT_DELAY)
+            continue
+
+        page_info = data["data"]["Page"]["pageInfo"]
+        media     = data["data"]["Page"]["media"]
 
         for raw in media:
             anime_list.append(_parse_anime(raw))
@@ -164,7 +185,7 @@ def collect_anime(max_anime: int = MAX_ANIME, force_refresh: bool = False) -> li
         page += 1
         time.sleep(RATE_LIMIT_DELAY)   # be polite to the API
 
-    # Save to cache 
+    # Save to cache
     os.makedirs(os.path.dirname(CACHE_FILE), exist_ok=True)
     with open(CACHE_FILE, "w", encoding="utf-8") as f:
         json.dump(anime_list, f, ensure_ascii=False, indent=2)
@@ -173,7 +194,7 @@ def collect_anime(max_anime: int = MAX_ANIME, force_refresh: bool = False) -> li
     return anime_list
 
 
-# Stats helper function
+# Quick stats helper
 
 def dataset_stats(anime_list: list[dict]) -> dict:
     """Return basic statistics about the collected dataset."""
@@ -190,9 +211,11 @@ def dataset_stats(anime_list: list[dict]) -> dict:
         "total_relation_edges": total_rels,
     }
 
+
+# CLI entry point 
 if __name__ == "__main__":
     anime = collect_anime()
     stats = dataset_stats(anime)
-    print("\n ----Dataset Statistics----")
+    print("\n--- Dataset Statistics ---")
     for k, v in stats.items():
         print(f"  {k:<28} {v}")
