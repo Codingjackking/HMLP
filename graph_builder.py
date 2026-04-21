@@ -104,7 +104,7 @@ def build_graph(anime_list: list[dict]):
     return G, dict(adj), meta
 
 
-def build_projection_graph(anime_list: list[dict], include_official_relations: bool = True):
+def build_projection_graph(anime_list: list[dict], include_official_relations: bool = True, min_weight: int = 4):
     """
     Project the heterogeneous graph onto anime nodes only.
 
@@ -135,7 +135,7 @@ def build_projection_graph(anime_list: list[dict], include_official_relations: b
             genre_to_anime[g].add(anime["id"])
         for s in anime["studios"]:
             studio_to_anime[s].add(anime["id"])
-        source_to_anime[anime["source"]].add(anime["id"])
+        # source_to_anime[anime["source"]].add(anime["id"])
 
     # weight accumulator: (id_a, id_b) → weight
     edge_weights: dict[tuple[int, int], int] = defaultdict(int)
@@ -180,8 +180,9 @@ def build_projection_graph(anime_list: list[dict], include_official_relations: b
     # Build adjacency dict  {anime_id → {neighbor_id → weight}}
     proj_adj: dict[int, dict[int, int]] = defaultdict(dict)
     for (a, b), w in edge_weights.items():
-        proj_adj[a][b] = w
-        proj_adj[b][a] = w
+        if w >= min_weight:
+            proj_adj[a][b] = w
+            proj_adj[b][a] = w
 
     # Ensure all anime appear (even isolated ones)
     for anime in anime_list:
@@ -194,7 +195,8 @@ def build_projection_graph(anime_list: list[dict], include_official_relations: b
         for anime in anime_list:
             G_proj.add_node(anime["id"], title=anime["title"])
         for (a, b), w in edge_weights.items():
-            G_proj.add_edge(a, b, weight=w)
+            if w >= min_weight:
+                G_proj.add_edge(a, b, weight=w)
 
     print(
         f"[graph_builder] Projection graph — "
