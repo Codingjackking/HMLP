@@ -36,7 +36,6 @@ except ImportError:
 
 
 # Attribute set builder
-
 def build_attribute_set(anime: dict, include_source: bool = False) -> frozenset:
     """
     Build a frozenset of (type, value) tuples for a single anime dict.
@@ -69,7 +68,6 @@ def build_all_attribute_sets(anime_list: list[dict]) -> dict[int, frozenset]:
 
 
 # Global attribute frequency index
-
 def build_attr_frequency(anime_list: list[dict]) -> dict[tuple, int]:
     """
     Count how many anime share each attribute across the whole dataset.
@@ -91,7 +89,6 @@ def build_attr_frequency(anime_list: list[dict]) -> dict[tuple, int]:
 
 
 # Heuristic algorithms
-
 def jaccard(a_attrs: frozenset, b_attrs: frozenset) -> float:
     """
     Jaccard similarity: ratio of shared attributes to total attributes.
@@ -140,7 +137,6 @@ def preferential_attachment(a_attrs: frozenset, b_attrs: frozenset) -> float:
 
 
 # Batch scoring
-
 def score_all_pairs(
     anime_list: list[dict],
     attr_sets: dict[int, frozenset],
@@ -195,7 +191,6 @@ def score_all_pairs(
 
 
 # Relation-type classifier
-
 class RelationClassifier:
     """
     Lightweight logistic regression classifier that predicts the semantic

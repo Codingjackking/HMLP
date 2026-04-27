@@ -1,0 +1,173 @@
+{
+  "metrics": {
+    "jaccard": {
+      "precision@10": 1.0,
+      "recall@10": 0.1639,
+      "precision@25": 1.0,
+      "recall@25": 0.4098,
+      "precision@50": 0.96,
+      "recall@50": 0.7869,
+      "MAP": 0.9695,
+      "AUC-ROC": 0.9917
+    },
+    "adamic_adar": {
+      "precision@10": 1.0,
+      "recall@10": 0.1639,
+      "precision@25": 0.92,
+      "recall@25": 0.377,
+      "precision@50": 0.92,
+      "recall@50": 0.7541,
+      "MAP": 0.9179,
+      "AUC-ROC": 0.9852
+    },
+    "preferential_attachment": {
+      "precision@10": 0.7,
+      "recall@10": 0.1148,
+      "precision@25": 0.4,
+      "recall@25": 0.1639,
+      "precision@50": 0.3,
+      "recall@50": 0.2459,
+      "MAP": 0.3224,
+      "AUC-ROC": 0.5786
+    }
+  },
+  "relation_summary": {
+    "n_relation_types": 5,
+    "type_counts": {
+      "SEQUEL": 151,
+      "PREQUEL": 151,
+      "ALTERNATIVE": 18,
+      "SIDE_STORY": 5,
+      "SPIN_OFF": 2
+    },
+    "group_counts": {
+      "continuation": 302,
+      "alternative": 18,
+      "side": 7
+    },
+    "total_eval_triples": 327
+  },
+  "per_relation_type": {
+    "SEQUEL": {
+      "jaccard": {
+        "precision@25": 0.56,
+        "recall@25": 0.4667,
+        "MAP": 0.604
+      },
+      "adamic_adar": {
+        "precision@25": 0.48,
+        "recall@25": 0.4,
+        "MAP": 0.4479
+      },
+      "preferential_attachment": {
+        "precision@25": 0.24,
+        "recall@25": 0.2,
+        "MAP": 0.2094
+      }
+    },
+    "PREQUEL": {
+      "jaccard": {
+        "precision@25": 0.44,
+        "recall@25": 0.3667,
+        "MAP": 0.4687
+      },
+      "adamic_adar": {
+        "precision@25": 0.44,
+        "recall@25": 0.3667,
+        "MAP": 0.5169
+      },
+      "preferential_attachment": {
+        "precision@25": 0.12,
+        "recall@25": 0.1,
+        "MAP": 0.1376
+      }
+    },
+    "ALTERNATIVE": {
+      "jaccard": {
+        "precision@25": 0.04,
+        "recall@25": 0.3333,
+        "MAP": 0.0533
+      },
+      "adamic_adar": {
+        "precision@25": 0.04,
+        "recall@25": 0.3333,
+        "MAP": 0.0757
+      },
+      "preferential_attachment": {
+        "precision@25": 0.04,
+        "recall@25": 0.3333,
+        "MAP": 0.056
+      }
+    },
+    "SIDE_STORY": {
+      "jaccard": {
+        "precision@25": 0.0,
+        "recall@25": 0.0,
+        "MAP": 0.037
+      },
+      "adamic_adar": {
+        "precision@25": 0.0,
+        "recall@25": 0.0,
+        "MAP": 0.0217
+      },
+      "preferential_attachment": {
+        "precision@25": 0.0,
+        "recall@25": 0.0,
+        "MAP": 0.0035
+      }
+    },
+    "SPIN_OFF": {
+      "jaccard": {
+        "precision@25": 0.0,
+        "recall@25": 0.0,
+        "MAP": 0.0159
+      },
+      "adamic_adar": {
+        "precision@25": 0.0,
+        "recall@25": 0.0,
+        "MAP": 0.0147
+      },
+      "preferential_attachment": {
+        "precision@25": 0.0,
+        "recall@25": 0.0,
+        "MAP": 0.0036
+      }
+    }
+  },
+  "classifier": {
+    "trained": true,
+    "report": {
+      "alternative": {
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1-score": 0.5,
+        "support": 3.0
+      },
+      "continuation": {
+        "precision": 0.9375,
+        "recall": 1.0,
+        "f1-score": 0.967741935483871,
+        "support": 60.0
+      },
+      "side": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2.0
+      },
+      "accuracy": 0.9384615384615385,
+      "macro avg": {
+        "precision": 0.6458333333333334,
+        "recall": 0.4444444444444444,
+        "f1-score": 0.489247311827957,
+        "support": 65.0
+      },
+      "weighted avg": {
+        "precision": 0.9115384615384615,
+        "recall": 0.9384615384615385,
+        "f1-score": 0.9163771712158809,
+        "support": 65.0
+      }
+    }
+  }
+}
