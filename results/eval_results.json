@@ -134,6 +134,11 @@
       }
     }
   },
+  "runtime": {
+    "attr_build_s": 0.001,
+    "scoring_s": 0.001,
+    "total_s": 0.003
+  },
   "classifier": {
     "trained": true,
     "report": {

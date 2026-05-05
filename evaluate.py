@@ -20,6 +20,7 @@ import argparse
 import json
 import os
 import random
+import time
 from collections import defaultdict
 from typing import Optional
 
@@ -69,6 +70,7 @@ def train_test_split_triples(
             train.extend(triples[n_test:])
 
     print(f"[evaluate] Train triples: {len(train)} | Test triples: {len(test)}")
+    print(f"[evaluate] Split type: random stratified (no temporal ordering by seasonYear)")
     return train, test
 
 
@@ -219,7 +221,7 @@ def run_evaluation(
     anime_list: list[dict],
     proj_adj: dict[int, dict[int, int]],
     relation_triples: list[dict],
-    k_values: list[int] = (10, 25, 50),
+    k_values: tuple[int, ...] = (10, 25, 50),
     test_ratio: float = 0.2,
     neg_multiplier: int = 5,
     seed: int = 42,
@@ -235,8 +237,10 @@ def run_evaluation(
 
     Returns a results dict consumed by analyse.py and visualize.py.
     """
+    t_start = time.perf_counter()
     attr_sets  = build_all_attribute_sets(anime_list)
     attr_freq  = build_attr_frequency(anime_list)
+    t_attr = time.perf_counter()
     anime_ids  = [a["id"] for a in anime_list]
 
     train_triples, test_triples = train_test_split_triples(
@@ -265,7 +269,9 @@ def run_evaluation(
     )
 
     # Score candidates
+    t_score_start = time.perf_counter()
     ranked = score_candidates(candidates, attr_sets, attr_freq)
+    t_score_end = time.perf_counter()
 
     # Compute metrics per algorithm
     metrics: dict[str, dict] = {}
@@ -282,6 +288,12 @@ def run_evaluation(
         alg_metrics["AUC-ROC"] = round(auc_roc(rows, test_positive_pairs, negative_pairs), 4)
         metrics[alg] = alg_metrics
 
+    runtime = {
+        "attr_build_s":  round(t_attr - t_start, 3),
+        "scoring_s":     round(t_score_end - t_score_start, 3),
+        "total_s":       round(t_score_end - t_start, 3),
+    }
+
     return {
         "metrics":             metrics,
         "train_triples":       train_triples,
@@ -291,6 +303,7 @@ def run_evaluation(
         "ranked":              ranked,
         "attr_sets":           attr_sets,
         "attr_freq":           attr_freq,
+        "runtime":             runtime,
     }
 
 
@@ -391,11 +404,17 @@ def main():
     print("\n=== Link Prediction Evaluation ===")
     eval_results = run_evaluation(
         anime_list, proj_adj, relation_triples,
-        k_values=[10, 25, 50],
+        k_values=(10, 25, 50),
         test_ratio=args.test_ratio,
         neg_multiplier=args.neg_mult,
         seed=args.seed,
     )
+
+    rt = eval_results["runtime"]
+    print(f"\n[evaluate] Practical runtime:")
+    print(f"  Attribute set build : {rt['attr_build_s']:.3f}s")
+    print(f"  Candidate scoring   : {rt['scoring_s']:.3f}s")
+    print(f"  Total pipeline      : {rt['total_s']:.3f}s")
 
     for alg, m in eval_results["metrics"].items():
         print(f"\n  {alg}")
@@ -442,6 +461,7 @@ def main():
         "metrics":           eval_results["metrics"],
         "relation_summary":  summary,
         "per_relation_type": per_type,
+        "runtime":           eval_results["runtime"],
         "classifier":        {
             "trained": clf_results["trained"],
             "report":  clf_results.get("classification_report", {}),

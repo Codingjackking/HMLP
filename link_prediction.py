@@ -5,12 +5,16 @@ Three classical link-prediction heuristics operating on attribute sets,
 plus a lightweight relation-type classifier that answers the professor's
 question: "Can you predict the relation?"
 
-Heuristics
-----------
-- jaccard             : |A ∩ B| / |A ∪ B|
-- adamic_adar         : Σ 1/log(freq(attr)) for shared attributes
-                        (freq = number of anime that share this attribute)
-- preferential_attachment : |A| * |B|
+Heuristics — Local Neighborhood Methods
+-----------------------------------------
+All three heuristics are local neighborhood (neighbor-based) methods:
+they score a candidate pair using only the immediate attribute neighborhood
+of each anime node, without traversing the full graph. This makes them
+efficient (O(1) or O(|A ∩ B|) per pair) and interpretable.
+
+- jaccard             : |A ∩ B| / |A ∪ B|           Time O(1)  Space O(1)
+- adamic_adar         : Σ 1/log(freq(attr))           Time O(|A ∩ B|)  Space O(|A ∩ B|)
+- preferential_attachment : |A| * |B|                 Time O(1)  Space O(1)
 
 Relation-type prediction
 ------------------------
@@ -95,6 +99,9 @@ def jaccard(a_attrs: frozenset, b_attrs: frozenset) -> float:
 
     Score in [0, 1].  A score of 1 means identical attribute profiles.
     Returns 0 for empty sets to avoid division by zero.
+
+    Time complexity  : O(1) given prebuilt frozensets.
+    Space complexity : O(1) -- no additional storage beyond inputs.
     """
     union_size = len(a_attrs | b_attrs)
     if union_size == 0:
@@ -116,6 +123,9 @@ def adamic_adar(
     Parameters
     ----------
     attr_freq : global frequency dict from build_attr_frequency()
+
+    Time complexity  : O(|A ∩ B|) -- iterates over the intersection.
+    Space complexity : O(|A ∩ B|) -- intersection set materialized internally.
     """
     score = 0.0
     for attr in a_attrs & b_attrs:
@@ -132,6 +142,9 @@ def preferential_attachment(a_attrs: frozenset, b_attrs: frozenset) -> float:
     Models the "rich-get-richer" intuition: anime with many attributes
     (genres, studios) are more likely to share connections with others.
     Returns an integer-valued float.
+
+    Time complexity  : O(1) given prebuilt frozensets.
+    Space complexity : O(1) -- only two integer multiplications.
     """
     return float(len(a_attrs) * len(b_attrs))
 
@@ -355,9 +368,9 @@ class RelationClassifier:
             return {}
 
         try:
-            report = classification_report(
+            report: dict = classification_report(
                 y_true, y_pred, output_dict=True, zero_division=0
-            )
+            )  # type: ignore[assignment]
             return report
         except Exception:
             # Manual fallback if sklearn unavailable

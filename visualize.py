@@ -27,6 +27,7 @@ import json
 import os
 import sys
 from collections import defaultdict
+from typing import Optional
 
 # Matplotlib (required)
 try:
@@ -81,7 +82,7 @@ def build_pyvis_hetero(
     meta: dict,
     typed_triples: list[dict],
     top_n: int = 60,
-    out_path: str = None,
+    out_path: Optional[str] = None,
 ):
     """
     Interactive heterogeneous KG limited to top_n anime by degree
@@ -99,28 +100,89 @@ def build_pyvis_hetero(
     top_ids = {a["id"] for a in anime_by_attrs}
 
     net = Network(
-        height="750px", width="100%",
-        bgcolor="#1a1a2e", font_color="#e0e0e0",
+        height="100vh", width="100%",
+        bgcolor="#1a1a2e",
         notebook=False, directed=False,
     )
-    net.force_atlas_2based(gravity=-50, central_gravity=0.01,
-                           spring_length=120, spring_strength=0.05)
+    # Use barnesHut instead of forceAtlas2Based — it settles much faster
+    # on large graphs and does not drift/rotate after stabilization.
+    # Physics is disabled entirely once stabilization completes.
+    # Use barnesHut with high damping and pinned hub nodes.
+    # High-degree genre/studio hubs (e.g. "Action", "MANGA") cause thrashing
+    # because their enormous force gradients ripple through the whole graph.
+    # Pinning them (physics=False) removes that instability entirely.
+    net.set_options(json.dumps({
+        "physics": {
+            "solver": "barnesHut",
+            "barnesHut": {
+                "gravitationalConstant": -3000,
+                "centralGravity": 0.1,
+                "springLength": 150,
+                "springConstant": 0.02,
+                "damping": 0.4,
+                "avoidOverlap": 0.5
+            },
+            "stabilization": {
+                "enabled": True,
+                "iterations": 2000,
+                "updateInterval": 100,
+                "fit": True
+            },
+            "minVelocity": 1.0,
+            "maxVelocity": 30
+        },
+        "nodes": {
+            "font": {"color": "#e0e0e0"}
+        }
+    }))
 
     added_nodes: set = set()
 
-    def add_node(node_id: str, label: str, ntype: str, size: int = 15):
+    # Count connections per attribute node to identify high-degree hubs
+    genre_counts: dict[str, int] = {}
+    studio_counts: dict[str, int] = {}
+    for anime in anime_by_attrs:
+        for g in anime["genres"]:
+            gk = f"genre_{g.replace(' ', '_')}"
+            genre_counts[gk] = genre_counts.get(gk, 0) + 1
+        for s in anime["studios"]:
+            sk = f"studio_{s.replace(' ', '_')}"
+            studio_counts[sk] = studio_counts.get(sk, 0) + 1
+
+    # Count connections per anime node (genres + studios it belongs to)
+    anime_conn_counts: dict[str, int] = {
+        f"anime_{a['id']}": len(a["genres"]) + len(a["studios"])
+        for a in anime_by_attrs
+    }
+
+    # Pin attribute nodes connected to 8+ anime — these are the hubs
+    # that cause thrashing when left free in the physics simulation
+    PIN_THRESHOLD = 8
+
+    def add_node(node_id: str, label: str, ntype: str, size: int = 15,
+                 full_label: str = ""):
         if node_id not in added_nodes:
+            if ntype == "anime":
+                degree = anime_conn_counts.get(node_id, 0)
+                pin = False
+                tooltip = f"{full_label or label}\nType: {ntype}\nConnections: {degree}"
+            else:
+                degree = genre_counts.get(node_id, studio_counts.get(node_id, 0))
+                pin = ntype in ("genre", "studio") and degree >= PIN_THRESHOLD
+                tooltip = f"Type: {ntype}\n{label}\nConnections: {degree}"
             net.add_node(
                 node_id, label=label,
                 color=NODE_COLORS.get(ntype, "#aaaaaa"),
                 size=size,
-                title=f"Type: {ntype}\n{label}",
+                title=tooltip,
+                physics=not pin,
             )
             added_nodes.add(node_id)
 
     for anime in anime_by_attrs:
         a_node = f"anime_{anime['id']}"
-        add_node(a_node, anime["title"][:30], "anime", size=20)
+        full_title = anime["title"]
+        add_node(a_node, full_title[:30], "anime", size=20, full_label=full_title)
 
         for g in anime["genres"]:
             g_node = f"genre_{g.replace(' ', '_')}"
@@ -146,18 +208,58 @@ def build_pyvis_hetero(
             dashes=(triple["relation"] in {"ALTERNATIVE", "SIDE_STORY"}),
         )
 
-    # Legend as isolated nodes in a corner
-    legend_items = list(NODE_COLORS.items()) + list(RELATION_COLORS.items())
-    for i, (label, color) in enumerate(legend_items):
-        lid = f"__legend_{i}"
-        net.add_node(lid, label=label, color=color, size=8,
-                     x=-900, y=-400 + i * 40, physics=False,
-                     font={"size": 10})
+    # Legend injected as an HTML overlay after save_graph
+    # (pyvis legend nodes end up inside the physics space and overlap the graph)
+    LEGEND_ITEMS = list(NODE_COLORS.items()) + list(RELATION_COLORS.items())
+    LEGEND_LABELS = {
+        "anime": "Anime", "genre": "Genre", "studio": "Studio", "source": "Source",
+        "SEQUEL": "SEQUEL", "PREQUEL": "PREQUEL",
+        "SIDE_STORY": "SIDE_STORY", "SPIN_OFF": "SPIN_OFF", "ALTERNATIVE": "ALTERNATIVE",
+    }
 
     if out_path is None:
         out_path = os.path.join(OUT_DIR, "graph_hetero.html")
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     net.save_graph(out_path)
+
+    # Post-process HTML: add stabilization kill switch + HTML legend overlay
+    with open(out_path, "r", encoding="utf-8") as f:
+        html = f.read()
+
+    # Build legend HTML — fixed position bottom-right, outside the graph canvas
+    legend_rows = ""
+    for key, color in LEGEND_ITEMS:
+        label = LEGEND_LABELS.get(key, key)
+        sep = "<hr style=\'margin:4px 0;border-color:#333\'>" if key == "SEQUEL" else ""
+        legend_rows += f"""{sep}<div style=\'display:flex;align-items:center;gap:6px;margin:2px 0\'>
+            <div style=\'width:12px;height:12px;border-radius:50%;background:{color};flex-shrink:0\'></div>
+            <span style=\'font-size:11px;color:#e0e0e0\'>{label}</span></div>"""
+
+    legend_div = f"""
+    <div style='position:fixed;bottom:18px;right:18px;background:rgba(10,22,40,0.92);
+                border:1px solid #1B6CA8;border-radius:8px;padding:10px 14px;
+                z-index:9999;pointer-events:none;min-width:140px;'>
+      <div style='font-size:11px;font-weight:bold;color:#0D9E8F;margin-bottom:6px;'>Legend</div>
+      {legend_rows}
+    </div>"""
+
+    inject = """
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+            if (typeof network !== "undefined") {
+                network.once("stabilizationIterationsDone", function() {
+                    network.setOptions({ physics: { enabled: false } });
+                });
+            }
+        }, 500);
+    });
+    </script>
+    """
+    html = html.replace("</body>", legend_div + inject + "</body>")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(html)
+
     print(f"[visualize] Saved interactive KG  -> {out_path}")
     return out_path
 
@@ -167,7 +269,7 @@ def build_pyvis_projection(
     proj_adj: dict[int, dict[int, int]],
     relation_triples: list[dict],
     top_n: int = 80,
-    out_path: str = None,
+    out_path: Optional[str] = None,
 ):
     """
     Interactive anime-only projection graph.
@@ -185,12 +287,29 @@ def build_pyvis_projection(
     id_to_title = {a["id"]: a["title"] for a in anime_list}
 
     net = Network(
-        height="750px", width="100%",
-        bgcolor="#1a1a2e", font_color="#e0e0e0",
+        height="100vh", width="100%",
+        bgcolor="#1a1a2e", font_color="#e0e0e0",  # type: ignore[arg-type]
         notebook=False,
     )
-    net.force_atlas_2based(gravity=-30, central_gravity=0.005,
-                           spring_length=100, spring_strength=0.04)
+    net.set_options(json.dumps({
+        "physics": {
+            "solver": "barnesHut",
+            "barnesHut": {
+                "gravitationalConstant": -6000,
+                "centralGravity": 0.3,
+                "springLength": 100,
+                "springConstant": 0.04,
+                "damping": 0.09
+            },
+            "stabilization": {
+                "enabled": True,
+                "iterations": 1000,
+                "updateInterval": 50,
+                "fit": True
+            },
+            "minVelocity": 0.75
+        }
+    }))
 
     for aid in top_ids:
         deg   = degrees.get(aid, 0)
@@ -234,6 +353,27 @@ def build_pyvis_projection(
         out_path = os.path.join(OUT_DIR, "graph_projection.html")
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     net.save_graph(out_path)
+
+    # Post-process HTML: disable physics after stabilization
+    with open(out_path, "r", encoding="utf-8") as f:
+        html = f.read()
+    inject = """
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+            if (typeof network !== "undefined") {
+                network.once("stabilizationIterationsDone", function() {
+                    network.setOptions({ physics: { enabled: false } });
+                });
+            }
+        }, 500);
+    });
+    </script>
+    """
+    html = html.replace("</body>", inject + "</body>")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(html)
+
     print(f"[visualize] Saved projection graph -> {out_path}")
     return out_path
 

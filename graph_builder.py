@@ -15,8 +15,11 @@ Constructs two graphs from the collected anime dataset:
 
 2. Anime-only projection
    Two anime are connected if they share >= min_weight attributes (genre,
-   studio, source). Official relation edges are excluded from the projection
-   so they remain a clean held-out evaluation target.
+   studio only -- source excluded, see build_projection_graph docstring).
+   The heterogeneous KG is bipartite between Anime nodes and attribute nodes
+   (Genre, Studio, Source). This projection collapses the attribute side by
+   connecting two anime with weight = count of shared attribute neighbors.
+   Official relation edges are excluded and used as evaluation targets.
 
 Both graphs are represented as NetworkX graphs AND plain adjacency dicts
 for algorithm use without a NetworkX dependency.
@@ -172,6 +175,13 @@ def build_projection_graph(
     """
     Project the KG onto anime nodes only using shared genres and studios.
 
+    The heterogeneous KG is naturally bipartite between Anime nodes and
+    attribute nodes (Genre, Studio, Source): no two attribute nodes are
+    directly connected, and no two anime nodes are directly connected except
+    through typed relation edges. This projection collapses the attribute
+    side of the bipartite structure, connecting two anime with edge weight
+    equal to the number of shared attribute neighbors (genres + studios).
+
     Source medium (MANGA / LIGHT_NOVEL / ORIGINAL …) is intentionally
     excluded from the projection weight because it is too coarse: ~42% of
     all anime share "MANGA", which would add +1 to nearly half of all pairs
@@ -183,7 +193,13 @@ def build_projection_graph(
     so they remain a clean held-out set for evaluation.
 
     Edge weight = number of shared genre nodes + shared studio nodes.
-    Default min_weight=4 yields density ~0.04-0.07 for a 500-anime dataset.
+    Default min_weight=4 yields density ~0.03 for a 500-anime dataset.
+
+    Note on seasonYear: this field is collected per anime and preserved in
+    anime_list (and therefore in graph_data.json via save_graph). It is not
+    used for temporal ordering of the train/test split -- we use random
+    stratified splitting. Temporal splitting by seasonYear is a direction
+    for future work.
 
     Returns
     -------
@@ -343,6 +359,8 @@ def save_graph(
     if out_path is None:
         out_path = os.path.join(os.path.dirname(__file__), "data", "graph_data.json")
 
+    # anime_list contains all original fields including seasonYear,
+    # which is preserved here for any future temporal analysis.
     payload = {
         "anime_list":       anime_list,
         "proj_adj":         {str(k): {str(n): w for n, w in v.items()}
