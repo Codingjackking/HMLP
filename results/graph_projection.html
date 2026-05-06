@@ -33,7 +33,7 @@
 
              #mynetwork {
                  width: 100%;
-                 height: 750px;
+                 height: 100vh;
                  background-color: #1a1a2e;
                  border: 1px solid lightgray;
                  position: relative;
@@ -100,44 +100,7 @@
                   // adding nodes and edges to the graph
                   data = {nodes: nodes, edges: edges};
 
-                  var options = {
-    "configure": {
-        "enabled": false
-    },
-    "edges": {
-        "color": {
-            "inherit": true
-        },
-        "smooth": {
-            "enabled": true,
-            "type": "dynamic"
-        }
-    },
-    "interaction": {
-        "dragNodes": true,
-        "hideEdgesOnDrag": false,
-        "hideNodesOnDrag": false
-    },
-    "physics": {
-        "enabled": true,
-        "forceAtlas2Based": {
-            "avoidOverlap": 0,
-            "centralGravity": 0.005,
-            "damping": 0.4,
-            "gravitationalConstant": -30,
-            "springConstant": 0.04,
-            "springLength": 100
-        },
-        "solver": "forceAtlas2Based",
-        "stabilization": {
-            "enabled": true,
-            "fit": true,
-            "iterations": 1000,
-            "onlyDynamicEdges": false,
-            "updateInterval": 50
-        }
-    }
-};
+                  var options = {"physics": {"solver": "repulsion", "repulsion": {"nodeDistance": 120, "centralGravity": 0.1, "springLength": 150, "springConstant": 0.05, "damping": 0.5}, "stabilization": {"enabled": true, "iterations": 1500, "updateInterval": 100, "fit": true}, "minVelocity": 1.0, "maxVelocity": 50}};
 
                   
 
@@ -160,5 +123,83 @@
               }
               drawGraph();
         </script>
-    </body>
+    
+<script>
+(function () {
+    var D = 55; // min center-to-center distance
+
+    function resolveCollisions(pos, ids) {
+        for (var it = 0; it < 150; it++) {
+            var moved = false;
+            for (var i = 0; i < ids.length; i++) {
+                for (var j = i + 1; j < ids.length; j++) {
+                    var a = pos[ids[i]], b = pos[ids[j]];
+                    var dx = b.x - a.x, dy = b.y - a.y;
+                    var d  = Math.sqrt(dx*dx + dy*dy);
+                    if (d < D && d > 0.01) {
+                        var push = (D - d) / 2 + 1;
+                        var nx2 = dx/d*push, ny2 = dy/d*push;
+                        pos[ids[i]].x -= nx2; pos[ids[i]].y -= ny2;
+                        pos[ids[j]].x += nx2; pos[ids[j]].y += ny2;
+                        moved = true;
+                    }
+                }
+            }
+            if (!moved) break;
+        }
+        ids.forEach(function (id) { network.moveNode(id, pos[id].x, pos[id].y); });
+    }
+
+    // Resolve collisions only for the dragged node and its nearby neighbours.
+    // This runs on every drag frame so it must be fast - limit to nodes
+    // within 2*D of the dragged node rather than the full graph.
+    function resolveNear(draggedId) {
+        var all = network.getPositions();
+        var dragged = all[draggedId];
+        if (!dragged) return;
+        var nearby = [draggedId];
+        var ids = Object.keys(all);
+        for (var k = 0; k < ids.length; k++) {
+            if (ids[k] === draggedId) continue;
+            var dx = all[ids[k]].x - dragged.x;
+            var dy = all[ids[k]].y - dragged.y;
+            if (Math.sqrt(dx*dx + dy*dy) < D * 3) nearby.push(ids[k]);
+        }
+        if (nearby.length < 2) return;
+        var sub = {};
+        for (var n = 0; n < nearby.length; n++) sub[nearby[n]] = { x: all[nearby[n]].x, y: all[nearby[n]].y };
+        resolveCollisions(sub, nearby);
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+            if (typeof network === "undefined") return;
+
+            // Initial pass on load
+            var pos = network.getPositions();
+            var ids = Object.keys(pos);
+            resolveCollisions(pos, ids);
+            network.fit();
+
+            // Real-time collision during drag (throttled to every 30ms)
+            var lastDrag = 0;
+            network.on("dragging", function (params) {
+                if (!params.nodes || params.nodes.length === 0) return;
+                var now = Date.now();
+                if (now - lastDrag < 30) return;
+                lastDrag = now;
+                resolveNear(String(params.nodes[0]));
+            });
+
+            // Final full pass on release to clean up anything missed
+            network.on("dragEnd", function (params) {
+                if (!params.nodes || params.nodes.length === 0) return;
+                var pos2 = network.getPositions();
+                var ids2 = Object.keys(pos2);
+                resolveCollisions(pos2, ids2);
+            });
+        }, 300);
+    });
+})();
+</script></body>
 </html>

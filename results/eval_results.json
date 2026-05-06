@@ -135,9 +135,9 @@
     }
   },
   "runtime": {
-    "attr_build_s": 0.001,
+    "attr_build_s": 0.004,
     "scoring_s": 0.001,
-    "total_s": 0.003
+    "total_s": 0.017
   },
   "classifier": {
     "trained": true,

@@ -28,14 +28,17 @@ for algorithm use without a NetworkX dependency.
 import json
 import os
 from collections import defaultdict
-from typing import Optional
+from typing import TYPE_CHECKING, Optional
 
 try:
-    import networkx as nx
+    import networkx as nx  # type: ignore[no-redef]
     HAS_NX = True
 except ImportError:
     HAS_NX = False
-    print("[graph_builder] WARNING: NetworkX not found – adjacency dict only.")
+    print("[graph_builder] WARNING: NetworkX not found - adjacency dict only.")
+
+if TYPE_CHECKING:
+    import networkx as nx
 
 # Node ID helpers
 def anime_id(aid: int)   -> str: return f"anime_{aid}"
@@ -69,7 +72,7 @@ def build_graph(anime_list: list[dict]):
     -------
     G        : nx.DiGraph with node_type and (for A->A edges) relation attrs,
                or None if NetworkX is unavailable.
-    adj_dict : dict[str, set[str]]  – undirected adjacency for heuristics.
+    adj_dict : dict[str, set[str]]  - undirected adjacency for heuristics.
     meta     : dict  node-type -> set of node IDs.
     typed_relation_edges : list[dict]  each entry is
                            {"head": anime_id, "relation": str, "tail": anime_id}

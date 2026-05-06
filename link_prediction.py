@@ -5,7 +5,7 @@ Three classical link-prediction heuristics operating on attribute sets,
 plus a lightweight relation-type classifier that answers the professor's
 question: "Can you predict the relation?"
 
-Heuristics — Local Neighborhood Methods
+Heuristics - Local Neighborhood Methods
 -----------------------------------------
 All three heuristics are local neighborhood (neighbor-based) methods:
 they score a candidate pair using only the immediate attribute neighborhood
@@ -27,16 +27,22 @@ Relation-type prediction
 
 import math
 from collections import defaultdict
-from typing import Optional
+from typing import TYPE_CHECKING, Optional
 
 try:
+    import numpy as np  # type: ignore[no-redef]
+    from sklearn.linear_model import LogisticRegression  # type: ignore[no-redef]
+    from sklearn.metrics import classification_report  # type: ignore[no-redef]
+    from sklearn.preprocessing import StandardScaler  # type: ignore[no-redef]
+    HAS_SKLEARN = True
+except ImportError:
+    HAS_SKLEARN = False
+
+if TYPE_CHECKING:
     import numpy as np
     from sklearn.linear_model import LogisticRegression
     from sklearn.metrics import classification_report
     from sklearn.preprocessing import StandardScaler
-    HAS_SKLEARN = True
-except ImportError:
-    HAS_SKLEARN = False
 
 
 # Attribute set builder
@@ -88,7 +94,7 @@ def build_attr_frequency(anime_list: list[dict]) -> dict[tuple, int]:
             freq[("genre",  genre)] += 1
         for studio in anime.get("studios", []):
             freq[("studio", studio)] += 1
-        # source intentionally excluded – matches build_attribute_set default
+        # source intentionally excluded - matches build_attribute_set default
     return dict(freq)
 
 

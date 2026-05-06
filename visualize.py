@@ -24,17 +24,23 @@ Usage
 
 import argparse
 import json
+import math
 import os
 import sys
 from collections import defaultdict
 from typing import TYPE_CHECKING, Optional
 
-# TYPE_CHECKING block gives Pylance the real types for autocomplete/checking
-# without actually importing at runtime when the packages may be missing.
+try:
+    import networkx as nx  # type: ignore[no-redef]
+    HAS_NX = True
+except ImportError:
+    HAS_NX = False
+
 if TYPE_CHECKING:
     import matplotlib.pyplot as plt
     import matplotlib.patches as mpatches
     import numpy as np
+    import networkx as nx
     from pyvis.network import Network
 
 # Matplotlib (required)
@@ -93,80 +99,317 @@ def build_pyvis_hetero(
     out_path: Optional[str] = None,
 ):
     """
-    Interactive heterogeneous KG limited to top_n anime by degree
-    (most connected) to keep the visualisation readable.
+    Heterogeneous KG layout:
+      - Genre nodes packed as a tight cluster at the center (small random offsets)
+      - Franchise clusters of anime nodes arranged around that genre cluster
+      - Studio nodes on an outer ring encircling the anime clusters
+    Physics disabled. Positions are pre-computed. No rotation.
     """
     if not HAS_PYVIS:
         return
 
-    # Pick top_n most-connected anime by attribute count
     anime_by_attrs = sorted(
         anime_list,
         key=lambda a: len(a["genres"]) + len(a["studios"]),
         reverse=True,
     )[:top_n]
-    top_ids = {a["id"] for a in anime_by_attrs}
+    top_ids     = {a["id"] for a in anime_by_attrs}
+    id_to_anime = {a["id"]: a for a in anime_list}
 
-    net = Network(
-        height="750px", width="100%",
-        bgcolor="#1a1a2e",
-        notebook=False, directed=False,
-    )
-    net.force_atlas_2based(gravity=-50, central_gravity=0.01,
-                           spring_length=120, spring_strength=0.05)
+    # Unique genres / studios in order of first appearance
+    genre_set:  list[str] = []
+    studio_set: list[str] = []
+    seen_g: set[str] = set()
+    seen_s: set[str] = set()
+    for a in anime_by_attrs:
+        for g in a["genres"]:
+            if g not in seen_g:
+                seen_g.add(g); genre_set.append(g)
+        for s in a["studios"]:
+            if s not in seen_s:
+                seen_s.add(s); studio_set.append(s)
 
-    added_nodes: set = set()
+    # Build franchise groups via SEQUEL/PREQUEL connected components
+    if HAS_NX:
+        G_rel = nx.Graph()
+        for a in anime_by_attrs:
+            G_rel.add_node(a["id"])
+        for tri in typed_triples:
+            h = int(tri["head"].replace("anime_", ""))
+            t = int(tri["tail"].replace("anime_", ""))
+            if h in top_ids and t in top_ids and tri["relation"] in {"SEQUEL", "PREQUEL"}:
+                G_rel.add_edge(h, t)
+        components = sorted(nx.connected_components(G_rel), key=len, reverse=True)
+        franchise_groups: list[list[int]] = [
+            sorted(comp, key=lambda i: id_to_anime[i].get("title", ""))
+            for comp in components
+        ]
+        placed = {aid for g in franchise_groups for aid in g}
+        singles = [[a["id"]] for a in anime_by_attrs if a["id"] not in placed]
+        franchise_groups += singles
+    else:
+        franchise_groups = [[a["id"]] for a in anime_by_attrs]
 
-    def add_node(node_id: str, label: str, ntype: str, size: int = 15):
-        if node_id not in added_nodes:
-            net.add_node(
-                node_id, label=label,
-                color=NODE_COLORS.get(ntype, "#aaaaaa"),
-                size=size,
-                title=f"Type: {ntype}\n{label}",
-            )
-            added_nodes.add(node_id)
+    # Layout constants
+    GENRE_SPREAD  = 120   # radius of genre cluster (tight dot in center)
+    CLUSTER_GAP   = 80    # min distance between franchise cluster centers
+    NODE_RADIUS   = 20    # half-size of a single node (vis.js units)
 
-    for anime in anime_by_attrs:
-        a_node = f"anime_{anime['id']}"
-        add_node(a_node, anime["title"][:30], "anime", size=20)
+    def polar(r: float, angle: float) -> tuple[float, float]:
+        return round(r * math.cos(angle), 1), round(r * math.sin(angle), 1)
 
-        for g in anime["genres"]:
-            g_node = f"genre_{g.replace(' ', '_')}"
-            add_node(g_node, g, "genre", size=12)
-            net.add_edge(a_node, g_node, color="#555555", width=1)
+    # Place franchise clusters on concentric rings around the genre cluster.
+    # Each ring fits as many clusters as possible without overlap, then
+    # spills to the next ring outward. Cluster radius scales with group size.
+    def cluster_radius(n: int) -> float:
+        """Radius of a franchise's internal sub-circle based on member count."""
+        if n <= 1:
+            return 0.0
+        return max(35.0, n * 22.0 / (2 * math.pi))
 
-        for s in anime["studios"]:
-            s_node = f"studio_{s.replace(' ', '_')}"
-            add_node(s_node, s[:20], "studio", size=14)
-            net.add_edge(a_node, s_node, color="#555555", width=1)
+    # Compute how many clusters fit on each ring
+    cluster_radii = [cluster_radius(len(g)) for g in franchise_groups]
+    ring_inner = GENRE_SPREAD + CLUSTER_GAP
+    cluster_positions: list[tuple[float, float]] = []
+    fi = 0
+    n_f = len(franchise_groups)
+    ring_r = ring_inner
+    while fi < n_f:
+        cr = cluster_radii[fi]
+        # circumference available / space needed per cluster
+        circumference = 2 * math.pi * ring_r
+        slot = max(cr * 2 + CLUSTER_GAP, 70.0)
+        fits = max(1, int(circumference / slot))
+        batch = franchise_groups[fi: fi + fits]
+        for bi, _ in enumerate(batch):
+            angle = 2 * math.pi * bi / max(len(batch), 1) - math.pi / 2
+            cluster_positions.append(polar(ring_r, angle))
+        fi += len(batch)
+        ring_r += max(cr * 2 + CLUSTER_GAP, 80.0)
 
-    # Draw typed relation edges between top_n anime
-    for triple in typed_triples:
-        head_id = int(triple["head"].replace("anime_", ""))
-        tail_id = int(triple["tail"].replace("anime_", ""))
-        if head_id not in top_ids or tail_id not in top_ids:
-            continue
-        color = RELATION_COLORS.get(triple["relation"], "#ffffff")
-        net.add_edge(
-            triple["head"], triple["tail"],
-            color=color, width=3,
-            title=triple["relation"],
-            dashes=(triple["relation"] in {"ALTERNATIVE", "SIDE_STORY"}),
+    # Studio ring sits just outside the outermost anime ring
+    # Use a fixed padding of 150px beyond the last anime ring, ignoring
+    # studio count multiplier which was pushing the ring too far out
+    outermost_anime_r = ring_r - CLUSTER_GAP
+    STUDIO_RADIUS = outermost_anime_r + 150
+
+    import random
+    rng = random.Random(42)
+
+    net = Network(height="100vh", width="100%", bgcolor="#1a1a2e",
+                  notebook=False, directed=False)
+    net.set_options(json.dumps({
+        "physics": {"enabled": False},
+        "nodes":   {"font": {"color": "#e0e0e0"}},
+        "interaction": {"zoomView": True, "dragView": True, "dragNodes": True}
+    }))
+
+    def anime_tooltip(a: dict) -> str:
+        genres  = ", ".join(a.get("genres",  [])) or "None"
+        studios = ", ".join(a.get("studios", [])) or "None"
+        rels    = ", ".join(
+            r["type"] + "\u2192" + str(r["id"]) for r in a.get("relations", [])[:5]
+        ) or "None"
+        return (
+            a.get("title", "Unknown") + "\n"
+            + "Year: "      + str(a.get("seasonYear") or "Unknown") + "\n"
+            + "Genres: "    + genres    + "\n"
+            + "Studios: "   + studios   + "\n"
+            + "Source: "    + a.get("source", "Unknown") + "\n"
+            + "Relations: " + rels
         )
 
-    # Legend as isolated nodes in a corner
-    legend_items = list(NODE_COLORS.items()) + list(RELATION_COLORS.items())
-    for i, (label, color) in enumerate(legend_items):
-        lid = f"__legend_{i}"
-        net.add_node(lid, label=label, color=color, size=8,
-                     x=-900, y=-400 + i * 40, physics=False,
-                     font={"size": 10})
+    # Inner cluster - Genre nodes packed in a tight circle
+    genre_nid: dict[str, str] = {}
+    n_g = len(genre_set)
+    for i, g in enumerate(genre_set):
+        nid = f"genre_{g.replace(' ', '_')}"
+        genre_nid[g] = nid
+        # Tight packing: small circle so genres form a visible cluster
+        angle = 2 * math.pi * i / max(n_g, 1)
+        r     = GENRE_SPREAD * math.sqrt(i / max(n_g, 1))
+        x, y  = polar(r, angle)
+        deg   = sum(1 for a in anime_by_attrs if g in a["genres"])
+        net.add_node(nid, label=g, color=NODE_COLORS["genre"],
+                     size=12, x=x, y=y,
+                     title="Genre: " + g + "\nConnections: " + str(deg))
+
+    # Middle - Anime nodes in franchise clusters
+    anime_nid: dict[int, str] = {}
+    for fi, group in enumerate(franchise_groups):
+        cx, cy = cluster_positions[fi]
+        cr     = cluster_radii[fi]
+        n_in   = len(group)
+        for ji, aid in enumerate(group):
+            a = id_to_anime.get(aid)
+            if a is None:
+                continue
+            nid = f"anime_{aid}"
+            anime_nid[aid] = nid
+            if n_in == 1:
+                x, y = cx, cy
+            else:
+                spread_angle = 2 * math.pi * ji / n_in
+                x = round(cx + cr * math.cos(spread_angle), 1)
+                y = round(cy + cr * math.sin(spread_angle), 1)
+            net.add_node(nid, label=a["title"][:28], color=NODE_COLORS["anime"],
+                         size=18, x=x, y=y, title=anime_tooltip(a))
+
+    # Outer ring - Studio nodes
+    studio_nid: dict[str, str] = {}
+    n_s = len(studio_set)
+    for i, s in enumerate(studio_set):
+        nid = f"studio_{s.replace(' ', '_')}"
+        studio_nid[s] = nid
+        angle = 2 * math.pi * i / max(n_s, 1) - math.pi / 2
+        x, y  = polar(STUDIO_RADIUS, angle)
+        deg   = sum(1 for a in anime_by_attrs if s in a["studios"])
+        net.add_node(nid, label=s[:22], color=NODE_COLORS["studio"],
+                     size=14, x=x, y=y,
+                     title="Studio: " + s + "\nConnections: " + str(deg))
+
+    # Edges: anime - genre and anime - studio
+    for a in anime_by_attrs:
+        an = anime_nid.get(a["id"])
+        if an is None:
+            continue
+        for g in a["genres"]:
+            if g in genre_nid:
+                net.add_edge(an, genre_nid[g], color="#334466", width=1)
+        for s in a["studios"]:
+            if s in studio_nid:
+                net.add_edge(an, studio_nid[s], color="#224433", width=1)
+
+    # Coloured relation edges
+    for tri in typed_triples:
+        h = int(tri["head"].replace("anime_", ""))
+        t = int(tri["tail"].replace("anime_", ""))
+        if h not in top_ids or t not in top_ids:
+            continue
+        net.add_edge(
+            tri["head"], tri["tail"],
+            color=RELATION_COLORS.get(tri["relation"], "#ffffff"),
+            width=3, title=tri["relation"],
+            dashes=(tri["relation"] in {"ALTERNATIVE", "SIDE_STORY"}),
+        )
 
     if out_path is None:
         out_path = os.path.join(OUT_DIR, "graph_hetero.html")
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     net.save_graph(out_path)
+
+    # Post-process: legend + collision JS
+    with open(out_path, encoding="utf-8") as f:
+        html = f.read()
+
+    node_rows = "".join(
+        f"<div style=\'display:flex;align-items:center;gap:6px;margin:2px 0\'>"
+        f"<div style=\'width:11px;height:11px;border-radius:50%;background:{col};flex-shrink:0\'></div>"
+        f"<span style=\'font-size:11px;color:#e0e0e0\'>{lbl.capitalize()}</span></div>"
+        for lbl, col in NODE_COLORS.items()
+    )
+    rel_rows = "".join(
+        f"<div style=\'display:flex;align-items:center;gap:6px;margin:2px 0\'>"
+        f"<div style=\'width:14px;height:3px;background:{col};flex-shrink:0;border-radius:2px\'></div>"
+        f"<span style=\'font-size:11px;color:#e0e0e0\'>{lbl}</span></div>"
+        for lbl, col in RELATION_COLORS.items()
+    )
+    legend = (
+        "<div style=\'position:fixed;top:14px;right:14px;"
+        "background:rgba(10,22,40,0.93);border:1px solid #1B6CA8;"
+        "border-radius:8px;padding:10px 14px;z-index:9999;"
+        "pointer-events:none;min-width:130px;\'>"
+        "<div style=\'font-size:11px;font-weight:bold;color:#0D9E8F;margin-bottom:5px;\'>Node Types</div>"
+        + node_rows
+        + "<div style=\'font-size:11px;font-weight:bold;color:#0D9E8F;margin:7px 0 5px;\'>Relations</div>"
+        + rel_rows
+        + "</div>"
+    )
+
+    collision_js = """
+<script>
+(function () {
+    var D = 55; // min center-to-center distance
+
+    function resolveCollisions(pos, ids) {
+        for (var it = 0; it < 150; it++) {
+            var moved = false;
+            for (var i = 0; i < ids.length; i++) {
+                for (var j = i + 1; j < ids.length; j++) {
+                    var a = pos[ids[i]], b = pos[ids[j]];
+                    var dx = b.x - a.x, dy = b.y - a.y;
+                    var d  = Math.sqrt(dx*dx + dy*dy);
+                    if (d < D && d > 0.01) {
+                        var push = (D - d) / 2 + 1;
+                        var nx2 = dx/d*push, ny2 = dy/d*push;
+                        pos[ids[i]].x -= nx2; pos[ids[i]].y -= ny2;
+                        pos[ids[j]].x += nx2; pos[ids[j]].y += ny2;
+                        moved = true;
+                    }
+                }
+            }
+            if (!moved) break;
+        }
+        ids.forEach(function (id) { network.moveNode(id, pos[id].x, pos[id].y); });
+    }
+
+    // Resolve collisions only for the dragged node and its nearby neighbours.
+    // This runs on every drag frame so it must be fast - limit to nodes
+    // within 2*D of the dragged node rather than the full graph.
+    function resolveNear(draggedId) {
+        var all = network.getPositions();
+        var dragged = all[draggedId];
+        if (!dragged) return;
+        var nearby = [draggedId];
+        var ids = Object.keys(all);
+        for (var k = 0; k < ids.length; k++) {
+            if (ids[k] === draggedId) continue;
+            var dx = all[ids[k]].x - dragged.x;
+            var dy = all[ids[k]].y - dragged.y;
+            if (Math.sqrt(dx*dx + dy*dy) < D * 3) nearby.push(ids[k]);
+        }
+        if (nearby.length < 2) return;
+        var sub = {};
+        for (var n = 0; n < nearby.length; n++) sub[nearby[n]] = { x: all[nearby[n]].x, y: all[nearby[n]].y };
+        resolveCollisions(sub, nearby);
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+            if (typeof network === "undefined") return;
+
+            // Initial pass on load
+            var pos = network.getPositions();
+            var ids = Object.keys(pos);
+            resolveCollisions(pos, ids);
+            network.fit();
+
+            // Real-time collision during drag (throttled to every 30ms)
+            var lastDrag = 0;
+            network.on("dragging", function (params) {
+                if (!params.nodes || params.nodes.length === 0) return;
+                var now = Date.now();
+                if (now - lastDrag < 30) return;
+                lastDrag = now;
+                resolveNear(String(params.nodes[0]));
+            });
+
+            // Final full pass on release to clean up anything missed
+            network.on("dragEnd", function (params) {
+                if (!params.nodes || params.nodes.length === 0) return;
+                var pos2 = network.getPositions();
+                var ids2 = Object.keys(pos2);
+                resolveCollisions(pos2, ids2);
+            });
+        }, 300);
+    });
+})();
+</script>"""
+
+    html = html.replace("</body>", legend + collision_js + "</body>")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(html)
+
     print(f"[visualize] Saved interactive KG  -> {out_path}")
     return out_path
 
@@ -194,12 +437,30 @@ def build_pyvis_projection(
     id_to_title = {a["id"]: a["title"] for a in anime_list}
 
     net = Network(
-        height="750px", width="100%",
+        height="100vh", width="100%",
         bgcolor="#1a1a2e", font_color="#e0e0e0",  # type: ignore[arg-type]
         notebook=False,
     )
-    net.force_atlas_2based(gravity=-30, central_gravity=0.005,
-                           spring_length=100, spring_strength=0.04)
+    net.set_options(json.dumps({
+        "physics": {
+            "solver": "repulsion",
+            "repulsion": {
+                "nodeDistance": 120,
+                "centralGravity": 0.1,
+                "springLength": 150,
+                "springConstant": 0.05,
+                "damping": 0.5
+            },
+            "stabilization": {
+                "enabled": True,
+                "iterations": 1500,
+                "updateInterval": 100,
+                "fit": True
+            },
+            "minVelocity": 1.0,
+            "maxVelocity": 50
+        }
+    }))
 
     for aid in top_ids:
         deg   = degrees.get(aid, 0)
@@ -243,6 +504,94 @@ def build_pyvis_projection(
         out_path = os.path.join(OUT_DIR, "graph_projection.html")
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     net.save_graph(out_path)
+
+    with open(out_path, encoding="utf-8") as f:
+        html = f.read()
+
+    # No legend overlay for projection graph
+    collision_js = """
+<script>
+(function () {
+    var D = 55; // min center-to-center distance
+
+    function resolveCollisions(pos, ids) {
+        for (var it = 0; it < 150; it++) {
+            var moved = false;
+            for (var i = 0; i < ids.length; i++) {
+                for (var j = i + 1; j < ids.length; j++) {
+                    var a = pos[ids[i]], b = pos[ids[j]];
+                    var dx = b.x - a.x, dy = b.y - a.y;
+                    var d  = Math.sqrt(dx*dx + dy*dy);
+                    if (d < D && d > 0.01) {
+                        var push = (D - d) / 2 + 1;
+                        var nx2 = dx/d*push, ny2 = dy/d*push;
+                        pos[ids[i]].x -= nx2; pos[ids[i]].y -= ny2;
+                        pos[ids[j]].x += nx2; pos[ids[j]].y += ny2;
+                        moved = true;
+                    }
+                }
+            }
+            if (!moved) break;
+        }
+        ids.forEach(function (id) { network.moveNode(id, pos[id].x, pos[id].y); });
+    }
+
+    // Resolve collisions only for the dragged node and its nearby neighbours.
+    // This runs on every drag frame so it must be fast - limit to nodes
+    // within 2*D of the dragged node rather than the full graph.
+    function resolveNear(draggedId) {
+        var all = network.getPositions();
+        var dragged = all[draggedId];
+        if (!dragged) return;
+        var nearby = [draggedId];
+        var ids = Object.keys(all);
+        for (var k = 0; k < ids.length; k++) {
+            if (ids[k] === draggedId) continue;
+            var dx = all[ids[k]].x - dragged.x;
+            var dy = all[ids[k]].y - dragged.y;
+            if (Math.sqrt(dx*dx + dy*dy) < D * 3) nearby.push(ids[k]);
+        }
+        if (nearby.length < 2) return;
+        var sub = {};
+        for (var n = 0; n < nearby.length; n++) sub[nearby[n]] = { x: all[nearby[n]].x, y: all[nearby[n]].y };
+        resolveCollisions(sub, nearby);
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+            if (typeof network === "undefined") return;
+
+            // Initial pass on load
+            var pos = network.getPositions();
+            var ids = Object.keys(pos);
+            resolveCollisions(pos, ids);
+            network.fit();
+
+            // Real-time collision during drag (throttled to every 30ms)
+            var lastDrag = 0;
+            network.on("dragging", function (params) {
+                if (!params.nodes || params.nodes.length === 0) return;
+                var now = Date.now();
+                if (now - lastDrag < 30) return;
+                lastDrag = now;
+                resolveNear(String(params.nodes[0]));
+            });
+
+            // Final full pass on release to clean up anything missed
+            network.on("dragEnd", function (params) {
+                if (!params.nodes || params.nodes.length === 0) return;
+                var pos2 = network.getPositions();
+                var ids2 = Object.keys(pos2);
+                resolveCollisions(pos2, ids2);
+            });
+        }, 300);
+    });
+})();
+</script>"""
+    html = html.replace("</body>", collision_js + "</body>")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(html)
+
     print(f"[visualize] Saved projection graph -> {out_path}")
     return out_path
 
@@ -401,8 +750,6 @@ def chart_per_relation_heatmap(per_relation_type: dict, metric: str = "precision
     for i in range(len(rel_types)):
         for j in range(len(ALG_NAMES)):
             val = data[i, j]
-            # Dark blue cells (high values) get white text
-            # Light blue / near-zero cells get dark text
             text_color = "white" if val > 0.35 else "#111111"
             ax.text(j, i, f"{val:.2f}", ha="center", va="center",
                     fontsize=9, color=text_color, fontweight="bold")

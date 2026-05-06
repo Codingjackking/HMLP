@@ -71,7 +71,7 @@ def _post(query: str, variables: dict, retries: int = 4) -> dict:
         # Rate limited — honour Retry-After header
         if response.status_code == 429:
             wait = int(response.headers.get("Retry-After", 60))
-            print(f"[data_collection] Rate limited – waiting {wait}s…")
+            print(f"[data_collection] Rate limited - waiting {wait}s…")
             time.sleep(wait)
             continue
         # Server error — exponential backoff, then give up on final attempt
@@ -79,7 +79,7 @@ def _post(query: str, variables: dict, retries: int = 4) -> dict:
             wait = 2 ** attempt * 3   # 3s, 6s, 12s, 24s
             if attempt < retries - 1:
                 print(f"[data_collection] Server error {response.status_code} "
-                      f"on attempt {attempt + 1}/{retries} – retrying in {wait}s…")
+                      f"on attempt {attempt + 1}/{retries} - retrying in {wait}s…")
                 time.sleep(wait)
                 continue
             else:
@@ -132,8 +132,8 @@ def collect_anime(max_anime: int = MAX_ANIME, force_refresh: bool = False) -> li
 
     Parameters
     ----------
-    max_anime     : int  – hard cap on number of anime collected
-    force_refresh : bool – ignore local cache and re-fetch
+    max_anime     : int  - hard cap on number of anime collected
+    force_refresh : bool - ignore local cache and re-fetch
 
     Returns
     -------
@@ -172,7 +172,7 @@ def collect_anime(max_anime: int = MAX_ANIME, force_refresh: bool = False) -> li
 
         print(
             f"[data_collection] Page {page}/{page_info['lastPage']} "
-            f"– collected {len(anime_list)} anime so far."
+            f"- collected {len(anime_list)} anime so far."
         )
 
         if not page_info["hasNextPage"]:
