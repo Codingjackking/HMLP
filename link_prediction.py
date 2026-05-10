@@ -12,9 +12,9 @@ they score a candidate pair using only the immediate attribute neighborhood
 of each anime node, without traversing the full graph. This makes them
 efficient (O(1) or O(|A ∩ B|) per pair) and interpretable.
 
-- jaccard             : |A ∩ B| / |A ∪ B|           Time O(1)  Space O(1)
-- adamic_adar         : Σ 1/log(freq(attr))           Time O(|A ∩ B|)  Space O(|A ∩ B|)
-- preferential_attachment : |A| * |B|                 Time O(1)  Space O(1)
+- jaccard             : |A ∩ B| / |A ∪ B|           Time O(1)        Space O(1)
+- adamic_adar         : Σ 1/log(freq(attr))         Time O(|A ∩ B|)  Space O(|A ∩ B|)
+- preferential_attachment : |A| * |B|               Time O(1)        Space O(1)
 
 Relation-type prediction
 ------------------------

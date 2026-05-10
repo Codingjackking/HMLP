@@ -212,14 +212,14 @@ SEQUEL, PREQUEL, and other typed Anime-Anime edges are the evaluation targets. I
 - Data collection pipeline (`data_collection.py`) — AniList API integration, pagination, rate limiting, caching
 - Graph construction (`graph_builder.py`) — heterogeneous KG, projection graph, min_weight threshold analysis, save/load pipeline
 - Identified and fixed the density problem (source exclusion, min_weight tuning)
-- Fleshed out everything from data collection to visualization through comments and adding additional features. 
+- Implemented all code across the full pipeline, including evaluation, and visualization. Also fleshed out the link prediction algorithm. 
 - Sprint 2 presentation slides (data collection + graph construction sections)
 - Final report
 
 ### John Kim
-- Link prediction algorithms (`link_prediction.py`) — Jaccard, Adamic-Adar, Preferential Attachment implementations, attribute frequency index, RelationClassifier
-- Gave ideas on how to implement the evaluation pipeline (`evaluate.py`) — train/test split, negative sampling, Precision@K, Recall@K, MAP, AUC-ROC, per-relation-type breakdown
-- Gave ideas on how to implement and helped on designing of the visualization (`visualize.py`) — all charts and interactive pyvis graphs
+- Designed the link prediction algorithms (`link_prediction.py`) — Jaccard, Adamic-Adar, Preferential Attachment, RelationClassifier
+- Designed the evaluation pipeline (`evaluate.py`) — train/test split, negative sampling, Precision@K, Recall@K, MAP, AUC-ROC
+- Designed the visualization layout (`visualize.py`) — charts and interactive pyvis graphs
 - Sprint 2 presentation slides (algorithms, example, results sections)
 - Final report
 
